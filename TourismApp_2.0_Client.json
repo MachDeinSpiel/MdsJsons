@@ -27,11 +27,6 @@
 				  }
 			  ],
 	
-	"player":	{
-				"name": "Player",
-				"latitude": 43.40338,
-				"longitude": 43.40338
-				},	
 
 	"state": [ 
 		{
