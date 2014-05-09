@@ -19,12 +19,7 @@
             }
         }
     ],
-    "player": {
-        "name": "Player",
-        "health": 1000,
-        "latitude": "null",
-        "longitude": "null"
-    },
+	
     "states": [
         {
             "ID": "0",
@@ -121,13 +116,13 @@
             "doAction": {
                 "name": "showInfo",
                 "params": {
-                    "text": "trigger.object.params('text')"
+                    "text": "object.params('text')"
                 }
             },
             "startAction": {
                 "name": "useItem",
                 "params": {
-                    "target": "trigger.object"
+                    "target": "object"
                 }
             },
             "endAction": "null",
