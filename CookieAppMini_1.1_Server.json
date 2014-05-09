@@ -36,5 +36,10 @@
 				
 						   ]
 				}		   
-				]
+				],
+		"player":	{
+				"name": "Player",
+				"latitude": "null",
+				"longitude": "null"
+				}
 }
