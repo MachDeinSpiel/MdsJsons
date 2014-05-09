@@ -13,7 +13,7 @@
                             "name": "changeAttribute",
                             "params": {
                                 "target": "self",
-                                "attribute": "player.health",
+                                "attribute": "self.health",
                                 "value": -250,
                                 "valueType": "add",
                                 "duration": "null",
@@ -39,7 +39,7 @@
                             "name": "changeAttribute",
                             "params": {
                                 "target": "self",
-                                "attribute": "player.health",
+                                "attribute": "self.health",
                                 "value": -250,
                                 "valueType": "add",
                                 "duration": "null",
@@ -65,7 +65,7 @@
                             "name": "changeAttribute",
                             "params": {
                                 "target": "self",
-                                "attribute": "player.health",
+                                "attribute": "self.health",
                                 "value": -250,
                                 "valueType": "add",
                                 "duration": "null",
@@ -91,7 +91,7 @@
                             "name": "changeAttribute",
                             "params": {
                                 "target": "self",
-                                "attribute": "player.health",
+                                "attribute": "self.health",
                                 "value": -250,
                                 "valueType": "add",
                                 "duration": "null",
@@ -122,7 +122,7 @@
                             "name": "changeAttribute",
                             "params": {
                                 "target": "self",
-                                "attribute": "player.health",
+                                "attribute": "self.health",
                                 "value": 250,
                                 "valueType": "add",
                                 "duration": "null",
@@ -148,7 +148,7 @@
                             "name": "changeAttribute",
                             "params": {
                                 "target": "self",
-                                "attribute": "player.health",
+                                "attribute": "self.health",
                                 "value": 250,
                                 "valueType": "add",
                                 "duration": "null",
@@ -174,7 +174,7 @@
                             "name": "changeAttribute",
                             "params": {
                                 "target": "self",
-                                "attribute": "player.health",
+                                "attribute": "self.health",
                                 "value": 250,
                                 "valueType": "add",
                                 "duration": "null",
@@ -192,5 +192,12 @@
                 }
             ]
         }
-    ]
+    ],
+   
+   "player": {
+        "name": "Player",
+        "health": 1000,
+        "latitude": "null",
+        "longitude": "null"
+	}
 }
