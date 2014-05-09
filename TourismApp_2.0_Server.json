@@ -1,0 +1,33 @@
+{
+"groups":[
+		{
+			"name": "exhibits",
+			"members":[
+				    {
+					"name": "Roland",
+					"url": "http://www.youtube.com/watch?v=9jAEtbhXgz4",
+					"text": "Willkommen beim Roland",
+					"latitude": 53.075934,
+				    "longitude": 8.807341,    	
+					"moveableStatus": 0 
+					},
+					{
+					"name": "HSB",
+					"url": "http://www.youtube.com/watch?v=esGOl-tMIZs",
+					"text": "Willkommen bei der Hochschule Bremen",
+					"latitude": 53.055142,
+					"longitude": 8.783204,
+					"moveableStatus": 0
+					},
+					{
+					"name": "Stadtmusikanten",
+					"url": "http://www.youtube.com/watch?v=nLSOIaT_IGA",
+					"text": "Willkommen bei den Bremer Stadtmusikanten",
+					"latitude": 53.07616,
+					"longitude": 8.807489,
+					"moveableStatus": 0
+					}
+			]	
+		}
+	]
+}
