@@ -1,0 +1,236 @@
+
+	#
+	#
+	#
+	#
+	#"visible": "mine"/"all"/"none"/"groupName"	
+	#"duration": Die Dauer des Effekts in Sekunden. Für Sichtbarkeit wird das Attribut danach z.B. wieder zurückgesetzt.
+	#"ticks": Die Anzahl an Anwendungen des Effekts. Bei einer Duration von 10 und Ticks von 10 wird über 10 Sekunden 10 mal der Effekt ausgeführt.
+	#
+	#!!!Actions und Inventar sind hier nicht definiert!!!
+	#
+	#
+	
+{
+
+"player": {
+			"name": "Jochen",
+			"health": {
+						"value": 1000,
+						"accessable": "true"
+					  }
+			"latitude": "positionString",
+			"longitude": "positionString",
+			"score": 0,
+			"visible": "visibleString",									
+		  },
+		  
+"groups":[
+		 {
+			"name": "Items",
+			"members":[
+						{
+						 "name": "Cloak",
+						 "useAction": [
+									  {
+										"name": "turnInvisible",
+										"params": {
+													"target": "self",
+													"attribute": Jochen.visible,
+													"value": "none",
+													"valueType": "set",
+													"duration": 60,
+													"ticks": "null"
+												  }
+									  },
+									  {
+										"name": "removeFromGroup",
+										"params": {
+													"target": "Cloak",   
+													"group": "Inventory" 
+												  }
+									  }
+									  ]
+						},
+						{
+						 "name": "HealthPotion",
+						 "useAction": [
+									  {
+										"name": "changeAttribute",
+										"params": {
+													"target": "self",
+													"attribute": Jochen.health('value'),
+													"value": 250,
+													"valueType": "add"
+													"duration": "null",
+													"ticks": "null"
+												  }
+									  },
+									  {
+										"name": "removeFromGroup",
+										"params": {
+													"target": "HealthPotion",   
+													"group": "Inventory" 
+												  }
+									  }
+									  ]
+						},
+						{
+						 "name": "GodPotion",
+						 "useAction": [
+									  {
+										"name": "changeAttribute",
+										"params": {
+													"target": "self",
+													"attribute": Jochen.health('accessable'),
+													"value": "false",
+													"valueType": "set",
+													"duration": 60,
+													"ticks": 1
+												  }
+									  },
+									  {
+										"name": "removeFromGroup",
+										"params": {
+													"target": "GodPotion",   
+													"group": "Inventory" 
+												  }
+									  }
+									  ]
+						},
+						{
+						 "name": "Bomb",
+						 "useAction": [
+									  {
+										"name": "changeAttribute",
+										"params": {
+													"target": "self",
+													"attribute": Jochen.health('value'),
+													"value": -250,
+													"valueType": "add",
+													"duration": "null",
+													"ticks": "null"
+												  }
+									  },
+									  {
+										"name": "removeFromGroup",
+										"params": {
+													"target": "Bomb",   
+													"group": "Items" 
+												  }
+									  }
+									  ]
+						},
+						{
+						 "name": "ScoreCookie",
+						 "useAction": [
+									  {
+										"name": "changeAttribute",
+										"params": {
+													"target": "self",
+													"attribute": Jochen.score,
+													"value": 100,
+													"valueType": "add",
+													"duration": "null",
+													"ticks": "null"
+												  }
+									  },
+									  {
+										"name": "removeFromGroup",
+										"params": {
+													"target": "ScoreCookie",   
+													"group": "Items" 
+												  }
+									  }
+									  ]
+						},
+						{
+						 "name": "UBERHealthPotionOfDoom",
+						 "useAction": [
+									  {
+										"name": "changeAttribute",
+										"params": {
+													"target": "self",
+													"attribute": Jochen.health('value'),
+													"value": 100000,
+													"valueType": "set",
+													"duration": "null",
+													"ticks": "null"
+												  }
+									  },
+									  {
+										"name": "removeFromGroup",
+										"params": {
+													"target": "UBERHealthPotionOfDoom",   
+													"group": "Inventory" 
+												  }
+									  }
+									  ]
+						},
+						{
+						 "name": "Poison",
+						 "useAction": [
+									  {
+										"name": "changeAttribute",
+										"params": {
+													"target": "self",
+													"attribute": Jochen.health('value'),
+													"value": -25,
+													"valueType": "add",
+													"duration": 10,
+													"ticks": 10
+													
+												  }
+									  },
+									  {
+										"name": "removeFromGroup",
+										"params": {
+													"target": "Poison",   
+													"group": "Items" 
+												  }
+									  }
+									  ]
+						}						
+			
+					  ]
+		 },
+		 
+		],
+
+
+}
+		
+
+		
+	#
+	#
+	#
+	#
+	#"visible": "mine"/"all"/"none"/"groupName"	
+	#"duration": Die Dauer des Effekts in Sekunden. Für Sichtbarkeit wird das Attribut danach z.B. wieder zurückgesetzt.
+	#"ticks": Die Anzahl an Anwendungen des Effekts. Bei einer Duration von 10 und Ticks von 10 wird über 10 Sekunden 10 mal der Effekt ausgeführt.
+	#
+	#!!!Actions und Inventar sind hier nicht definiert!!!
+	#
+	#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		  
