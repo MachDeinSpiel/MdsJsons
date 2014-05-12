@@ -198,17 +198,21 @@
 					]
                 }
             ]
-        }
-    ],
-   
-   "players": [
-	   {
-			"name": "Player",
-			"params": [
-				"health": 1000,
-				"latitude": "null",
-				"longitude": "null"
-				]
-		}
-		]
+        },
+		    {
+            "name": "Players",
+            "members": [
+				   {
+						"name": "Player1",
+						"params": [
+							"health": 1000,
+							"latitude": "null",
+							"longitude": "null"
+						]
+					}
+			
+			]
+			}
+    ]
+  
 }
