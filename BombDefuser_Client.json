@@ -116,7 +116,7 @@
             "doAction": {
                 "name": "showInfo",
                 "params": {
-                    "text": "object.params('text')"
+                    "text": "object.text"
                 }
             },
             "startAction": {
