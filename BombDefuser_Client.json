@@ -56,7 +56,7 @@
                             "radius": 20
                         }
                     }
-                },
+                },co
                 {
                     "target": "trigger Item",
                     "event": "locationEvent",
@@ -85,7 +85,7 @@
                     "target": "gameOver Bombs",
                     "event": "whiteboardEvent",
                     "condition": {
-                        "name": "compare",
+                        "name": "condition",
                         "params": {
                             "checkType": "equals",
                             "value": "Bombs.length",
