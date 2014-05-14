@@ -1,218 +1,232 @@
 {
-    "groups": [
-        {
-            "name": "Bombs",
-            "members": [
-                {
-                    "name": "Bomb1",
-					"params": [
-						"text": "Das war eine Bombe!",
-						"latitude": 53.055223,
-						"longitude": 8.784514,
-						"useAction": [
-							{
-								"name": "changeAttribute",
-								"params": {
-									"attribute": "self.health",
-									"value": -250,
-									"valueType": "add",
-									"duration": "null",
-									"ticks": "null"
-								}
-							},
-							{
-								"name": "removeFromGroup",
-								"params": {
-									"target": "Bomb1",
-									"group": "Bombs"
-								}
-							}
-						]
-					]
-                },
-                {
-                    "name": "Bomb2",
-					"params": [
-						"text": "Das war eine Bombe!",
-						"latitude": 53.055809,
-						"longitude": 8.783629,
-						"useAction": [
-							{
-								"name": "changeAttribute",
-								"params": {
-									"attribute": "self.health",
-									"value": -250,
-									"valueType": "add",
-									"duration": "null",
-									"ticks": "null"
-								}
-							},
-							{
-								"name": "removeFromGroup",
-								"params": {
-									"target": "Bomb2",
-									"group": "Bombs"
-								}
-							}
-						]
-					]
-                },
-                {
-                    "name": "Bomb3",
-					"params": [
-						"text": "Das war eine Bombe!",
-						"latitude": 53.055494,
-						"longitude": 8.780968,
-						"useAction": [
-							{
-								"name": "changeAttribute",
-								"params": {
-									"attribute": "self.health",
-									"value": -250,
-									"valueType": "add",
-									"duration": "null",
-									"ticks": "null"
-								}
-							},
-							{
-								"name": "removeFromGroup",
-								"params": {
-									"target": "Bomb3",
-									"group": "Bombs"
-								}
-							}
-						]
-					]
-                },
-                {
-                    "name": "Bomb4",
-					"params": [
-						"text": "Das war eine Bombe!",
-						"latitude": 53.051908,
-						"longitude": 8.787395,
-						"useAction": [
-							{
-								"name": "changeAttribute",
-								"params": {
-									"attribute": "self.health",
-									"value": -250,
-									"valueType": "add",
-									"duration": "null",
-									"ticks": "null"
-								}
-							},
-							{
-								"name": "removeFromGroup",
-								"params": {
-									"target": "Bomb4",
-									"group": "Bombs"
-								}
-							}
-						]
-					]
-                }
-            ]
-        },
-        {
-            "name": "Medipacks",
-            "members": [
-                {
-                    "name": "Medipack1",
-					"params": [
-						"text": "Das war ein Medipack!",
-						"latitude": 53.053888,
-						"longitude": 8.783318,
-						"useAction": [
-							{
-								"name": "changeAttribute",
-								"params": {
-									"attribute": "self.health",
-									"value": 250,
-									"valueType": "add",
-									"duration": "null",
-									"ticks": "null"
-								}
-							},
-							{
-								"name": "removeFromGroup",
-								"params": {
-									"target": "Medipack1",
-									"group": "Medipacks"
-								}
-							}
-						]
-					]
-                },
-                {
-                    "name": "Medipack2",
-					"params": [
-						"text": "Das war ein Medipack!",
-						"latitude": 53.061323,
-						"longitude": 8.785571,
-						"useAction": [
-							{
-								"name": "changeAttribute",
-								"params": {
-									"attribute": "self.health",
-									"value": 250,
-									"valueType": "add",
-									"duration": "null",
-									"ticks": "null"
-								}
-							},
-							{
-								"name": "removeFromGroup",
-								"params": {
-									"target": "Medipack2",
-									"group": "Medipacks"
-								}
-							}
-						]
-					]
-                },
-                {
-                    "name": "Medipack3",
-					"params": [
-                    "text": "Das war ein Medipack!",
-                    "latitude": 53.056143,
-                    "longitude": 8.786756,
-                    "useAction": [
+   "groups":[
+      {
+         "name":"Bombs",
+         "members":[
+            {
+               "name":"Bomb1",
+               "params":[
+                  {
+                     "text":"Das war eine Bombe!",
+                     "latitude":53.055223,
+                     "longitude":8.784514,
+                     "useAction":[
                         {
-                            "name": "changeAttribute",
-                            "params": {
-                                "attribute": "self.health",
-                                "value": 250,
-                                "valueType": "add",
-                                "duration": "null",
-                                "ticks": "null"
-                            }
+                           "name":"changeAttribute",
+                           "params":{
+                              "attribute":"self.health",
+                              "value":-250,
+                              "valueType":"add",
+                              "duration":"null",
+                              "ticks":"null"
+                           }
                         },
                         {
-                            "name": "removeFromGroup",
-                            "params": {
-                                "target": "Medipack3",
-                                "group": "Medipacks"
-                            }
+                           "name":"removeFromGroup",
+                           "params":{
+                              "target":"Bomb1",
+                              "group":"Bombs"
+                           }
                         }
-                    ]
-					]
-                }
-            ]
-        },
-		    {
-            "name": "Players",
-            "members": [
-				   {
-						"name": "Player1",
-						"params": [
-							"health": 1000,
-							"latitude": "null",
-							"longitude": "null"
-						]
-					}
-			
-			]
-			}
-    ]
-  
+                     ]
+                  }
+               ]
+            },
+            {
+               "name":"Bomb2",
+               "params":[
+                  {
+                     "text":"Das war eine Bombe!",
+                     "latitude":53.055809,
+                     "longitude":8.783629,
+                     "useAction":[
+                        {
+                           "name":"changeAttribute",
+                           "params":{
+                              "attribute":"self.health",
+                              "value":-250,
+                              "valueType":"add",
+                              "duration":"null",
+                              "ticks":"null"
+                           }
+                        },
+                        {
+                           "name":"removeFromGroup",
+                           "params":{
+                              "target":"Bomb2",
+                              "group":"Bombs"
+                           }
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "name":"Bomb3",
+               "params":[
+                  {
+                     "text":"Das war eine Bombe!",
+                     "latitude":53.055494,
+                     "longitude":8.780968,
+                     "useAction":[
+                        {
+                           "name":"changeAttribute",
+                           "params":{
+                              "attribute":"self.health",
+                              "value":-250,
+                              "valueType":"add",
+                              "duration":"null",
+                              "ticks":"null"
+                           }
+                        },
+                        {
+                           "name":"removeFromGroup",
+                           "params":{
+                              "target":"Bomb3",
+                              "group":"Bombs"
+                           }
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "name":"Bomb4",
+               "params":[
+                  {
+                     "text":"Das war eine Bombe!",
+                     "latitude":53.051908,
+                     "longitude":8.787395,
+                     "useAction":[
+                        {
+                           "name":"changeAttribute",
+                           "params":{
+                              "attribute":"self.health",
+                              "value":-250,
+                              "valueType":"add",
+                              "duration":"null",
+                              "ticks":"null"
+                           }
+                        },
+                        {
+                           "name":"removeFromGroup",
+                           "params":{
+                              "target":"Bomb4",
+                              "group":"Bombs"
+                           }
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Medipacks",
+         "members":[
+            {
+               "name":"Medipack1",
+               "params":[
+                  {
+                     "text":"Das war ein Medipack!",
+                     "latitude":53.053888,
+                     "longitude":8.783318,
+                     "useAction":[
+                        {
+                           "name":"changeAttribute",
+                           "params":{
+                              "attribute":"self.health",
+                              "value":250,
+                              "valueType":"add",
+                              "duration":"null",
+                              "ticks":"null"
+                           }
+                        },
+                        {
+                           "name":"removeFromGroup",
+                           "params":{
+                              "target":"Medipack1",
+                              "group":"Medipacks"
+                           }
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "name":"Medipack2",
+               "params":[
+                  {
+                     "text":"Das war ein Medipack!",
+                     "latitude":53.061323,
+                     "longitude":8.785571,
+                     "useAction":[
+                        {
+                           "name":"changeAttribute",
+                           "params":{
+                              "attribute":"self.health",
+                              "value":250,
+                              "valueType":"add",
+                              "duration":"null",
+                              "ticks":"null"
+                           }
+                        },
+                        {
+                           "name":"removeFromGroup",
+                           "params":{
+                              "target":"Medipack2",
+                              "group":"Medipacks"
+                           }
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "name":"Medipack3",
+               "params":[
+                  {
+                     "text":"Das war ein Medipack!",
+                     "latitude":53.056143,
+                     "longitude":8.786756,
+                     "useAction":[
+                        {
+                           "name":"changeAttribute",
+                           "params":{
+                              "attribute":"self.health",
+                              "value":250,
+                              "valueType":"add",
+                              "duration":"null",
+                              "ticks":"null"
+                           }
+                        },
+                        {
+                           "name":"removeFromGroup",
+                           "params":{
+                              "target":"Medipack3",
+                              "group":"Medipacks"
+                           }
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name":"Players",
+         "members":[
+            {
+               "name":"Player1",
+               "params":[
+                  {
+                     "health":1000,
+                     "latitude":"null",
+                     "longitude":"null"
+                  }
+               ]
+            }
+         ]
+      }
+   ]
 }
