@@ -114,7 +114,7 @@
             "startState": false,
             "finalState": false,
             "doAction": {
-                "name": "showInfo",
+                "name": "showText",
                 "params": {
                     "text": "object.text"
                 }
@@ -146,7 +146,7 @@
             "startState": false,
             "finalState": true,
             "doAction": {
-                "name": "showInfo",
+                "name": "showText",
                 "params": {
                     "text": "Du hast alle Bomben erfolgreich hochgejagt!"
                 }
@@ -162,7 +162,7 @@
             "startState": false,
             "finalState": true,
             "doAction": {
-                "name": "showInfo",
+                "name": "showText",
                 "params": {
                     "text": "Du hast es scheinbar nicht geschafft alle Bomben zu vernichten!"
                 }
