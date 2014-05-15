@@ -13,7 +13,7 @@
             }
         },
         {
-            "ident": "showInfo",
+            "ident": "showText",
             "defaults": {
                 "text": "text"
             }
@@ -85,7 +85,7 @@
                     "target": "gameOver Bombs",
                     "event": "whiteboardEvent",
                     "condition": {
-                        "name": "condition",
+                        "name": "compare",
                         "params": {
                             "checkType": "equals",
                             "value": "Bombs.length",
