@@ -16,7 +16,7 @@
                 },
                 "removeFromGroup": {
                     "name": "removeFromGroup",
-                    "target": "Bomb1",
+                    "target": "Bombs.Bomb1",
                     "group": "Bombs"
                 }
             }
@@ -37,7 +37,7 @@
                 },
                 "removeFromGroup": {
                     "name": "removeFromGroup",
-                    "target": "Bomb2",
+                    "target": "Bombs.Bomb2",
                     "group": "Bombs"
                 }
             }
@@ -58,7 +58,7 @@
                 },
                 "removeFromGroup": {
                     "name": "removeFromGroup",
-                    "target": "Bomb3",
+                    "target": "Bombs.Bomb3",
                     "group": "Bombs"
                 }
             }
@@ -79,7 +79,7 @@
                 },
                 "removeFromGroup": {
                     "name": "removeFromGroup",
-                    "target": "Bomb4",
+                    "target": "Bombs.Bomb4",
                     "group": "Bombs"
                 }
             }
@@ -102,7 +102,7 @@
                 },
                 "removeFromGroup": {
                     "name": "removeFromGroup",
-                    "target": "Medipack1",
+                    "target": "Medipacks.Medipack1",
                     "group": "Medipacks"
                 }
             }
@@ -123,7 +123,7 @@
                 },
                 "removeFromGroup": {
                     "name": "removeFromGroup",
-                    "target": "Medipack2",
+                    "target": "Medipacks.Medipack2",
                     "group": "Medipacks"
                 }
             }
@@ -144,7 +144,7 @@
                 },
                 "removeFromGroup": {
                     "name": "removeFromGroup",
-                    "target": "Medipack3",
+                    "target": "Medipacks.Medipack3",
                     "group": "Medipacks"
                 }
             }
