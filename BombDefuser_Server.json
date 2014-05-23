@@ -1,6 +1,7 @@
 {
     "Bombs": {
         "Bomb1": {
+            "title": "Bombe!",
             "text": "Das war eine Bombe!",
             "latitude": 53.055223,
             "longitude": 8.784514,
@@ -21,6 +22,7 @@
             }
         },
         "Bomb2": {
+            "title": "Bombe!",
             "text": "Das war eine Bombe!",
             "latitude": 53.055809,
             "longitude": 8.783629,
@@ -41,6 +43,7 @@
             }
         },
         "Bomb3": {
+            "title": "Bombe!",
             "text": "Das war eine Bombe!",
             "latitude": 53.055494,
             "longitude": 8.780968,
@@ -61,6 +64,7 @@
             }
         },
         "Bomb4": {
+            "title": "Bombe!",
             "text": "Das war eine Bombe!",
             "latitude": 53.051908,
             "longitude": 8.787395,
@@ -83,6 +87,7 @@
     },
     "Medipacks": {
         "Medipack1": {
+            "title": "Medipack",
             "text": "Das war ein Medipack!",
             "latitude": 53.053888,
             "longitude": 8.783318,
@@ -103,6 +108,7 @@
             }
         },
         "Medipack2": {
+            "title": "Medipack",
             "text": "Das war ein Medipack!",
             "latitude": 53.061323,
             "longitude": 8.785571,
@@ -123,6 +129,7 @@
             }
         },
         "Medipack3": {
+            "title": "Medipack",
             "text": "Das war ein Medipack!",
             "latitude": 53.056143,
             "longitude": 8.786756,
