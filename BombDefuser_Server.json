@@ -8,7 +8,7 @@
             "useAction": {
                 "changeAttribute": {
                     "name": "changeAttribute",
-                    "attribute": "self.health",
+                    "attribute": "notValue.self.health",
                     "value": -250,
                     "valueType": "add",
                     "duration": "null",
@@ -29,7 +29,7 @@
             "useAction": {
                 "changeAttribute": {
                     "name": "changeAttribute",
-                    "attribute": "self.health",
+                    "attribute": "notValue.self.health",
                     "value": -250,
                     "valueType": "add",
                     "duration": "null",
@@ -50,7 +50,7 @@
             "useAction": {
                 "changeAttribute": {
                     "name": "changeAttribute",
-                    "attribute": "self.health",
+                    "attribute": "notValue.self.health",
                     "value": -250,
                     "valueType": "add",
                     "duration": "null",
@@ -71,7 +71,7 @@
             "useAction": {
                 "changeAttribute": {
                     "name": "changeAttribute",
-                    "attribute": "self.health",
+                    "attribute": "notValue.self.health",
                     "value": -250,
                     "valueType": "add",
                     "duration": "null",
@@ -94,7 +94,7 @@
             "useAction": {
                 "changeAttribute": {
                     "name": "changeAttribute",
-                    "attribute": "self.health",
+                    "attribute": "notValue.self.health",
                     "value": 250,
                     "valueType": "add",
                     "duration": "null",
@@ -115,7 +115,7 @@
             "useAction": {
                 "changeAttribute": {
                     "name": "changeAttribute",
-                    "attribute": "self.health",
+                    "attribute": "notValue.self.health",
                     "value": 250,
                     "valueType": "add",
                     "duration": "null",
@@ -136,7 +136,7 @@
             "useAction": {
                 "changeAttribute": {
                     "name": "changeAttribute",
-                    "attribute": "self.health",
+                    "attribute": "notValue.self.health",
                     "value": 250,
                     "valueType": "add",
                     "duration": "null",
