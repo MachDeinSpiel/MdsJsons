@@ -1,0 +1,5 @@
+// Spiel joinen
+{"mode":"join","id":0,"name":"Peter"}
+
+// Games anfordern
+{"mode":"games"}
