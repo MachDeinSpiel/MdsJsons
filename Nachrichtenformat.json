@@ -1,5 +1,8 @@
 // Spiel joinen
 {"mode":"join","id":0,"name":"Peter"}
 
+// Spiel erstellen (Initialspieler)
+{"mode":"create","id":0,"name":"Peter"}
+
 // Games anfordern
 {"mode":"games"}
