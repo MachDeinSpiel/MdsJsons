@@ -1,5 +1,8 @@
-// Games anfordern
-{"mode":"games"}
+// Verfügbare Spiele anfordern
+{"mode":"gametemplates"}
+
+// Laufende Spiele anfordern
+{"mode":"activegames"}
 
 // Spiel joinen
 {"mode":"join","id":0,"name":"Peter"}
