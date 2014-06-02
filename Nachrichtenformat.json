@@ -8,4 +8,4 @@
 {"mode":"join","id":0,"name":"Peter"}
 
 // Spiel erstellen (Initialspieler)
-{"mode":"create","id":0,"name":"Peter"}
+{"mode":"create","id":0,"name":"Peter", "maxplayers":2}
