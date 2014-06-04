@@ -1,25 +1,27 @@
 ###Globale Lobby
-Verfügbare Spiele anfordern
-{"mode":"gametemplates"}
+**Verfügbare Spiele anfordern**  
+```{"mode":"gametemplates"}```
 
-Laufende Spiele anfordern
-{"mode":"activegames"}
+**Laufende Spiele anfordern**  
+```{"mode":"activegames"}```
 
-Spiel joinen
-{"mode":"join","id":0,"name":"Peter"}
+**Spiel joinen**  
+```{"mode":"join","id":0,"name":"Jason"}```
 
-Spiel erstellen (Initialspieler)
-{"mode":"create","id":0,"name":"Peter", "maxplayers":2}
+**Spiel erstellen (Initialspieler)**  
+```{"mode":"create","id":0,"name":"Jason", "maxplayers":2}```
 
 
---- Spiele Lobby ---
+###Spiele Lobby
  
-{"mode":"gamelobby", "action":"players"}
+**Liste der Spieler anfordern**
+```{"mode":"gamelobby", "action":"players"}```
 
+**Spieler Liste**
+```{"mode":"gamelobby", "action":"players", "players": [ {"name":"Jason", "id":0}, {"name":"Eva", "id":1}]}```
 
-{"mode":"gamelobby", "action":"start"}
+**Spiel starten**
+```{"mode":"gamelobby", "action":"start"}```
 
-
-
-
-{"mode":"gamelobby", "action":"kick"}
+**Spieler 0 kicken**
+```{"mode":"gamelobby", "action":"kick", "player":0}```
