@@ -14,14 +14,14 @@
 
 ###Spiele Lobby
  
-**Liste der Spieler anfordern**
+**Liste der Spieler anfordern**  
 ```{"mode":"gamelobby", "action":"players"}```
 
-**Spieler Liste**
+**Spieler Liste**  
 ```{"mode":"gamelobby", "action":"players", "players": [ {"name":"Jason", "id":0}, {"name":"Eva", "id":1}]}```
 
-**Spiel starten**
+**Spiel starten**  
 ```{"mode":"gamelobby", "action":"start"}```
 
-**Spieler 0 kicken**
+**Spieler 0 kicken**  
 ```{"mode":"gamelobby", "action":"kick", "player":0}```
