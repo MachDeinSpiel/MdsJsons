@@ -23,5 +23,5 @@
 **Spiel starten**  
 ```{"mode":"gamelobby", "action":"start"}```
 
-**Spieler 0 kicken**  
-```{"mode":"gamelobby", "action":"kick", "player":0}```
+**Spieler Eva kicken**  
+```{"mode":"gamelobby", "action":"kick", "player":1}```
