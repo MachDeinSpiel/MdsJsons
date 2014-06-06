@@ -1,4 +1,4 @@
-{  "mode":"games",
+{  "mode":"gametemplates",
    "games":[
       {
          "name":"Bomb Defuser",
@@ -6,7 +6,6 @@
          "version":0.1,
          "id":0,
          "maxplayers":2,
-         "activeplayers":0,
          "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/BombDefuser_Server.json",
          "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/BombDefuser_Client.json"
       },
@@ -16,7 +15,6 @@
          "version":1.1,
          "id":1,
          "maxplayers":5,
-         "activeplayers":0,
          "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/CookieAppMini_1.1_Server.json",
          "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/CookieAppMini_1.1_Client.json"
       },
@@ -26,7 +24,6 @@
          "version":2.0,
          "id":2,
          "maxplayers":10,
-         "activeplayers":0,
          "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/TourismApp_2.0_Server.json",
          "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/TourismApp_2.0_Client.json"
       }
