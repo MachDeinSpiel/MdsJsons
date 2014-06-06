@@ -11,7 +11,7 @@
 **Spiel erstellen (Initialspieler)**  
 ```{"mode":"create","id":0,"name":"Jason", "maxplayers":2}```
 
-
+##Entwürfe  
 ###Spiele Lobby
  
 **Liste der Spieler anfordern**  
@@ -25,3 +25,8 @@
 
 **Spieler Eva kicken**  
 ```{"mode":"gamelobby", "action":"kick", "player":1}```
+
+###Monitoringtool  
+
+**Monitoring Tool in laufendes Spiel 0 einhängen**  
+```{"mode":"monitor", "id",0}```
