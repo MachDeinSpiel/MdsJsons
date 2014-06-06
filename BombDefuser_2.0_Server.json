@@ -8,7 +8,7 @@
 			"visible": {
 						"target": "all",
 						"name": "?",
-						"imagePath": "http://www.albrecht-engineers.com/fileadmin/vorlage/img/kreis.png"
+						"imagePath": "http://i.imgur.com/GKY1yuZ.png"
 			            },
             "useAction": {
                 "changeAttribute": {
@@ -34,7 +34,7 @@
 			"visible": {
 						"target": "all",
 						"name": "?",
-						"imagePath": "http://www.albrecht-engineers.com/fileadmin/vorlage/img/kreis.png"
+						"imagePath": "http://i.imgur.com/GKY1yuZ.png"
 			            },
             "useAction": {
                 "changeAttribute": {
@@ -60,7 +60,7 @@
 			"visible": {
 						"target": "all",
 						"name": "?",
-						"imagePath": "http://www.albrecht-engineers.com/fileadmin/vorlage/img/kreis.png"
+						"imagePath": "http://i.imgur.com/GKY1yuZ.png"
 			            },
             "useAction": {
                 "changeAttribute": {
@@ -86,7 +86,7 @@
 			"visible": {
 						"target": "all",
 						"name": "?",
-						"imagePath": "http://www.albrecht-engineers.com/fileadmin/vorlage/img/kreis.png"
+						"imagePath": "http://i.imgur.com/GKY1yuZ.png"
 			            },
             "useAction": {
                 "changeAttribute": {
@@ -114,7 +114,7 @@
 			"visible": {
 						"target": "all",
 						"name": "?",
-						"imagePath": "http://www.albrecht-engineers.com/fileadmin/vorlage/img/kreis.png"
+						"imagePath": "http://i.imgur.com/GKY1yuZ.png"
 			            },
             "useAction": {
                 "changeAttribute": {
@@ -140,7 +140,7 @@
 			"visible": {
 						"target": "all",
 						"name": "?",
-						"imagePath": "http://www.albrecht-engineers.com/fileadmin/vorlage/img/kreis.png"
+						"imagePath": "http://i.imgur.com/GKY1yuZ.png"
 			            },
             "useAction": {
                 "changeAttribute": {
@@ -166,7 +166,7 @@
 			"visible": {
 						"target": "all",
 						"name": "?",
-						"imagePath": "http://www.albrecht-engineers.com/fileadmin/vorlage/img/kreis.png"
+						"imagePath": "http://i.imgur.com/GKY1yuZ.png"
 			            },
             "useAction": {
                 "changeAttribute": {
@@ -186,7 +186,7 @@
         }
     },
     "Players": {
-        "0": {
+        "template": {
             "health": 1000,
             "latitude": "null",
             "longitude": "null",
