@@ -205,7 +205,15 @@
             "endAction": "null",
             "transition": {
                 "target": "move around",
-                "event": "null"
+                "event": "whiteboardEvent",
+                "condition": {
+                  "name": "condition",
+                  "params": {
+                               "checkTyp": "equals",
+                               "value": "0",
+                               "compValue": "0" 
+                            }     
+                }
             }
         },
         {
