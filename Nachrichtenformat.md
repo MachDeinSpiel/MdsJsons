@@ -26,7 +26,7 @@
 **Spieler Eva kicken**  
 ```{"mode":"gamelobby", "action":"kick", "player":1}```
 
-###Monitoringtool  
+###Monitoring Tool  
 
 **Monitoring Tool in laufendes Spiel 0 einhängen**  
-```{"mode":"monitor", "id",0}```
+```{"mode":"monitor", "id":0}```
