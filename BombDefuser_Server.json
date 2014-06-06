@@ -9,7 +9,7 @@
                 "changeAttribute": {
                     "name": "changeAttribute",
                     "attribute": "notValue.self.health",
-                    "value": -250,
+                    "value": -1000,
                     "valueType": "add",
                     "duration": "null",
                     "ticks": "null"
