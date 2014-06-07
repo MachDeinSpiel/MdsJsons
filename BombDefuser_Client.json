@@ -18,19 +18,19 @@
                 "text": "text"
             }
         },
-		{
-			"ident": "showMapWButton",
-			"defaults": {
-						"target": "self"
-						}
-		},
-		{
-			"ident": "addToGroup",
-			"defaults": {
-						 "target": "object.name",   
-						 "group": "name" 
-						}
-		}
+        {
+	    "ident": "showMapWButton",
+	    "defaults": {
+		 "target": "self"
+	    }
+	},
+	{
+	    "ident": "addToGroup",
+	    "defaults": {
+		 "target": "object.name",   
+		 "group": "name" 
+	    }
+	}
     ],
 	
     "states": [
@@ -168,25 +168,25 @@
             "endAction": "null",
             "transition": [
 		{
-			"target": "trigger Item",
-			"event": "uiEvent",
-	            	"condition":     {
-				"name": "use Button", 
-	                        "params": {
-	                                   "action": "RELEASE" 
-	                                  }
-        		}
+		    "target": "trigger Item",
+		    "event": "uiEvent",
+            	    "condition":     {
+			"name": "use Button", 
+                        "params": {
+                             "action": "RELEASE" 
+                        }
+		    }
 								
 		},
 		{
-			 "target": "pickup Medipack",
-			 "event": "uiEvent",
-			 "condition": {
-				"name": "pickup Button",
-				"params": {
-					   "action": "RELEASE"
-					  }
-			  }
+		     "target": "pickup Medipack",
+		     "event": "uiEvent",
+		     "condition": {
+			"name": "pickup Button",
+			"params": {
+			      "action": "RELEASE"
+			}
+		     }
 		}
 	    ]
         },
@@ -198,19 +198,17 @@
             "finalState": false,
             "doAction": "null",
             "startAction": {
-						"name": "addToGroup",
-						"params": {
-								
-								"target": "object.name",   
-								"group": "Players.0.Inventory" 
-						
-						}
+		    "name": "addToGroup",
+		    "params": {
+			"target": "object.name",   
+			"group": "Players.0.Inventory" 
+		     }
 					},
             "endAction": "null",
             "transition": {
-						"target": "move around",
-						"event": "null"
-			}
+		    "target": "move around",
+		    "event": "null"
+	    }
         },
         {
             "ID": "4",
