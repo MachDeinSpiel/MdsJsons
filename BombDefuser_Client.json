@@ -152,7 +152,7 @@
                 }
             ]
         },
-		  {
+	{
             "ID": "2",
             "name": "medipack buttons",
             "parentState": "null",
@@ -167,29 +167,28 @@
             "startAction": "null",
             "endAction": "null",
             "transition": [
-							{
-							"target": "trigger Item",
-							"event": "uiEvent",
-                            "condition":     {
-												"name": "use Button", 
-                                                "params": {
-                                                           "action": "RELEASE" 
-                                                          }
-                                             }
-							
-							},
-							{
-							 "target": "pickup Medipack",
-							 "event": "uiEvent",
-							 "condition": {
-											"name": "pickup Button",
-											"params": {
-														"action": "RELEASE"
-													  }
-										  }
-							}
-							
-			]
+		{
+			"target": "trigger Item",
+			"event": "uiEvent",
+	            	"condition":     {
+				"name": "use Button", 
+	                        "params": {
+	                                   "action": "RELEASE" 
+	                                  }
+        		}
+								
+		},
+		{
+			 "target": "pickup Medipack",
+			 "event": "uiEvent",
+			 "condition": {
+				"name": "pickup Button",
+				"params": {
+					   "action": "RELEASE"
+					  }
+			  }
+		}
+	    ]
         },
 		 {
             "ID": "3",
