@@ -143,7 +143,7 @@
                     "target": "move around",
                     "event": "uiEvent",
                     "condition": {
-                        "name": "back button",
+                        "name": "back",
                         "params": {
                             "action": "RELEASE"
                         }
@@ -170,7 +170,7 @@
                     "target": "trigger Item",
                     "event": "uiEvent",
                     "condition": {
-                        "name": "use Button",
+                        "name": "use",
                         "params": {
                             "action": "RELEASE"
                         }
@@ -180,7 +180,7 @@
                     "target": "pickup Medipack",
                     "event": "uiEvent",
                     "condition": {
-                        "name": "pickup Button",
+                        "name": "pickup",
                         "params": {
                             "action": "RELEASE"
                         }
@@ -199,7 +199,7 @@
                 "name": "addToGroup",
                 "params": {
                     "target": "object.name",
-                    "group": "Players.0.Inventory"
+                    "group": "self.Inventory"
                 }
             },
             "endAction": "null",
