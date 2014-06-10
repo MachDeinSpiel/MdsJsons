@@ -65,24 +65,6 @@
 
         },
         {
-            "name": "Player is at position",
-            "inputs": {
-                "longitute": {
-                    "type": "NUMBER",
-                    "hint": "Longitude of player's position."
-                },
-                "latitude": {
-                    "type": "NUMBER",
-                    "hint": "Latitude of player's position."
-                },
-                "radius": {
-                    "type": "NUMBER",
-                    "hint": "Radius, the player has to be in to trigger this transition."
-                }
-            },
-            "json": "???"
-        },
-        {
             "name": "Player pressed button",
             "inputs": {
                 "button": {
