@@ -13,7 +13,7 @@
          "name":"Bomb Defuser 2.0",
          "author":"MDS Team",
          "version":0.1,
-         "id":0,
+         "id":1,
          "maxplayers":2,
          "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/BombDefuser_2.0_Server.json",
          "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/BombDefuser_2.0_Client.json"
@@ -22,7 +22,7 @@
          "name":"Cookie Mini Game",
          "author":"MDS Team",
          "version":1.1,
-         "id":1,
+         "id":2,
          "maxplayers":5,
          "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/CookieAppMini_1.1_Server.json",
          "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/CookieAppMini_1.1_Client.json"
@@ -31,7 +31,7 @@
          "name":"City Guide Bremen",
          "author":"MDS Team",
          "version":2.0,
-         "id":2,
+         "id":3,
          "maxplayers":10,
          "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/TourismApp_2.0_Server.json",
          "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/TourismApp_2.0_Client.json"
