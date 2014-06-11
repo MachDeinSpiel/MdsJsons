@@ -3,7 +3,6 @@
         {
             "ident": "updateMap",
             "defaults": {
-                "target": "self"
             }
         },
         {
@@ -17,20 +16,7 @@
             "defaults": {
                 "text": "text"
             }
-        },
-        {
-	    "ident": "showMapWButton",
-	    "defaults": {
-		 "target": "self"
-	    }
-	},
-	{
-	    "ident": "addToGroup",
-	    "defaults": {
-		 "target": "object.name",   
-		 "group": "name" 
-	    }
-	}
+        }
     ],
 	
     "states": [
@@ -71,7 +57,7 @@
                     }
                 },
                 {
-                    "target": "medipack buttons",
+                    "target": "trigger Item",
                     "event": "locationEvent",
                     "condition": {
                         "name": "nearby",
@@ -113,7 +99,7 @@
                         "name": "condition",
                         "params": {
                             "checkType": "equals",
-                            "value": "Player.health",
+                            "value": "self.health",
                             "compValue": 0
                         }
                     }
@@ -127,7 +113,7 @@
             "startState": false,
             "finalState": false,
             "doAction": {
-                "name": "showInfo",
+                "name": "showText",
                 "params": {
                     "text": "object.text"
                 }
@@ -144,7 +130,7 @@
                     "target": "move around",
                     "event": "uiEvent",
                     "condition": {
-                        "name": "back button",
+                        "name": "back",
                         "params": {
                             "action": "RELEASE"
                         }
@@ -152,72 +138,14 @@
                 }
             ]
         },
-	{
-            "ID": "2",
-            "name": "medipack buttons",
-            "parentState": "null",
-            "startState": false,
-            "finalState": false,
-            "doAction": {
-                "name": "showMapWButton",
-                "params": {
-                    "target": "self"
-				}
-            },
-            "startAction": "null",
-            "endAction": "null",
-            "transition": [
-		{
-		    "target": "trigger Item",
-		    "event": "uiEvent",
-            	    "condition":     {
-			"name": "use Button", 
-                        "params": {
-                             "action": "RELEASE" 
-                        }
-		    }
-								
-		},
-		{
-		     "target": "pickup Medipack",
-		     "event": "uiEvent",
-		     "condition": {
-			"name": "pickup Button",
-			"params": {
-			      "action": "RELEASE"
-			}
-		     }
-		}
-	    ]
-        },
-		 {
-            "ID": "3",
-            "name": "pickup Medipack",
-            "parentState": "null",
-            "startState": false,
-            "finalState": false,
-            "doAction": "null",
-            "startAction": {
-		    "name": "addToGroup",
-		    "params": {
-			"target": "object.name",   
-			"group": "Players.0.Inventory" 
-		     }
-					},
-            "endAction": "null",
-            "transition": {
-		    "target": "move around",
-		    "event": "null"
-	    }
-        },
         {
-            "ID": "4",
+            "ID": "2",
             "name": "gameOver Bombs",
             "parentState": "null",
             "startState": false,
             "finalState": true,
             "doAction": {
-                "name": "showInfo",
+                "name": "showText",
                 "params": {
                     "text": "Du hast alle Bomben erfolgreich hochgejagt!"
                 }
@@ -227,13 +155,13 @@
             "transition": "null"
         },
         {
-            "ID": "5",
+            "ID": "3",
             "name": "gameOver Health",
             "parentState": "null",
             "startState": false,
             "finalState": true,
             "doAction": {
-                "name": "showInfo",
+                "name": "showText",
                 "params": {
                     "text": "Du hast es scheinbar nicht geschafft alle Bomben zu vernichten!"
                 }
