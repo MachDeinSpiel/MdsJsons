@@ -19,12 +19,6 @@
             }
         },
         {
-            "ident": "showMapWButton",
-            "defaults": {
-                "target": "self"
-            }
-        },
-        {
             "ident": "addToGroup",
             "defaults": {
                 "target": "object.name",
@@ -158,9 +152,9 @@
             "startState": false,
             "finalState": false,
             "doAction": {
-                "name": "showMapWButton",
+                "name": "showText",
                 "params": {
-                    "target": "self"
+                    "text": "Das ist ein Medipack! Aufnehmen oder benutzen?"
                 }
             },
             "startAction": "null",
@@ -183,6 +177,30 @@
                         "name": "pickup",
                         "params": {
                             "action": "RELEASE"
+                        }
+                    }
+                },
+                {
+                    "target": "move around",
+                    "event": "locationEvent",
+                    "condition": {
+                        "name": "!nearby",
+                        "params": {
+                            "object": {
+                                "name": "Medipacks",
+                                "quantifier": {
+                                    "checkType": "equals",
+                                    "value": 1
+                                }
+                            },
+                            "subject": {
+                                "name": "self",
+                                "quantifier": {
+                                    "checkType": "equals",
+                                    "value": 1
+                                }
+                            },
+                            "radius": 20
                         }
                     }
                 }
