@@ -120,7 +120,7 @@
             "startState": false,
             "finalState": false,
             "doAction": {
-                "name": "showInfo",
+                "name": "showText",
                 "params": {
                     "text": "object.text"
                 }
@@ -221,18 +221,20 @@
                 }
             },
             "endAction": "null",
-            "transition": {
-                "target": "move around",
-                "event": "whiteboardEvent",
-                "condition": {
-                  "name": "condition",
-                  "params": {
+            "transition": [
+               {
+                    "target": "move around",
+                    "event": "whiteboardEvent",
+                    "condition": {
+                        "name": "condition",
+                        "params": {
                                "checkTyp": "equals",
                                "value": "0",
                                "compValue": "0" 
-                            }     
+                        }     
+                    }
                 }
-            }
+            ]
         },
         {
             "ID": "4",
@@ -241,7 +243,7 @@
             "startState": false,
             "finalState": true,
             "doAction": {
-                "name": "showInfo",
+                "name": "showText",
                 "params": {
                     "text": "Du hast alle Bomben erfolgreich hochgejagt!"
                 }
@@ -257,7 +259,7 @@
             "startState": false,
             "finalState": true,
             "doAction": {
-                "name": "showInfo",
+                "name": "showText",
                 "params": {
                     "text": "Du hast es scheinbar nicht geschafft alle Bomben zu vernichten!"
                 }
