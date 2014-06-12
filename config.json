@@ -35,6 +35,15 @@
          "maxplayers":10,
          "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/TourismApp_2.0_Server.json",
          "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/TourismApp_2.0_Client.json"
+      },
+      {
+         "name":"KeyQuest",
+         "author":"MDS Team",
+         "version":0.1,
+         "id":4,
+         "maxplayers":2,
+         "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/KeyQuest_Server.json",
+         "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/KeyQuest_Client.json"
       }
    ]
 }
