@@ -11,7 +11,6 @@
 **Spiel erstellen (Initialspieler)**  
 ```{"mode":"create","id":0,"name":"Jason", "maxplayers":2}```
 
-##Entwürfe  
 ###Spiele Lobby
  
 **Liste der Spieler anfordern**  
