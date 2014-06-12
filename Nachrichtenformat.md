@@ -32,3 +32,7 @@
 
 **Monitoring Tool mit Namen "Monitor1" in laufendes Spiel 0 einhängen**  
 ```{"mode":"monitor", "id":0, "name":"Monitor1"}```
+
+
+###Fehler Nachrichten  
+```{"mode":"error", "message":"This is an error."}```
