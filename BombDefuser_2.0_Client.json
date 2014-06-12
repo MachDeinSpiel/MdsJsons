@@ -216,7 +216,7 @@
             "startAction": {
                 "name": "addToGroup",
                 "params": {
-                    "target": "self.object.name",
+                    "target": "self.object",
                     "group": "self.Inventory"
                 }
             },
