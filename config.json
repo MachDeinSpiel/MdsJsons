@@ -10,6 +10,16 @@
          "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/BombDefuser_2.0_Client.json"
       },
       {
+         "name":"Bomb Defuser",
+         "author":"MDS Team",
+         "version":0.1,
+         "id":1,
+         "maxplayers":2,
+         "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/BombDefuser_Server.json",
+         "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/BombDefuser_Client.json"
+      },
+      
+      {
          "name":"Cookie Mini Game",
          "author":"MDS Team",
          "version":1.1,
