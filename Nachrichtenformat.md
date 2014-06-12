@@ -26,6 +26,9 @@
 **Spieler Eva kicken**  
 ```{"mode":"gamelobby", "action":"kick", "player":1}```
 
+**Spiel Lobby verlassen**  
+```{"mode":"gamelobby", "action":"leave"}```
+
 ###Monitoring Tool  
 
 **Monitoring Tool mit Namen "Monitor1" in laufendes Spiel 0 einhängen**  
