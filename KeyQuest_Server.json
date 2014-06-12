@@ -1,0 +1,78 @@
+{
+    "Key": {
+        "Key": {
+            "title": "Der Schlüssel!",
+            "text": "Die Magie des Schlüssels hat etwas bewirkt...",
+            "latitude": 53.055223,
+            "longitude": 8.784514,
+            "visibility": "all",
+            "iconName": "?",
+            "imagePath": "http://i.imgur.com/GKY1yuZ.png",
+            "useAction": {
+                "changeAttribute": {
+                    "name": "changeAttribute",
+                    "attribute": "door.visibility",
+                    "value": "all",
+                    "valueType": "set",
+                    "duration": "null",
+                    "ticks": "null"
+                }
+            }
+        }
+    },
+    "Blanks": {
+        "Blank1": {
+            "title": "Ein Haufen Dreck",
+            "text": "Hier war der Schlüssel nicht...",
+            "latitude": 53.055223,
+            "longitude": 8.784514,
+            "visibility": "all",
+            "iconName": "?",
+            "imagePath": "http://i.imgur.com/GKY1yuZ.png",
+            "useAction": {
+                "removeFromGroup": {
+                    "name": "removeFromGroup",
+                    "target": "Blanks.Blank1",
+                    "group": "Blanks"
+                }
+            }
+        },
+        "Blank2": {
+            "title": "Ein Haufen Dreck",
+            "text": "Hier war der Schlüssel nicht...",
+            "latitude": 53.055223,
+            "longitude": 8.784514,
+            "visibility": "all",
+            "iconName": "?",
+            "imagePath": "http://i.imgur.com/GKY1yuZ.png",
+            "useAction": {
+                "removeFromGroup": {
+                    "name": "removeFromGroup",
+                    "target": "Blanks.Blank2",
+                    "group": "Blanks"
+                }
+            }
+        }
+    },
+    "Door": {
+        "Door1": {
+            "title": "Der Ausgang!",
+            "text": "Du hast den Ausgang gefunden! Nichts wie weg hier.",
+            "latitude": 53.055223,
+            "longitude": 8.784514,
+            "visibility": "none",
+            "iconName": "Door",
+            "imagePath": "http://i.imgur.com/5uJBnCG.png",
+            "useAction": "null"
+        }
+    },
+	"Players": {
+        "template": {
+            "health": 1000,
+            "latitude": "null",
+            "longitude": "null",
+			"solved": false,
+            "inventory": []
+        }
+    }
+}
