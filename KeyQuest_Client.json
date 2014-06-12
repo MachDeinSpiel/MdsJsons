@@ -1,0 +1,272 @@
+{
+    "action": [
+        {
+            "ident": "updateMap",
+            "defaults": {
+                "target": "self"
+            }
+        },
+        {
+            "ident": "useItem",
+            "defaults": {
+                "target": "useAction"
+            }
+        },
+        {
+            "ident": "showText",
+            "defaults": {
+                "text": "text"
+            }
+        },
+        {
+            "ident": "addToGroup",
+            "defaults": {
+                "target": "object.name",
+                "group": "name"
+            }
+        },
+        {
+            "ident": "removeFromGroup",
+            "defaults": {
+                "target": "object.name",
+                "group": "name"
+            }
+        },
+        {
+            "ident": "startMiniApp",
+            "defaults": {
+                "name": "null",
+                "subject": "self",
+                "object": "null",
+                "targetAttribute": "null"
+            }
+        }
+    ],
+    "states": [
+        {
+            "ID": "0",
+            "name": "move around",
+            "parentState": "null",
+            "startState": true,
+            "finalState": false,
+            "doAction": {
+                "name": "updateMap"
+            },
+            "startAction": "null",
+            "endAction": "null",
+            "transition": [
+                {
+                    "target": "pickup Item",
+                    "event": "locationEvent",
+                    "condition": {
+                        "name": "nearby",
+                        "params": {
+                            "object": {
+                                "name": "Key",
+                                "quantifier": {
+                                    "checkType": "equals",
+                                    "value": 1
+                                }
+                            },
+                            "subject": {
+                                "name": "self",
+                                "quantifier": {
+                                    "checkType": "equals",
+                                    "value": 1
+                                }
+                            },
+                            "radius": 20
+                        }
+                    }
+                },
+                {
+                    "target": "trigger Item",
+                    "event": "locationEvent",
+                    "condition": {
+                        "name": "nearby",
+                        "params": {
+                            "object": {
+                                "name": "Blank",
+                                "quantifier": {
+                                    "checkType": "equals",
+                                    "value": 1
+                                }
+                            },
+                            "subject": {
+                                "name": "self",
+                                "quantifier": {
+                                    "checkType": "equals",
+                                    "value": 1
+                                }
+                            },
+                            "radius": 20
+                        }
+                    }
+                },
+                {
+                    "target": "miniApp",
+                    "event": "whiteboardEvent",
+                    "condition": {
+                        "name": "condition",
+                        "params": {
+                            "checkType": "equals",
+                            "value": "self.inventory.length",
+                            "compValue": 1
+                        }
+                    }
+                },
+                {
+                    "target": "game Over",
+                    "event": "locationEvent",
+                    "condition": [
+                        {
+                            "name": "nearby",
+                            "params": {
+                                "object": {
+                                    "name": "Door",
+                                    "quantifier": {
+                                        "checkType": "equals",
+                                        "value": 1
+                                    }
+                                },
+                                "subject": {
+                                    "name": "self",
+                                    "quantifier": {
+                                        "checkType": "equals",
+                                        "value": 1
+                                    }
+                                },
+                                "radius": 20
+                            }
+                        },
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "self.solved",
+                                "compValue": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ID": "1",
+            "name": "pickup Item",
+            "parentState": "null",
+            "startState": false,
+            "finalState": false,
+            "doAction": {
+                "name": "showText",
+                "params": {
+                    "text": "Ein Gegenstand! Ist es vielleicht der Schlüssel?"
+                }
+            },
+            "startAction": {
+                "name": "addToGroup",
+                "params": {
+                    "target": "object.name",
+                    "group": "self.Inventory"
+                }
+            },
+            "endAction": {
+                "name": "removeFromFroup",
+                "params": {
+                    "target": "object.name",
+                    "group": "Key"
+                }
+            },
+            "transition": [
+                {
+                    "target": "trigger Item",
+                    "event": "uiEvent",
+                    "condition": {
+                        "name": "benutzen",
+                        "params": {
+                            "action": "RELEASE"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "ID": "2",
+            "name": "trigger Item",
+            "parentState": "null",
+            "startState": false,
+            "finalState": false,
+            "doAction": {
+                "name": "showText",
+                "params": {
+                    "text": "object.text"
+                }
+            },
+            "startAction": {
+                "name": "useItem",
+                "params": {
+                    "target": "object"
+                }
+            },
+            "endAction": "null",
+            "transition": [
+                {
+                    "target": "move around",
+                    "event": "uiEvent",
+                    "condition": {
+                        "name": "back",
+                        "params": {
+                            "action": "RELEASE"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "ID": "3",
+            "name": "miniApp",
+            "parentState": "null",
+            "startState": false,
+            "finalState": false,
+            "doAction": "null",
+            "startAction": {
+                "name": "startMiniApp",
+                "params": {
+                    "type": "Puzzle",
+                    "subject": "self",
+                    "object": "null",
+                    "attribute": "self.solved"
+                }
+            },
+            "endAction": "null",
+            "transition": [
+                {
+                    "target": "move around",
+                    "event": "uiEvent",
+                    "condition": {
+                        "name": "back",
+                        "params": {
+                            "action": "RELEASE"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "ID": "4",
+            "name": "game Over",
+            "parentState": "null",
+            "startState": false,
+            "finalState": true,
+            "doAction": {
+                "name": "showInfo",
+                "params": {
+                    "text": "Super! Du hast die Tür geöffnet und bist entkommen!"
+                }
+            },
+            "startAction": "null",
+            "endAction": "null",
+            "transition": "null"
+        }
+    ]
+}
