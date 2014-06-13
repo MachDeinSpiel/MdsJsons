@@ -44,6 +44,15 @@
          "maxplayers":2,
          "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/KeyQuest_Server.json",
          "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/KeyQuest_Client.json"
+      },
+      {
+         "name":"MiniApp Test",
+         "author":"MDS Team",
+         "version":0.1,
+         "id":5,
+         "maxplayers":2,
+         "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/MiniAppTest_Client.json",
+         "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/MiniAppTest_Server.json.json"
       }
    ]
 }
