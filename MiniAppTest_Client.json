@@ -1,0 +1,136 @@
+{
+    "action": [
+        {
+            "ident": "updateMap",
+            "defaults": {
+                "target": "self"
+            }
+        },
+        {
+            "ident": "showText",
+            "defaults": {
+                "text": "text"
+            }
+        },
+        {
+            "ident": "startMiniApp",
+            "defaults": {
+                "name": "null",
+                "subject": "self",
+                "object": "null",
+                "targetAttribute": "null"
+            }
+        }
+    ],
+    "states": [
+        {
+            "ID": "0",
+            "name": "Move around",
+            "parentState": "null",
+            "startState": true,
+            "finalState": false,
+            "doAction": {
+                "name": "updateMap"
+            },
+            "startAction": "null",
+            "endAction": "null",
+            "transition": [
+                {
+                    "target": "ChingChangChong",
+                    "event": "locationEvent",
+                    "condition": {
+                        "name": "nearby",
+                        "params": {
+                            "object": {
+                                "name": "Players",
+                                "quantifier": {
+                                    "checkType": "equals",
+                                    "value": 1
+                                }
+                            },
+                            "subject": {
+                                "name": "self",
+                                "quantifier": {
+                                    "checkType": "equals",
+                                    "value": 1
+                                }
+                            },
+                            "radius": 20
+                        }
+                    }
+				}
+            ]
+        },
+        {
+            "ID": "1",
+            "name": "ChingChangChong",
+            "parentState": "null",
+            "startState": false,
+            "finalState": false,
+            "doAction": {
+                "name": "startMiniApp",
+                "params": {
+                    "type": "ChingChangChong",
+                    "subject": "self",
+                    "object": "object"
+                }
+            },
+            "startAction": "null",
+            "endAction": "null",
+            "transition": [
+                {
+                    "target": "You Loose",
+                    "event": "uiEvent",
+                    "condition": {
+                        "name": "LOOSE",
+                        "params": {
+                            "action": "RELEASE"
+                        }
+                    }
+                },
+                {
+                    "target": "You Win",
+                    "event": "uiEvent",
+                    "condition": {
+                        "name": "WIN",
+                        "params": {
+                            "action": "RELEASE"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "ID": "2",
+            "name": "You Loose",
+            "parentState": "null",
+            "startState": false,
+            "finalState": true,
+            "doAction": {
+                "name": "showText",
+                "params": {
+                    "text": "Sadly you lost this game"
+                }
+            },
+            "startAction": "null",
+            "endAction": "null",
+            "transition": "null"
+        },
+        {
+            "ID": "4",
+            "name": "You Win",
+            "parentState": "null",
+            "startState": false,
+            "finalState": true,
+            "doAction": {
+                "name": "showText",
+                "params": {
+                    "text": "Great! You won this game!"
+                }
+            },
+            "startAction": "null",
+            "endAction": "null",
+            "transition": "null"
+        }
+    ]
+}
