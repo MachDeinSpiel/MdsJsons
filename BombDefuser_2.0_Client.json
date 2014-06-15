@@ -217,7 +217,7 @@
                 "name": "addToGroup",
                 "params": {
                     "target": "self.object",
-                    "group": "self.Inventory"
+                    "group": "self.inventory"
                 }
             },
             "endAction": "null",
