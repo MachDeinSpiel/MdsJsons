@@ -176,7 +176,9 @@
             "health": 1000,
             "latitude": "null",
             "longitude": "null",
-			"inventory": {}
+	    "inventory": {
+	        "dummy": "dummytext"
+            }
         }
     }
 }
