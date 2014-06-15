@@ -228,7 +228,7 @@
                     "condition": {
                         "name": "condition",
                         "params": {
-                               "checkTyp": "equals",
+                               "checkType": "equals",
                                "value": "0",
                                "compValue": "0" 
                         }     
