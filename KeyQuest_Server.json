@@ -4,7 +4,7 @@
             "title": "Der Schlüssel!",
             "text": "Die Magie des Schlüssels hat etwas bewirkt...",
             "pathKey": "Key",
-			"latitude": 53.055223,
+            "latitude": 53.055223,
             "longitude": 8.784514,
             "visibility": "all",
             "iconName": "?",
@@ -25,7 +25,7 @@
         "Blank1": {
             "title": "Ein Haufen Dreck",
             "text": "Hier war der Schlüssel nicht...",
-			"pathKey": "Blank1",
+            "pathKey": "Blank1",
             "latitude": 53.055223,
             "longitude": 8.784514,
             "visibility": "all",
@@ -42,7 +42,7 @@
         "Blank2": {
             "title": "Ein Haufen Dreck",
             "text": "Hier war der Schlüssel nicht...",
-			"pathKey": "Blank2",
+            "pathKey": "Blank2",
             "latitude": 53.055223,
             "longitude": 8.784514,
             "visibility": "all",
@@ -61,7 +61,7 @@
         "Door1": {
             "title": "Der Ausgang!",
             "text": "Du hast den Ausgang gefunden! Nichts wie weg hier.",
-			"pathKey": "Door1",
+            "pathKey": "Door1",
             "latitude": 53.055223,
             "longitude": 8.784514,
             "visibility": "none",
@@ -70,14 +70,14 @@
             "useAction": "null"
         }
     },
-	"Players": {
+    "Players": {
         "template": {
             "health": 1000,
             "latitude": "null",
             "longitude": "null",
-			"solved": false,
-			"inventory": {
-				"dummy": "dummytext"
+            "solved": false,
+            "inventory": {
+                "dummy": "dummytext"
             }
         }
     }
