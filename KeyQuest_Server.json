@@ -75,6 +75,7 @@
             "health": 1000,
             "latitude": "null",
             "longitude": "null",
+            "imagePath": "http://imgur.com/Ureny6D",
             "solved": false,
             "inventory": {
                 "dummy": "dummytext"
