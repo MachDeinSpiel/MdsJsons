@@ -76,7 +76,9 @@
             "latitude": "null",
             "longitude": "null",
 			"solved": false,
-            "inventory": "null"
+			"inventory": {
+				"dummy": "dummytext"
+            }
         }
     }
 }
