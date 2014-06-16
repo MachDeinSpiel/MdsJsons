@@ -235,7 +235,13 @@
                     "type": "Puzzle",
                     "subject": "self",
                     "object": "null",
-                    "attribute": "self.solved"
+                    "result": [
+                        {
+                            "attribute": "self.solved",
+                            "setWin": true,
+                            "setLoose": false
+                        }
+                    ]
                 }
             },
             "endAction": "null",
