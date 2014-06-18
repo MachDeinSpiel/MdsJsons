@@ -62,7 +62,7 @@
                         "name": "nearby",
                         "params": {
                             "object": {
-                                "name": "Key",
+                                "name": "Keys",
                                 "quantifier": {
                                     "checkType": "equals",
                                     "value": 1
@@ -174,7 +174,7 @@
                 "name": "removeFromFroup",
                 "params": {
                     "target": "object.name",
-                    "group": "Key"
+                    "group": "Keys"
                 }
             },
             "transition": [
