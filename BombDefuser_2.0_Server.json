@@ -182,6 +182,7 @@
         "template": {
             "pathKey": "template",
             "health": 1000,
+            "visibility": "all",
             "latitude": "null",
             "longitude": "null",
             "imagePath": "http://imgur.com/Ureny6D",
