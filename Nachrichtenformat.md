@@ -1,3 +1,8 @@
+###Login
+**Spieler einloggen**  
+```{"mode":"login", "username":"Alice", "password":"s3cur3P4ssw0rd"}```
+
+
 ###Globale Lobby
 **Verfügbare Spiele anfordern**  
 ```{"mode":"gametemplates"}```
