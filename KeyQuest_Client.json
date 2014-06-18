@@ -21,14 +21,14 @@
         {
             "ident": "addToGroup",
             "defaults": {
-                "target": "object.name",
+                "target": "self.object.name",
                 "group": "name"
             }
         },
         {
             "ident": "removeFromGroup",
             "defaults": {
-                "target": "object.name",
+                "target": "self.object.name",
                 "group": "name"
             }
         },
@@ -166,14 +166,14 @@
             "startAction": {
                 "name": "addToGroup",
                 "params": {
-                    "target": "object.name",
+                    "target": "self.object.name",
                     "group": "self.Inventory"
                 }
             },
             "endAction": {
                 "name": "removeFromFroup",
                 "params": {
-                    "target": "object.name",
+                    "target": "self.object.name",
                     "group": "Keys"
                 }
             },
@@ -199,13 +199,13 @@
             "doAction": {
                 "name": "showText",
                 "params": {
-                    "text": "object.text"
+                    "text": "self.object.text"
                 }
             },
             "startAction": {
                 "name": "useItem",
                 "params": {
-                    "target": "object"
+                    "target": "self.object"
                 }
             },
             "endAction": "null",
