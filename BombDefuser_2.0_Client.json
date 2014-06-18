@@ -105,7 +105,7 @@
                     "condition": {
                         "name": "condition",
                         "params": {
-                            "checkType": "equals",
+                            "checkType": "lowequals",
                             "value": "self.health",
                             "compValue": 0
                         }
