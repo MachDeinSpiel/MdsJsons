@@ -1,6 +1,6 @@
 ###Login
 **Spieler einloggen**  
-```{"mode":"login", "username":"Alice", "password":"s3cur3P4ssw0rd"}```
+```{"mode":"login", "username":"Alice", "password":"md5-Passwort"}```
 
 
 ###Globale Lobby
