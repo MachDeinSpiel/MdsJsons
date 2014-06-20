@@ -1,0 +1,173 @@
+{
+"Teams": {
+	
+	"Red": {
+		"title": "Team Red",
+        "pathKey": "red",
+		"enemy": "Blue",
+        "text": "This is the red Team",
+		"win": false
+		},
+	"Blue": {
+		"title": "Team Blue",	
+		"pathKey": "blue",
+		"enemy": "Red",
+		"text": "This is the blue Team",
+		"win": false
+	}
+	
+},
+
+"Flags": {
+	"RedFlag": {
+			"title": "Red Flag",
+            "pathKey": "flag",
+			"team": "Red",
+            "text": "You took The Red Teams Flag",
+            "latitude": 53.061360,
+            "longitude": 8.785747,
+			"visibility": "all",
+			"iconName": "RoteF",			
+			"imagePath": "http://i.imgur.com/XrMpVlg.png",
+			"useAction": {
+                "changeAttribute": {
+                    "name": "changeAttribute",
+                    "attribute": "notValue.self.visibility",
+                    "value": "all",
+                    "valueType": "set",
+                    "duration": "null",
+                    "ticks": "null"
+                }
+			}
+	},
+	"BlueFlag": {
+			"title": "Blue Flag",
+            "pathKey": "flag",
+			"team": "Blue",
+            "text": "You Took The Blue Teams Flag",
+            "latitude": 53.053571,
+            "longitude": 8.787077,
+			"visibility": "all",
+			"iconName": "BlaueF",			
+			"imagePath": "http://i.imgur.com/tueOpzE.png",
+			"useAction": {
+                "changeAttribute": {
+                    "name": "changeAttribute",
+                    "attribute": "notValue.self.visibility",
+                    "value": "all",
+                    "valueType": "set",
+                    "duration": "null",
+                    "ticks": "null"
+                }
+			}
+	}
+	
+},
+	
+"Bases": {
+	"RedBase": {
+			"title": "Red Base",
+            "pathKey": "baseRed",
+			"team": "Red",
+            "text": "Team Red´s Base",
+            "latitude": 53.053571, 
+            "longitude": 8.787077,
+			"visibility": "all",
+			"iconName": "RoteB",			
+			"imagePath": "http://i.imgur.com/sfCFfYd.png",
+			"useAction": "null"
+	},
+	"BlueBase": {
+			"title": "Blue Base",
+            "pathKey": "baseBlue",
+			"team": "Blue",
+            "text": "Team Blue´s Base",
+            "latitude": 53.061360,
+            "longitude": 8.785747,
+			"visibility": "all",
+			"iconName": "BlaueB",			
+			"imagePath": "http://i.imgur.com/0uLMOns.png",
+			"useAction": "null"
+	}
+	
+},
+
+"Mines": {
+	"Mine1": {
+		"title": "Mine 1",
+		"pathKey": "mine",
+		"latitude": 53.055547,
+        "longitude": 8.784968,
+		"visibility": "none",
+		"iconName": "Mine",			
+		"imagePath": "http://i.imgur.com/mVaa4qd.png?1",
+		"useAction": "null"
+	},
+	"Mine2": {
+		"title": "Mine 2",
+		"pathKey": "mine",
+		"latitude": 53.056441, 
+        "longitude": 8.786541,
+		"visibility": "none",
+		"iconName": "Mine",			
+		"imagePath": "http://i.imgur.com/mVaa4qd.png?1",
+		"useAction": "null"
+	},
+	"Mine3": {
+		"title": "Mine 3",
+		"pathKey": "mine",
+		"latitude": 53.057498, 
+        "longitude": 8.782185,
+		"visibility": "none",
+		"iconName": "Mine",			
+		"imagePath": "http://i.imgur.com/mVaa4qd.png?1",
+		"useAction": "null"
+	},
+	"Mine4": {
+		"title": "Mine 4",
+		"pathKey": "mine",
+		"latitude": 53.055150, 
+        "longitude": 8.783054,
+		"visibility": "none",
+		"iconName": "Mine",			
+		"imagePath": "http://i.imgur.com/mVaa4qd.png?1",
+		"useAction": "null"
+	},
+	"Mine5": {
+		"title": "Mine 5",
+		"pathKey": "mine",
+		"latitude": 53.054075, 
+        "longitude": 8.783819,
+		"visibility": "none",
+		"iconName": "Mine",			
+		"imagePath": "http://i.imgur.com/mVaa4qd.png?1",
+		"useAction": "null"
+	},
+	"Mine6": {
+		"title": "Mine 6",
+		"pathKey": "mine",
+		"latitude": 53.052760, 
+        "longitude": 8.786244,
+		"visibility": "none",
+		"iconName": "Mine",			
+		"imagePath": "http://i.imgur.com/mVaa4qd.png?1",
+		"useAction": "null"
+	}
+},
+	
+"Players": {
+        "template": {
+            "pathKey": "template",
+            "health": 1000,
+            "latitude": "null",
+            "longitude": "null",
+			"solve": "null",
+			"visibility": "ownGroup",
+			"iconName": "self.pathKey",	
+			"imagePath": "http://imgur.com/Ureny6D",
+			"inventory": {
+				"dummy": "dummytext"
+				}
+			}
+    }	
+}
