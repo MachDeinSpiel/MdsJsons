@@ -237,7 +237,7 @@
                     "object": "null",
                     "result": [
                         {
-                            "attribute": "self.solved",
+                            "attribute": "notValue.self.solved",
                             "setWin": true,
                             "setLoose": false
                         }
