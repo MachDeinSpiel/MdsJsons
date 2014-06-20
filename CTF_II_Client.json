@@ -1,0 +1,431 @@
+{
+    "action": [
+        {
+            "ident": "updateMap",
+            "defaults": {
+                "target": "self"
+            }
+        },
+        {
+           	"ident": "changeAttribute",
+			"defaults": {
+                    		"attribute": "null",
+                    		"value": "null",
+                    		"valueType": "null",
+                    		"duration": "null",
+                    		"ticks": "null"
+						}
+                				
+		},
+        {
+            "ident": "useItem",
+            "defaults": {
+                "target": "self.object.useAction"
+            }
+        },
+        {
+            "ident": "showText",
+            "defaults": {
+                "text": "text"
+            }
+        },
+        {
+            "ident": "addToGroup",
+            "defaults": {
+                "target": "self.object.name",
+                "group": "name"
+            }
+        },
+        {
+            "ident": "removeFromGroup",
+            "defaults": {
+                "target": "self.object.name",
+                "group": "name"
+            }
+        }
+    ],
+    "states": [
+        {
+            "ID": "0",
+            "name": "Move Around",
+            "parentState": "null",
+            "startState": true,
+            "finalState": false,
+            "doAction": {
+                "name": "updateMap"
+            },
+            "startAction": "null",
+            "endAction": "null",
+            "transition": [
+                {
+                    "target": "Take Flag",
+                    "event": "locationWhiteboardEvent",
+                    "condition": [
+                        {
+                            "name": "nearby",
+                            "params": {
+                                "object": {
+                                    "name": "Flags",
+                                    "quantifier": {
+                                        "checkType": "equals",
+                                        "value": 1
+                                    }
+                                },
+                                "subject": {
+                                    "name": "self",
+                                    "quantifier": {
+                                        "checkType": "equals",
+                                        "value": 1
+                                    }
+                                },
+                                "radius": 10
+                            }
+                        },
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "self.object.team",
+                                "compValue": "ownGroup"
+                            }
+                        }
+                    ]
+                },
+				{
+					"target": "Your Team Won",
+					"event": "whiteboardEvent",
+					"condition":
+						{
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "ownGroup.win",
+                                "compValue": true
+                            }
+                        }
+				},
+				{
+					"target": "Your Team Lost",
+					"event": "whiteboardEvent",
+					"condition":
+						{
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "ownGroup.enemy.win",
+                                "compValue": true
+                            }
+                        }
+				}
+            ]
+        },
+        {
+            "ID": "1",
+            "name": "Take Flag",
+            "parentState": "null",
+            "startState": false,
+            "finalState": false,
+            "doAction": {
+				"name": "showText",
+				"params": {
+					"text": "self.object.text"
+				}
+			},
+            "startAction": [
+                {
+                    "name": "addToGroup",
+                    "params": {
+                        "target": "self.object.name",
+                        "group": "self.Inventory"
+                    }
+                },
+                {
+                    "name": "useItem",
+                    "params": {
+                        "target": "self.object.useAction"
+                    }
+                }
+            ],
+            "endAction": {
+                "name": "removeFromGroup",
+                "params": {
+                    "target": "self.object.name",
+                    "group": "Flags"
+                }
+            },
+            "transition": [
+                {
+                    "target": "Move With Flag",
+                    "event": "uiEvent",
+                    "condition": {
+                        "name": "Take Flag!",
+                        "params": {
+                            "action": "RELEASE"
+                        }
+                    }
+                },
+				{
+					"target": "Your Team Lost",
+					"event": "whiteboardEvent",
+					"condition":
+						{
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "ownGroup.enemy.win",
+                                "compValue": true
+                            }
+                        }
+				}
+            ]
+        },
+        {
+            "ID": "2",
+            "name": "Move With Flag",
+            "parentState": "null",
+            "startState": false,
+            "finalState": false,
+            "doAction": {
+                "name": "updateMap"
+            },
+            "startAction": "null",
+            "endAction": "null",
+            "transition": [
+                {
+                    "target": "Puzzle",
+                    "event": "locationWhiteboardEvent",
+					"condition": [
+                        {
+                            "name": "nearby",
+                            "params": {
+                                "object": {
+                                    "name": "Mines",
+                                    "quantifier": {
+                                        "checkType": "equals",
+                                        "value": 1
+                                    }
+                                },
+                                "subject": {
+                                    "name": "self",
+                                    "quantifier": {
+                                        "checkType": "equals",
+                                        "value": 1
+                                    }
+                                },
+                                "radius": 20
+                            }
+                        }
+                    ]
+                },
+				{
+                    "target": "Your Team Won",
+                    "event": "locationWhiteboardEvent",
+					"condition": [
+                        {
+                            "name": "nearby",
+                            "params": {
+                                "object": {
+                                    "name": "Bases",
+                                    "quantifier": {
+                                        "checkType": "equals",
+                                        "value": 1
+                                    }
+                                },
+                                "subject": {
+                                    "name": "self",
+                                    "quantifier": {
+                                        "checkType": "equals",
+                                        "value": 1
+                                    }
+                                },
+                                "radius": 10
+                            }
+                        },
+						{
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "self.object.team",
+                                "compValue": "ownGroup"
+                            }
+                        }
+                    ]
+                },
+				{
+					"target": "Your Team Lost",
+					"event": "whiteboardEvent",
+					"condition":
+						{
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "ownGroup.enemy.win",
+                                "compValue": true
+                            }
+                        }
+				}
+            ]
+        },
+		{
+            "ID": "3",
+            "name": "Puzzle",
+            "parentState": "null",
+            "startState": false,
+            "finalState": false,
+            "doAction": {
+                "name": "startMiniApp",
+                "params": {
+                    "type": "Puzzle",
+                    "subject": "self",
+					"object": "null",
+                    "result": [
+                        {
+                            "attribute": "notValue.self.solve",
+                            "setWin": true,
+                            "setLoose": false
+                        }
+                    ]
+                }
+			},
+            "startAction": "null",
+            "endAction": "null",
+            "transition": [
+				{
+					"target": "Move With Flag",
+					"event": "whiteboardEvent",
+					"condition":
+						{
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "notValue.self.solve",
+                                "compValue": true
+                            }
+                        }
+				},
+				{
+					"target": "Drop Flag",
+					"event": "whiteboardEvent",
+					"condition":
+						{
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "notValue.self.solve",
+                                "compValue": false
+                            }
+                        }
+				},
+				{
+					"target": "Your Team Lost",
+					"event": "whiteboardEvent",
+					"condition":
+						{
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "ownGroup.enemy.win",
+                                "compValue": true
+                            }
+                        }
+				}
+			]
+        },
+        {
+            "ID": "4",
+            "name": "Drop Flag",
+            "parentState": "null",
+            "startState": false,
+            "finalState": false,
+            "doAction": {
+				"name": "showText",
+				"params": {
+					"text": "The Mine detonated and you lost the Flag!"
+				}
+			},
+            "startAction": [
+                {
+                    "name": "addToGroup",
+                    "params": {
+                        "target": "self.inventory.flag",
+                        "group": "Flags"
+                    }
+                },
+                {
+                    "name": "changeAttribute",
+                    "params": {
+                    		"attribute": "notValue.self.visibility",
+                    		"value": "ownGroup",
+                    		"valueType": "set",
+                    		"duration": "null",
+                    		"ticks": "null"
+						}
+                }
+            ],
+            "endAction": {
+                "name": "removeFromGroup",
+                "params": {
+                    "target": "self.inventory.flag",
+                    "group": "self.inventory"
+                }
+            },
+            "transition": [
+                {
+                    "target": "Move Around",
+                    "event": "uiEvent",
+                    "condition": {
+                        "name": "Carry On anyway!",
+                        "params": {
+                            "action": "RELEASE"
+                        }
+                    }
+                },
+				{
+					"target": "Your Team Lost",
+					"event": "whiteboardEvent",
+					"condition":
+						{
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "ownGroup.enemy.win",
+                                "compValue": true
+                            }
+                        }
+				}
+            ]
+        },		
+        {
+            "ID": "5",
+            "name": "Your Team Won",
+            "parentState": "null",
+            "startState": false,
+            "finalState": true,
+            "doAction": {
+				"name": "showText",
+				"params": {
+					"text": "Congratulations, your Team won!"
+				}
+			},
+            "startAction": "null",
+            "endAction": "null",
+            "transition": "null"
+        },
+        {
+            "ID": "6",
+            "name": "Your Team Lost",
+            "parentState": "null",
+            "startState": false,
+            "finalState": true,
+            "doAction": {
+				"name": "showText",
+				"params": {
+					"text": "Sorry, but your Team lost."
+				}
+			},
+            "startAction": "null",
+            "endAction": "null",
+            "transition": "null"
+        }
+    ]
+}
