@@ -53,6 +53,15 @@
          "maxplayers":2,
          "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/MiniAppTest_Client.json",
          "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/MiniAppTest_Server.json.json"
-      }
+      },
+      {
+         "name":"CTF",
+         "author":"MDS Team",
+         "version":0.1,
+         "id":6,
+         "maxplayers":8,
+         "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/CTF_II_Client.json",
+         "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/CTF_II_Server.json"
+      
    ]
 }
