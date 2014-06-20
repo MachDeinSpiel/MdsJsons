@@ -21,8 +21,30 @@
 **Liste der Spieler anfordern**  
 ```{"mode":"gamelobby", "action":"players"}```
 
-**Spieler Liste**  
+**Spieler Liste ohne Teams**  
 ```{"mode":"gamelobby", "action":"players", "players": [ {"name":"Jason", "id":0}, {"name":"Eva", "id":1}]}```
+
+**Spieler Liste mit Teams**  
+```{
+    "mode": "gamelobby",
+    "action": "players",
+    "isTeamGame": true,
+    "players": [
+        {
+            "name": "Team A",
+            "players": [
+                {
+                    "name": "Jason",
+                    "id": 0
+                },
+                {
+                    "name": "Eva",
+                    "id": 1
+                }
+            ]
+        }
+    ]
+}```
 
 **Spiel starten**  
 ```{"mode":"gamelobby", "action":"start"}```
