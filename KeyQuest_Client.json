@@ -58,7 +58,7 @@
                 {
                     "target": "pickup Item",
                     "event": "locationEvent",
-                    "condition": {
+                    "condition": [{
                         "name": "nearby",
                         "params": {
                             "object": {
@@ -77,12 +77,12 @@
                             },
                             "radius": 20
                         }
-                    }
+                    }]
                 },
                 {
                     "target": "trigger Item",
                     "event": "locationEvent",
-                    "condition": {
+                    "condition": [{
                         "name": "nearby",
                         "params": {
                             "object": {
@@ -101,19 +101,19 @@
                             },
                             "radius": 20
                         }
-                    }
+                    }]
                 },
                 {
                     "target": "miniApp",
                     "event": "whiteboardEvent",
-                    "condition": {
+                    "condition": [{
                         "name": "condition",
                         "params": {
                             "checkType": "equals",
                             "value": "self.inventory.length",
                             "compValue": 1
                         }
-                    }
+                    }]
                 },
                 {
                     "target": "game Over",
@@ -181,12 +181,12 @@
                 {
                     "target": "trigger Item",
                     "event": "uiEvent",
-                    "condition": {
+                    "condition": [{
                         "name": "benutzen",
                         "params": {
                             "action": "RELEASE"
                         }
-                    }
+                    }]
                 }
             ]
         },
@@ -213,12 +213,12 @@
                 {
                     "target": "move around",
                     "event": "uiEvent",
-                    "condition": {
+                    "condition": [{
                         "name": "back",
                         "params": {
                             "action": "RELEASE"
                         }
-                    }
+                    }]
                 }
             ]
         },
@@ -249,12 +249,12 @@
                 {
                     "target": "move around",
                     "event": "uiEvent",
-                    "condition": {
+                    "condition": [{
                         "name": "back",
                         "params": {
                             "action": "RELEASE"
                         }
-                    }
+                    }]
                 }
             ]
         },
