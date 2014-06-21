@@ -93,26 +93,30 @@
                 {
                     "target": "Your Team Won",
                     "event": "whiteboardEvent",
-                    "condition": {
-                        "name": "condition",
-                        "params": {
-                            "checkType": "equals",
-                            "value": "ownGroup.win",
-                            "compValue": true
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "ownGroup.win",
+                                "compValue": true
+                            }
                         }
-                    }
+                    ]
                 },
                 {
                     "target": "Your Team Lost",
                     "event": "whiteboardEvent",
-                    "condition": {
-                        "name": "condition",
-                        "params": {
-                            "checkType": "equals",
-                            "value": "ownGroup.enemy.win",
-                            "compValue": true
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "ownGroup.enemy.win",
+                                "compValue": true
+                            }
                         }
-                    }
+                    ]
                 }
             ]
         },
@@ -154,24 +158,28 @@
                 {
                     "target": "Move With Flag",
                     "event": "uiEvent",
-                    "condition": {
-                        "name": "Take Flag!",
-                        "params": {
-                            "action": "RELEASE"
+                    "condition": [
+                        {
+                            "name": "Take Flag!",
+                            "params": {
+                                "action": "RELEASE"
+                            }
                         }
-                    }
+                    ]
                 },
                 {
                     "target": "Your Team Lost",
                     "event": "whiteboardEvent",
-                    "condition": {
-                        "name": "condition",
-                        "params": {
-                            "checkType": "equals",
-                            "value": "ownGroup.enemy.win",
-                            "compValue": true
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "ownGroup.enemy.win",
+                                "compValue": true
+                            }
                         }
-                    }
+                    ]
                 }
             ]
         },
@@ -250,14 +258,16 @@
                 {
                     "target": "Your Team Lost",
                     "event": "whiteboardEvent",
-                    "condition": {
-                        "name": "condition",
-                        "params": {
-                            "checkType": "equals",
-                            "value": "ownGroup.enemy.win",
-                            "compValue": true
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "ownGroup.enemy.win",
+                                "compValue": true
+                            }
                         }
-                    }
+                    ]
                 }
             ]
         },
@@ -288,38 +298,44 @@
                 {
                     "target": "Move With Flag",
                     "event": "whiteboardEvent",
-                    "condition": {
-                        "name": "condition",
-                        "params": {
-                            "checkType": "equals",
-                            "value": "notValue.self.solve",
-                            "compValue": true
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "notValue.self.solve",
+                                "compValue": true
+                            }
                         }
-                    }
+                    ]
                 },
                 {
                     "target": "Drop Flag",
                     "event": "whiteboardEvent",
-                    "condition": {
-                        "name": "condition",
-                        "params": {
-                            "checkType": "equals",
-                            "value": "notValue.self.solve",
-                            "compValue": false
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "notValue.self.solve",
+                                "compValue": false
+                            }
                         }
-                    }
+                    ]
                 },
                 {
                     "target": "Your Team Lost",
                     "event": "whiteboardEvent",
-                    "condition": {
-                        "name": "condition",
-                        "params": {
-                            "checkType": "equals",
-                            "value": "ownGroup.enemy.win",
-                            "compValue": true
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "ownGroup.enemy.win",
+                                "compValue": true
+                            }
                         }
-                    }
+                    ]
                 }
             ]
         },
@@ -365,24 +381,28 @@
                 {
                     "target": "Move Around",
                     "event": "uiEvent",
-                    "condition": {
-                        "name": "Carry On anyway!",
-                        "params": {
-                            "action": "RELEASE"
+                    "condition": [
+                        {
+                            "name": "Carry On anyway!",
+                            "params": {
+                                "action": "RELEASE"
+                            }
                         }
-                    }
+                    ]
                 },
                 {
                     "target": "Your Team Lost",
                     "event": "whiteboardEvent",
-                    "condition": {
-                        "name": "condition",
-                        "params": {
-                            "checkType": "equals",
-                            "value": "ownGroup.enemy.win",
-                            "compValue": true
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "ownGroup.enemy.win",
+                                "compValue": true
+                            }
                         }
-                    }
+                    ]
                 }
             ]
         },
