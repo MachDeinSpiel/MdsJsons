@@ -172,14 +172,14 @@
             "startAction": {
                 "name": "addToGroup",
                 "params": {
-                    "target": "self.object.name",
+                    "target": "self.object",
                     "group": "self.inventory"
                 }
             },
             "endAction": {
                 "name": "removeFromFroup",
                 "params": {
-                    "target": "self.object.name",
+                    "target": "self.object",
                     "group": "Keys"
                 }
             },
