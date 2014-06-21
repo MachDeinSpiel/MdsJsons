@@ -58,62 +58,68 @@
                 {
                     "target": "pickup Item",
                     "event": "locationEvent",
-                    "condition": [{
-                        "name": "nearby",
-                        "params": {
-                            "object": {
-                                "name": "Keys",
-                                "quantifier": {
-                                    "checkType": "equals",
-                                    "value": 1
-                                }
-                            },
-                            "subject": {
-                                "name": "self",
-                                "quantifier": {
-                                    "checkType": "equals",
-                                    "value": 1
-                                }
-                            },
-                            "radius": 20
+                    "condition": [
+                        {
+                            "name": "nearby",
+                            "params": {
+                                "object": {
+                                    "name": "Keys",
+                                    "quantifier": {
+                                        "checkType": "equals",
+                                        "value": 1
+                                    }
+                                },
+                                "subject": {
+                                    "name": "self",
+                                    "quantifier": {
+                                        "checkType": "equals",
+                                        "value": 1
+                                    }
+                                },
+                                "radius": 20
+                            }
                         }
-                    }]
+                    ]
                 },
                 {
                     "target": "trigger Item",
                     "event": "locationEvent",
-                    "condition": [{
-                        "name": "nearby",
-                        "params": {
-                            "object": {
-                                "name": "Blank",
-                                "quantifier": {
-                                    "checkType": "equals",
-                                    "value": 1
-                                }
-                            },
-                            "subject": {
-                                "name": "self",
-                                "quantifier": {
-                                    "checkType": "equals",
-                                    "value": 1
-                                }
-                            },
-                            "radius": 20
+                    "condition": [
+                        {
+                            "name": "nearby",
+                            "params": {
+                                "object": {
+                                    "name": "Blank",
+                                    "quantifier": {
+                                        "checkType": "equals",
+                                        "value": 1
+                                    }
+                                },
+                                "subject": {
+                                    "name": "self",
+                                    "quantifier": {
+                                        "checkType": "equals",
+                                        "value": 1
+                                    }
+                                },
+                                "radius": 20
+                            }
                         }
-                    }]
+                    ]
                 },
                 {
                     "target": "miniApp",
                     "event": "whiteboardEvent",
-                    "condition": [{
-                        "name": "condition",
-                        "params": {
-                            "checkType": "equals",
-                            "value": "self.inventory.length",
-                            "compValue": 1
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "self.inventory.length",
+                                "compValue": 1
+                            }
                         }
-                    }]
+                    ]
                 },
                 {
                     "target": "game Over",
@@ -181,12 +187,14 @@
                 {
                     "target": "trigger Item",
                     "event": "uiEvent",
-                    "condition": [{
-                        "name": "benutzen",
-                        "params": {
-                            "action": "RELEASE"
+                    "condition": [
+                        {
+                            "name": "benutzen",
+                            "params": {
+                                "action": "RELEASE"
+                            }
                         }
-                    }]
+                    ]
                 }
             ]
         },
@@ -213,12 +221,14 @@
                 {
                     "target": "move around",
                     "event": "uiEvent",
-                    "condition": [{
-                        "name": "back",
-                        "params": {
-                            "action": "RELEASE"
+                    "condition": [
+                        {
+                            "name": "back",
+                            "params": {
+                                "action": "RELEASE"
+                            }
                         }
-                    }]
+                    ]
                 }
             ]
         },
@@ -249,12 +259,14 @@
                 {
                     "target": "move around",
                     "event": "uiEvent",
-                    "condition": [{
-                        "name": "back",
-                        "params": {
-                            "action": "RELEASE"
+                    "condition": [
+                        {
+                            "name": "back",
+                            "params": {
+                                "action": "RELEASE"
+                            }
                         }
-                    }]
+                    ]
                 }
             ]
         },
