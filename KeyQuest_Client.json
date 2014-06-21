@@ -21,14 +21,14 @@
         {
             "ident": "addToGroup",
             "defaults": {
-                "target": "self.object.name",
+                "target": "self.object",
                 "group": "name"
             }
         },
         {
             "ident": "removeFromGroup",
             "defaults": {
-                "target": "self.object.name",
+                "target": "self.object",
                 "group": "name"
             }
         },
