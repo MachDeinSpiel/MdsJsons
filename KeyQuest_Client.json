@@ -117,7 +117,7 @@
                 },
                 {
                     "target": "game Over",
-                    "event": "locationEvent|whiteboardEvent",
+                    "event": "locationWhiteboardEvent",
                     "condition": [
                         {
                             "name": "nearby",
