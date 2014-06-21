@@ -7,16 +7,15 @@
             }
         },
         {
-           	"ident": "changeAttribute",
-			"defaults": {
-                    		"attribute": "null",
-                    		"value": "null",
-                    		"valueType": "null",
-                    		"duration": "null",
-                    		"ticks": "null"
-						}
-                				
-		},
+            "ident": "changeAttribute",
+            "defaults": {
+                "attribute": "null",
+                "value": "null",
+                "valueType": "null",
+                "duration": "null",
+                "ticks": "null"
+            }
+        },
         {
             "ident": "useItem",
             "defaults": {
@@ -91,32 +90,30 @@
                         }
                     ]
                 },
-				{
-					"target": "Your Team Won",
-					"event": "whiteboardEvent",
-					"condition":
-						{
-                            "name": "condition",
-                            "params": {
-                                "checkType": "equals",
-                                "value": "ownGroup.win",
-                                "compValue": true
-                            }
+                {
+                    "target": "Your Team Won",
+                    "event": "whiteboardEvent",
+                    "condition": {
+                        "name": "condition",
+                        "params": {
+                            "checkType": "equals",
+                            "value": "ownGroup.win",
+                            "compValue": true
                         }
-				},
-				{
-					"target": "Your Team Lost",
-					"event": "whiteboardEvent",
-					"condition":
-						{
-                            "name": "condition",
-                            "params": {
-                                "checkType": "equals",
-                                "value": "ownGroup.enemy.win",
-                                "compValue": true
-                            }
+                    }
+                },
+                {
+                    "target": "Your Team Lost",
+                    "event": "whiteboardEvent",
+                    "condition": {
+                        "name": "condition",
+                        "params": {
+                            "checkType": "equals",
+                            "value": "ownGroup.enemy.win",
+                            "compValue": true
                         }
-				}
+                    }
+                }
             ]
         },
         {
@@ -126,11 +123,11 @@
             "startState": false,
             "finalState": false,
             "doAction": {
-				"name": "showText",
-				"params": {
-					"text": "self.object.text"
-				}
-			},
+                "name": "showText",
+                "params": {
+                    "text": "self.object.text"
+                }
+            },
             "startAction": [
                 {
                     "name": "addToGroup",
@@ -164,19 +161,18 @@
                         }
                     }
                 },
-				{
-					"target": "Your Team Lost",
-					"event": "whiteboardEvent",
-					"condition":
-						{
-                            "name": "condition",
-                            "params": {
-                                "checkType": "equals",
-                                "value": "ownGroup.enemy.win",
-                                "compValue": true
-                            }
+                {
+                    "target": "Your Team Lost",
+                    "event": "whiteboardEvent",
+                    "condition": {
+                        "name": "condition",
+                        "params": {
+                            "checkType": "equals",
+                            "value": "ownGroup.enemy.win",
+                            "compValue": true
                         }
-				}
+                    }
+                }
             ]
         },
         {
@@ -194,7 +190,7 @@
                 {
                     "target": "Puzzle",
                     "event": "locationWhiteboardEvent",
-					"condition": [
+                    "condition": [
                         {
                             "name": "nearby",
                             "params": {
@@ -217,10 +213,10 @@
                         }
                     ]
                 },
-				{
+                {
                     "target": "Your Team Won",
                     "event": "locationWhiteboardEvent",
-					"condition": [
+                    "condition": [
                         {
                             "name": "nearby",
                             "params": {
@@ -241,7 +237,7 @@
                                 "radius": 10
                             }
                         },
-						{
+                        {
                             "name": "condition",
                             "params": {
                                 "checkType": "equals",
@@ -251,22 +247,21 @@
                         }
                     ]
                 },
-				{
-					"target": "Your Team Lost",
-					"event": "whiteboardEvent",
-					"condition":
-						{
-                            "name": "condition",
-                            "params": {
-                                "checkType": "equals",
-                                "value": "ownGroup.enemy.win",
-                                "compValue": true
-                            }
+                {
+                    "target": "Your Team Lost",
+                    "event": "whiteboardEvent",
+                    "condition": {
+                        "name": "condition",
+                        "params": {
+                            "checkType": "equals",
+                            "value": "ownGroup.enemy.win",
+                            "compValue": true
                         }
-				}
+                    }
+                }
             ]
         },
-		{
+        {
             "ID": "3",
             "name": "Puzzle",
             "parentState": "null",
@@ -277,7 +272,7 @@
                 "params": {
                     "type": "Puzzle",
                     "subject": "self",
-					"object": "null",
+                    "object": "null",
                     "result": [
                         {
                             "attribute": "notValue.self.solve",
@@ -286,50 +281,47 @@
                         }
                     ]
                 }
-			},
+            },
             "startAction": "null",
             "endAction": "null",
             "transition": [
-				{
-					"target": "Move With Flag",
-					"event": "whiteboardEvent",
-					"condition":
-						{
-                            "name": "condition",
-                            "params": {
-                                "checkType": "equals",
-                                "value": "notValue.self.solve",
-                                "compValue": true
-                            }
+                {
+                    "target": "Move With Flag",
+                    "event": "whiteboardEvent",
+                    "condition": {
+                        "name": "condition",
+                        "params": {
+                            "checkType": "equals",
+                            "value": "notValue.self.solve",
+                            "compValue": true
                         }
-				},
-				{
-					"target": "Drop Flag",
-					"event": "whiteboardEvent",
-					"condition":
-						{
-                            "name": "condition",
-                            "params": {
-                                "checkType": "equals",
-                                "value": "notValue.self.solve",
-                                "compValue": false
-                            }
+                    }
+                },
+                {
+                    "target": "Drop Flag",
+                    "event": "whiteboardEvent",
+                    "condition": {
+                        "name": "condition",
+                        "params": {
+                            "checkType": "equals",
+                            "value": "notValue.self.solve",
+                            "compValue": false
                         }
-				},
-				{
-					"target": "Your Team Lost",
-					"event": "whiteboardEvent",
-					"condition":
-						{
-                            "name": "condition",
-                            "params": {
-                                "checkType": "equals",
-                                "value": "ownGroup.enemy.win",
-                                "compValue": true
-                            }
+                    }
+                },
+                {
+                    "target": "Your Team Lost",
+                    "event": "whiteboardEvent",
+                    "condition": {
+                        "name": "condition",
+                        "params": {
+                            "checkType": "equals",
+                            "value": "ownGroup.enemy.win",
+                            "compValue": true
                         }
-				}
-			]
+                    }
+                }
+            ]
         },
         {
             "ID": "4",
@@ -338,11 +330,11 @@
             "startState": false,
             "finalState": false,
             "doAction": {
-				"name": "showText",
-				"params": {
-					"text": "The Mine detonated and you lost the Flag!"
-				}
-			},
+                "name": "showText",
+                "params": {
+                    "text": "The Mine detonated and you lost the Flag!"
+                }
+            },
             "startAction": [
                 {
                     "name": "addToGroup",
@@ -354,12 +346,12 @@
                 {
                     "name": "changeAttribute",
                     "params": {
-                    		"attribute": "notValue.self.visibility",
-                    		"value": "ownGroup",
-                    		"valueType": "set",
-                    		"duration": "null",
-                    		"ticks": "null"
-						}
+                        "attribute": "notValue.self.visibility",
+                        "value": "ownGroup",
+                        "valueType": "set",
+                        "duration": "null",
+                        "ticks": "null"
+                    }
                 }
             ],
             "endAction": {
@@ -380,21 +372,20 @@
                         }
                     }
                 },
-				{
-					"target": "Your Team Lost",
-					"event": "whiteboardEvent",
-					"condition":
-						{
-                            "name": "condition",
-                            "params": {
-                                "checkType": "equals",
-                                "value": "ownGroup.enemy.win",
-                                "compValue": true
-                            }
+                {
+                    "target": "Your Team Lost",
+                    "event": "whiteboardEvent",
+                    "condition": {
+                        "name": "condition",
+                        "params": {
+                            "checkType": "equals",
+                            "value": "ownGroup.enemy.win",
+                            "compValue": true
                         }
-				}
+                    }
+                }
             ]
-        },		
+        },
         {
             "ID": "5",
             "name": "Your Team Won",
@@ -402,11 +393,11 @@
             "startState": false,
             "finalState": true,
             "doAction": {
-				"name": "showText",
-				"params": {
-					"text": "Congratulations, your Team won!"
-				}
-			},
+                "name": "showText",
+                "params": {
+                    "text": "Congratulations, your Team won!"
+                }
+            },
             "startAction": "null",
             "endAction": "null",
             "transition": "null"
@@ -418,11 +409,11 @@
             "startState": false,
             "finalState": true,
             "doAction": {
-				"name": "showText",
-				"params": {
-					"text": "Sorry, but your Team lost."
-				}
-			},
+                "name": "showText",
+                "params": {
+                    "text": "Sorry, but your Team lost."
+                }
+            },
             "startAction": "null",
             "endAction": "null",
             "transition": "null"
