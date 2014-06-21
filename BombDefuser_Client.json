@@ -2,8 +2,7 @@
     "action": [
         {
             "ident": "updateMap",
-            "defaults": {
-            }
+            "defaults": {}
         },
         {
             "ident": "useItem",
@@ -18,7 +17,6 @@
             }
         }
     ],
-	
     "states": [
         {
             "ID": "0",
@@ -83,26 +81,30 @@
                 {
                     "target": "gameOver Bombs",
                     "event": "whiteboardEvent",
-                    "condition": {
-                        "name": "condition",
-                        "params": {
-                            "checkType": "equals",
-                            "value": "Bombs.length",
-                            "compValue": 0
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "Bombs.length",
+                                "compValue": 0
+                            }
                         }
-                    }
+                    ]
                 },
                 {
                     "target": "gameOver Health",
                     "event": "whiteboardEvent",
-                    "condition": {
-                        "name": "condition",
-                        "params": {
-                            "checkType": "equals",
-                            "value": "self.health",
-                            "compValue": 0
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "self.health",
+                                "compValue": 0
+                            }
                         }
-                    }
+                    ]
                 }
             ]
         },
@@ -129,12 +131,14 @@
                 {
                     "target": "move around",
                     "event": "uiEvent",
-                    "condition": {
-                        "name": "back",
-                        "params": {
-                            "action": "RELEASE"
+                    "condition": [
+                        {
+                            "name": "back",
+                            "params": {
+                                "action": "RELEASE"
+                            }
                         }
-                    }
+                    ]
                 }
             ]
         },
