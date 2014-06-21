@@ -33,50 +33,54 @@
                 {
                     "target": "trigger Item",
                     "event": "locationEvent",
-                    "condition": {
-                        "name": "nearby",
-                        "params": {
-                            "object": {
-                                "name": "Bombs",
-                                "quantifier": {
-                                    "checkType": "equals",
-                                    "value": 1
-                                }
-                            },
-                            "subject": {
-                                "name": "self",
-                                "quantifier": {
-                                    "checkType": "equals",
-                                    "value": 1
-                                }
-                            },
-                            "radius": 20
+                    "condition": [
+                        {
+                            "name": "nearby",
+                            "params": {
+                                "object": {
+                                    "name": "Bombs",
+                                    "quantifier": {
+                                        "checkType": "equals",
+                                        "value": 1
+                                    }
+                                },
+                                "subject": {
+                                    "name": "self",
+                                    "quantifier": {
+                                        "checkType": "equals",
+                                        "value": 1
+                                    }
+                                },
+                                "radius": 20
+                            }
                         }
-                    }
+                    ]
                 },
                 {
                     "target": "trigger Item",
                     "event": "locationEvent",
-                    "condition": {
-                        "name": "nearby",
-                        "params": {
-                            "object": {
-                                "name": "Medipacks",
-                                "quantifier": {
-                                    "checkType": "equals",
-                                    "value": 1
-                                }
-                            },
-                            "subject": {
-                                "name": "self",
-                                "quantifier": {
-                                    "checkType": "equals",
-                                    "value": 1
-                                }
-                            },
-                            "radius": 20
+                    "condition": [
+                        {
+                            "name": "nearby",
+                            "params": {
+                                "object": {
+                                    "name": "Medipacks",
+                                    "quantifier": {
+                                        "checkType": "equals",
+                                        "value": 1
+                                    }
+                                },
+                                "subject": {
+                                    "name": "self",
+                                    "quantifier": {
+                                        "checkType": "equals",
+                                        "value": 1
+                                    }
+                                },
+                                "radius": 20
+                            }
                         }
-                    }
+                    ]
                 },
                 {
                     "target": "gameOver Bombs",
