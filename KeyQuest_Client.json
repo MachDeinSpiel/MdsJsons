@@ -265,7 +265,7 @@
             "startState": false,
             "finalState": true,
             "doAction": {
-                "name": "showInfo",
+                "name": "showText",
                 "params": {
                     "text": "Super! Du hast die Tür geöffnet und bist entkommen!"
                 }
