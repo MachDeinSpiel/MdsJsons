@@ -31,14 +31,14 @@
         {
             "ident": "addToGroup",
             "defaults": {
-                "target": "self.object.name",
+                "target": "self.object",
                 "group": "name"
             }
         },
         {
             "ident": "removeFromGroup",
             "defaults": {
-                "target": "self.object.name",
+                "target": "self.object",
                 "group": "name"
             }
         }
@@ -136,7 +136,7 @@
                 {
                     "name": "addToGroup",
                     "params": {
-                        "target": "self.object.name",
+                        "target": "self.object",
                         "group": "self.Inventory"
                     }
                 },
@@ -150,7 +150,7 @@
             "endAction": {
                 "name": "removeFromGroup",
                 "params": {
-                    "target": "self.object.name",
+                    "target": "self.object",
                     "group": "Flags"
                 }
             },
@@ -216,7 +216,7 @@
                                         "value": 1
                                     }
                                 },
-                                "radius": 20
+                                "radius": 15
                             }
                         }
                     ]
