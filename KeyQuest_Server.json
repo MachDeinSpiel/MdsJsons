@@ -12,7 +12,7 @@
             "useAction": {
                 "changeAttribute": {
                     "name": "changeAttribute",
-                    "attribute": "Door.door1.visibility",
+                    "attribute": "Door.Door1.visibility",
                     "value": "all",
                     "valueType": "set",
                     "duration": "null",
