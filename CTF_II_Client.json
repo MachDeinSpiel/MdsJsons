@@ -19,7 +19,7 @@
         {
             "ident": "useItem",
             "defaults": {
-                "target": "self.object.useAction"
+                "target": "useAction"
             }
         },
         {
@@ -143,7 +143,7 @@
                 {
                     "name": "useItem",
                     "params": {
-                        "target": "self.object.useAction"
+                        "target": "self.object"
                     }
                 }
             ],
