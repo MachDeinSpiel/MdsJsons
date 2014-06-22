@@ -41,9 +41,9 @@
 	    }
 	},
 	"BlueFlag": {
-			"title": "Blue Flag",
+	    "title": "Blue Flag",
             "pathKey": "flag",
-			"team": "Blue",
+	    "team": "Blue",
             "text": "You Took The Blue Teams Flag",
             "latitude": 53.053571,
             "longitude": 8.787077,
