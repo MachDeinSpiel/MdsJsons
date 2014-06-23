@@ -85,7 +85,7 @@
                             "params": {
                                 "checkType": "equals",
                                 "value": "self.object.team",
-                                "compValue": "ownGroup"
+                                "compValue": "ownGroup.name"
                             }
                         }
                     ]
@@ -250,7 +250,7 @@
                             "params": {
                                 "checkType": "equals",
                                 "value": "self.object.team",
-                                "compValue": "ownGroup"
+                                "compValue": "ownGroup.name"
                             }
                         }
                     ]
