@@ -89,7 +89,7 @@
                             "name": "nearby",
                             "params": {
                                 "object": {
-                                    "name": "Blank",
+                                    "name": "Blanks",
                                     "quantifier": {
                                         "checkType": "equals",
                                         "value": 1
