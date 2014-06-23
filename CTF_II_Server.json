@@ -4,14 +4,14 @@
 	"Red": {
 		"title": "Team Red",
         	"pathKey": "Red",
-		"enemy": "Blue",
+		"enemy": "Teams.Blue",
         	"text": "This is the red Team",
 		"win": false
 		},
 	"Blue": {
 		"title": "Team Blue",	
 		"pathKey": "Blue",
-		"enemy": "Red",
+		"enemy": "Teams.Red",
 		"text": "This is the blue Team",
 		"win": false
 	}
@@ -22,7 +22,7 @@
 	"RedFlag": {
 	    "title": "Red Flag",
     	    "pathKey": "flag",
-	    "team": "Red",
+	    "team": "Teams.Red",
             "text": "You took The Red Teams Flag",
             "latitude": 53.061360,
             "longitude": 8.785747,
@@ -43,7 +43,7 @@
 	"BlueFlag": {
 	    "title": "Blue Flag",
             "pathKey": "flag",
-	    "team": "Blue",
+	    "team": "Teams.Blue",
             "text": "You Took The Blue Teams Flag",
             "latitude": 53.053571,
             "longitude": 8.787077,
@@ -68,7 +68,7 @@
 	"RedBase": {
 	    "title": "Red Base",
             "pathKey": "baseRed",
-	    "team": "Red",
+	    "team": "Teams.Red",
             "text": "Team Red´s Base",
             "latitude": 53.053571, 
             "longitude": 8.787077,
@@ -80,7 +80,7 @@
 	"BlueBase": {
 	    "title": "Blue Base",
             "pathKey": "baseBlue",
-	    "team": "Blue",
+	    "team": "Teams.Blue",
             "text": "Team Blue´s Base",
             "latitude": 53.061360,
             "longitude": 8.785747,
