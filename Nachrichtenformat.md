@@ -56,6 +56,10 @@
 **Spiel Lobby verlassen**  
 ```{"mode":"gamelobby", "action":"leave"}```
 
+**Team wechseln**  
+```{"mode":"gamelobby", "action":"changeTeam", "team": "Team A"}```
+
+
 ###Monitoring Tool  
 
 **Monitoring Tool mit Namen "Monitor1" in laufendes Spiel 0 einhängen**  
