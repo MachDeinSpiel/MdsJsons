@@ -22,7 +22,7 @@
 ```{"mode":"gamelobby", "action":"players"}```
 
 **Spieler Liste ohne Teams**  
-```{"mode":"gamelobby", "action":"players",    "isTeamGame": true,
+```{"mode":"gamelobby", "action":"players",    "isTeamGame": false,
  "players": [ {"name":"Jason", "id":0}, {"name":"Eva", "id":1}]}```
 
 **Spieler Liste mit Teams**  
