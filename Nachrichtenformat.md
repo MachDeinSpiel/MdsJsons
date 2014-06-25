@@ -57,7 +57,7 @@
 ```{"mode":"gamelobby", "action":"leave"}```
 
 **Team wechseln**  
-```{"mode":"gamelobby", "action":"changeTeam", "team": "Team A"}```
+```{"mode":"gamelobby", "action":"changeteam", "team":"Team A"}```
 
 
 ###Monitoring Tool  
