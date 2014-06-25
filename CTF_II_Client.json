@@ -205,14 +205,14 @@
                                 "object": {
                                     "name": "Mines",
                                     "quantifier": {
-                                        "checkType": "equals",
+                                        "checkType": "exists",
                                         "value": 1
                                     }
                                 },
                                 "subject": {
                                     "name": "self",
                                     "quantifier": {
-                                        "checkType": "equals",
+                                        "checkType": "exists",
                                         "value": 1
                                     }
                                 },
