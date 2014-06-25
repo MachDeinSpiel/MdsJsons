@@ -23,7 +23,7 @@
 "Flags": {
 	"RedFlag": {
 	    "title": "Red Flag",
-    	    "pathKey": "redFlag",
+    	    "pathKey": "RedFlag",
 	    "team": "Teams.Red",
             "text": "You took The Red Teams Flag",
             "latitude": 53.061360,
@@ -44,7 +44,7 @@
 	},
 	"BlueFlag": {
 	    "title": "Blue Flag",
-            "pathKey": "blueFlag",
+            "pathKey": "BlueFlag",
 	    "team": "Teams.Blue",
             "text": "You Took The Blue Teams Flag",
             "latitude": 53.053571,
