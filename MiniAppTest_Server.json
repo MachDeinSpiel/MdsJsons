@@ -2,7 +2,8 @@
 	"Players": {
         "template": {
             "latitude": "null",
-            "longitude": "null"
+            "longitude": "null",
+            "solve": false
         }
     }
 }
