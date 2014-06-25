@@ -356,7 +356,7 @@
                 {
                     "name": "addToGroup",
                     "params": {
-                        "target": "self.inventory.flag",
+                        "target": "self.object.flag",
                         "group": "Flags"
                     }
                 },
@@ -374,7 +374,7 @@
             "endAction": {
                 "name": "removeFromGroup",
                 "params": {
-                    "target": "self.inventory.flag",
+                    "target": "self.object.flag",
                     "group": "self.inventory"
                 }
             },
