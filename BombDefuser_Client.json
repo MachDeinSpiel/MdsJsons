@@ -124,12 +124,14 @@
                     "text": "object.text"
                 }
             },
-            "startAction": {
-                "name": "useItem",
-                "params": {
-                    "target": "object"
+            "startAction": [
+                {
+                    "name": "useItem",
+                    "params": {
+                        "target": "object"
+                    }
                 }
-            },
+            ],
             "endAction": "null",
             "transition": [
                 {
