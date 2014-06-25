@@ -133,12 +133,14 @@
                     "text": "self.object.text"
                 }
             },
-            "startAction": {
-                "name": "useItem",
-                "params": {
-                    "target": "self.object"
+            "startAction": [
+                {
+                    "name": "useItem",
+                    "params": {
+                        "target": "self.object"
+                    }
                 }
-            },
+            ],
             "endAction": "null",
             "transition": [
                 {
@@ -229,13 +231,15 @@
             "startState": false,
             "finalState": false,
             "doAction": "null",
-            "startAction": {
-                "name": "addToGroup",
-                "params": {
-                    "target": "self.object",
-                    "group": "self.inventory"
+            "startAction": [
+                {
+                    "name": "addToGroup",
+                    "params": {
+                        "target": "self.object",
+                        "group": "self.inventory"
+                    }
                 }
-            },
+            ],
             "endAction": "null",
             "transition": [
                 {
