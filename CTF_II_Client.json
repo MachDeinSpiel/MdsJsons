@@ -66,14 +66,14 @@
                                 "object": {
                                     "name": "Flags",
                                     "quantifier": {
-                                        "checkType": "equals",
+                                        "checkType": "exists",
                                         "value": 1
                                     }
                                 },
                                 "subject": {
                                     "name": "self",
                                     "quantifier": {
-                                        "checkType": "equals",
+                                        "checkType": "exists",
                                         "value": 1
                                     }
                                 },
@@ -231,14 +231,14 @@
                                 "object": {
                                     "name": "Bases",
                                     "quantifier": {
-                                        "checkType": "equals",
+                                        "checkType": "exists",
                                         "value": 1
                                     }
                                 },
                                 "subject": {
                                     "name": "self",
                                     "quantifier": {
-                                        "checkType": "equals",
+                                        "checkType": "exists",
                                         "value": 1
                                     }
                                 },
