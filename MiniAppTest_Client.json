@@ -68,12 +68,19 @@
             "startState": false,
             "finalState": false,
             "doAction": {
-                "name": "startMiniApp",
+            	"name": "startMiniApp",
                 "params": {
-                    "type": "Question",
+                    "type": "Puzzle",
                     "subject": "self",
                     "object": "null",
-					"result": "null"
+                    "result": [
+                        {
+                            "attribute": "notValue.self.solve",
+                            "minScore": 6,
+                            "setWin": true,
+                            "setLoose": false
+                        }
+                    ]
                 }
             },
             "startAction": "null",
@@ -81,23 +88,31 @@
             "transition": [
                 {
                     "target": "You Loose",
-                    "event": "uiEvent",
-                    "condition": {
-                        "name": "LOOSE",
-                        "params": {
-                            "action": "RELEASE"
+                    "event": "whiteboardEvent",
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "notValue.self.solve",
+                                "compValue": false
+                            }
                         }
-                    }
+                    ]
                 },
                 {
                     "target": "You Win",
                     "event": "uiEvent",
-                    "condition": {
-                        "name": "WIN",
-                        "params": {
-                            "action": "RELEASE"
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "notValue.self.solve",
+                                "compValue": true
+                            }
                         }
-                    }
+                    ]
                 }
             ]
         },
