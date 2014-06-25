@@ -30,6 +30,7 @@
          "maxplayers":8,
          "teams":2,
          "isteamgame":true,
+         "teamnames": ["Blue", "Red"],
          "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/CTF_II_Client.json",
          "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/CTF_II_Server.json"
       },  
