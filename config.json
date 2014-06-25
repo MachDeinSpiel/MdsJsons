@@ -30,8 +30,8 @@
          "maxplayers":8,
          "teams":2,
          "isteamgame":true,
-         "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/CTF_II_Client.json",
-         "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/CTF_II_Server.json"
+         "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/CTF_II_Client.json",
+         "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/CTF_II_Server.json"
       },  
       {
          "name":"Bomb Defuser",
