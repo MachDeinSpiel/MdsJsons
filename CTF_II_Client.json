@@ -41,6 +41,15 @@
                 "target": "self.object",
                 "group": "name"
             }
+        },
+        {
+            "ident": "startMiniApp",
+            "defaults": {
+                "name": "null",
+                "subject": "self",
+                "object": "null",
+                "result": "null"
+            }
         }
     ],
     "states": [
