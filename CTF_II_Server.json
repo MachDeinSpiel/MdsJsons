@@ -5,7 +5,7 @@
 		"title": "Team Red",
         	"pathKey": "Red",
 		"enemy": "Teams.Blue",
-		"flag":"redFlag",
+		"flag":"Flags.redFlag",
         	"text": "This is the red Team",
 		"win": false
 		},
@@ -13,7 +13,7 @@
 		"title": "Team Blue",	
 		"pathKey": "Blue",
 		"enemy": "Teams.Red",
-		"flag":"blueFlag",
+		"flag":"Flags.blueFlag",
 		"text": "This is the blue Team",
 		"win": false
 	}
