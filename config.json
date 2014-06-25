@@ -7,6 +7,7 @@
          "id":0,
          "maxplayers":2,
          "teams":0,
+         "isteamgame":false,
          "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/BombDefuser_2.0_Server.json",
          "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/BombDefuser_2.0_Client.json"
       },
@@ -17,6 +18,7 @@
          "id":1,
          "maxplayers":2,
          "teams":0,
+         "isteamgame":false,
          "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/BombDefuser_Server.json",
          "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/BombDefuser_Client.json"
       },
@@ -27,6 +29,7 @@
          "id":2,
          "maxplayers":5,
          "teams":0,
+         "isteamgame":false,
          "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/CookieAppMini_1.1_Server.json",
          "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/CookieAppMini_1.1_Client.json"
       },
@@ -37,6 +40,7 @@
          "id":3,
          "maxplayers":10,
          "teams":0,
+         "isteamgame":false,
          "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/TourismApp_2.0_Server.json",
          "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/TourismApp_2.0_Client.json"
       },
@@ -47,6 +51,7 @@
          "id":4,
          "maxplayers":2,
          "teams":0,
+         "isteamgame":false,
          "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/KeyQuest_Server.json",
          "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/KeyQuest_Client.json"
       },
@@ -57,6 +62,7 @@
          "id":5,
          "maxplayers":2,
          "teams":0,
+         "isteamgame":false,
          "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/MiniAppTest_Client.json",
          "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/MiniAppTest_Server.json.json"
       },
@@ -67,6 +73,7 @@
          "id":6,
          "maxplayers":8,
          "teams":0,
+         "isteamgame":false,
          "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/CTF_II_Client.json",
          "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/CTF_II_Server.json"
       }  
