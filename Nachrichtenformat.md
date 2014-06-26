@@ -22,10 +22,10 @@
 ```{"mode":"gamelobby", "action":"players"}```
 
 **Spieler Liste ohne Teams**  
-```{"mode":"gamelobby","action":"players","isteamgame":false,"players":[{"name":"Jason","id":0},{"name":"Eva","id":1}]}```
+```{"mode":"gamelobby","action":"players","isteamgame":false,"players":[{"name":"Jason"},{"name":"Eva"}]}```
 
 **Spieler Liste mit Teams**  
-```{"mode":"gamelobby","action":"players","isteamgame":true,"players":[{"name":"Team A","players":[{"name":"Jason","id":0},{"name":"Eva","id":1}]}]}```
+```{"mode":"gamelobby","action":"players","isteamgame":true,"players":[{"name":"Team A","players":[{"name":"Jason"},{"name":"Eva"}]}]}```
 
 **Spiel starten**  
 ```{"mode":"gamelobby", "action":"start"}```
