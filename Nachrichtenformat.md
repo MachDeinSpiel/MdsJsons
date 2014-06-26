@@ -10,10 +10,10 @@
 **Laufende Spiele anfordern**  
 ```{"mode":"activegames"}```
 
-**Spiel joinen**  
+**Spiel joinen (nur nach Login)**  
 ```{"mode":"join","id":0,"name":"Jason"}```
 
-**Spiel erstellen (Initialspieler)**  
+**Spiel erstellen (nur nach Login)**  
 ```{"mode":"create","id":0,"name":"Jason", "maxplayers":2}```
 
 ###Spiele Lobby
