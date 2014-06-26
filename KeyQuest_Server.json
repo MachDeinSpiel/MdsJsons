@@ -1,89 +1,89 @@
 {
-    "Keys": {
-        "Key": {
-            "title": "Der Schlüssel!",
-            "text": "Die Magie des Schlüssels hat etwas bewirkt...",
-            "pathKey": "Key",
-            "latitude": 53.055117, 
-            "longitude": 8.782488,
-            "visibility": "all",
-            "iconName": "?",
-            "imagePath": "http://i.imgur.com/IkD1Kya.png?1",
-			"mImagePath": "http://i.imgur.com/IkD1Kya.png?1",
-            "useAction": {
-                "changeAttribute": {
-                    "name": "changeAttribute",
-                    "attribute": "notValue.Door.Door1.visibility",
-                    "value": "all",
-                    "valueType": "set",
-                    "duration": "null",
-                    "ticks": "null"
-                }
+   "Keys":{
+      "Key":{
+         "title":"Der Schlüssel!",
+         "text":"Die Magie des Schlüssels hat etwas bewirkt...",
+         "pathKey":"Key",
+         "latitude":53.055117,
+         "longitude":8.782488,
+         "visibility":"all",
+         "iconName":"?",
+         "imagePath":"http://i.imgur.com/IkD1Kya.png?1",
+         "mImagePath":"http://i.imgur.com/IkD1Kya.png?1",
+         "useAction":{
+            "changeAttribute":{
+               "name":"changeAttribute",
+               "attribute":"notValue.Door.Door1.visibility",
+               "value":"all",
+               "valueType":"set",
+               "duration":"null",
+               "ticks":"null"
             }
-        }
-    },
-    "Blanks": {
-        "Blank1": {
-            "title": "Ein Haufen Dreck",
-            "text": "Hier war der Schlüssel nicht...",
-            "pathKey": "Blank1",
-            "latitude": 53.056006, 
-            "longitude": 8.783668,
-            "visibility": "all",
-            "iconName": "?",
-            "imagePath": "http://i.imgur.com/AbRKC9A.png?1",
-			"mImagePath": "http://i.imgur.com/AbRKC9A.png?1",
-            "useAction": {
-                "removeFromGroup": {
-                    "name": "removeFromGroup",
-                    "target": "Blanks.Blank1",
-                    "group": "Blanks"
-                }
+         }
+      }
+   },
+   "Blanks":{
+      "Blank1":{
+         "title":"Ein Haufen Dreck",
+         "text":"Hier war der Schlüssel nicht...",
+         "pathKey":"Blank1",
+         "latitude":53.056006,
+         "longitude":8.783668,
+         "visibility":"all",
+         "iconName":"?",
+         "imagePath":"http://i.imgur.com/AbRKC9A.png?1",
+         "mImagePath":"http://i.imgur.com/AbRKC9A.png?1",
+         "useAction":{
+            "removeFromGroup":{
+               "name":"removeFromGroup",
+               "target":"Blanks.Blank1",
+               "group":"Blanks"
             }
-        },
-        "Blank2": {
-            "title": "Ein Haufen Dreck",
-            "text": "Hier war der Schlüssel nicht...",
-            "pathKey": "Blank2",
-            "latitude": 53.054459, 
-            "longitude": 8.783690,
-            "visibility": "all",
-            "iconName": "?",
-            "imagePath": "http://i.imgur.com/AbRKC9A.png?1",
-			"mImagePath": "http://i.imgur.com/AbRKC9A.png?1",
-            "useAction": {
-                "removeFromGroup": {
-                    "name": "removeFromGroup",
-                    "target": "Blanks.Blank2",
-                    "group": "Blanks"
-                }
+         }
+      },
+      "Blank2":{
+         "title":"Ein Haufen Dreck",
+         "text":"Hier war der Schlüssel nicht...",
+         "pathKey":"Blank2",
+         "latitude":53.054459,
+         "longitude":8.783690,
+         "visibility":"all",
+         "iconName":"?",
+         "imagePath":"http://i.imgur.com/AbRKC9A.png?1",
+         "mImagePath":"http://i.imgur.com/AbRKC9A.png?1",
+         "useAction":{
+            "removeFromGroup":{
+               "name":"removeFromGroup",
+               "target":"Blanks.Blank2",
+               "group":"Blanks"
             }
-        }
-    },
-    "Door": {
-        "Door1": {
-            "title": "Der Ausgang!",
-            "text": "Du hast den Ausgang gefunden! Nichts wie weg hier.",
-            "pathKey": "Door1",
-            "latitude": 53.061204, 
-            "longitude": 8.785213,
-            "visibility": "none",
-            "iconName": "Door",
-            "imagePath": "http://i.imgur.com/s5Mdsih.png?1",
-			"mImagePath": "http://i.imgur.com/s5Mdsih.png?1",
-            "useAction": "null"
-        }
-    },
-    "Players": {
-        "template": {
-            "health": 1000,
-            "latitude": "null",
-            "longitude": "null",
-            "imagePath": "http://imgur.com/Ureny6D",
-            "solved": false,
-            "inventory": {
-                "dummy": "dummytext"
-            }
-        }
-    }
+         }
+      }
+   },
+   "Door":{
+      "Door1":{
+         "title":"Der Ausgang!",
+         "text":"Du hast den Ausgang gefunden! Nichts wie weg hier.",
+         "pathKey":"Door1",
+         "latitude":53.061204,
+         "longitude":8.785213,
+         "visibility":"none",
+         "iconName":"Door",
+         "imagePath":"http://i.imgur.com/s5Mdsih.png?1",
+         "mImagePath":"http://i.imgur.com/s5Mdsih.png?1",
+         "useAction":"null"
+      }
+   },
+   "Players":{
+      "template":{
+         "health":1000,
+         "latitude":"null",
+         "longitude":"null",
+         "imagePath":"http://imgur.com/Ureny6D",
+         "solved":false,
+         "inventory":{
+            "dummy":"dummytext"
+         }
+      }
+   }
 }
