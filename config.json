@@ -76,7 +76,7 @@
          "teams":0,
          "isteamgame":false,
          "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/MiniAppTest_Client.json",
-         "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/MiniAppTest_Server.json.json"
+         "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/MiniAppTest_Server.json"
       }
    ]
 }
