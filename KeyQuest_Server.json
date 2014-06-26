@@ -9,6 +9,7 @@
             "visibility": "all",
             "iconName": "?",
             "imagePath": "http://i.imgur.com/IkD1Kya.png?1",
+			"mImagePath": ""http://i.imgur.com/IkD1Kya.png?1",
             "useAction": {
                 "changeAttribute": {
                     "name": "changeAttribute",
@@ -31,6 +32,7 @@
             "visibility": "all",
             "iconName": "?",
             "imagePath": "http://i.imgur.com/AbRKC9A.png?1",
+			"mImagePath": "http://i.imgur.com/AbRKC9A.png?1",
             "useAction": {
                 "removeFromGroup": {
                     "name": "removeFromGroup",
@@ -48,6 +50,7 @@
             "visibility": "all",
             "iconName": "?",
             "imagePath": "http://i.imgur.com/AbRKC9A.png?1",
+			"mImagePath": "http://i.imgur.com/AbRKC9A.png?1",
             "useAction": {
                 "removeFromGroup": {
                     "name": "removeFromGroup",
@@ -67,6 +70,7 @@
             "visibility": "none",
             "iconName": "Door",
             "imagePath": "http://i.imgur.com/s5Mdsih.png?1",
+			"mImagePath": "http://i.imgur.com/s5Mdsih.png?1",
             "useAction": "null"
         }
     },
