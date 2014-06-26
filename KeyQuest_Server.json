@@ -9,7 +9,7 @@
             "visibility": "all",
             "iconName": "?",
             "imagePath": "http://i.imgur.com/IkD1Kya.png?1",
-			"mImagePath": http://i.imgur.com/IkD1Kya.png?1",
+			"mImagePath": "http://i.imgur.com/IkD1Kya.png?1",
             "useAction": {
                 "changeAttribute": {
                     "name": "changeAttribute",
