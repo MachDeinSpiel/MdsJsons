@@ -27,7 +27,6 @@
     },
     "Players": {
         "name": "Player",
-        "cookies": 0,
         "latitude": "null",
         "longitude": "null"
     }
