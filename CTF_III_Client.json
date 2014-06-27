@@ -1,4 +1,3 @@
-
 {
     "action": [
         {
@@ -67,7 +66,7 @@
             "endAction": "null",
             "transition": [
                 {
-                    "target": "Take Flag",
+                    "target": "Take Red Flag",
                     "event": "locationWhiteboardEvent",
                     "condition": [
                         {
@@ -94,8 +93,58 @@
                             "name": "condition",
                             "params": {
                                 "checkType": "equals",
-                                "value": "self.object.team",
-                                "compValue": "ownGroup.title"
+                                "value": "ownGroup.title",
+                                "compValue": "Team Red"
+                            }
+                        },
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "self.object.pathKey",
+                                "compValue": "RedFlag"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "target": "Take Blue Flag",
+                    "event": "locationWhiteboardEvent",
+                    "condition": [
+                        {
+                            "name": "nearby",
+                            "params": {
+                                "object": {
+                                    "name": "Flags",
+                                    "quantifier": {
+                                        "checkType": "exists",
+                                        "value": 1
+                                    }
+                                },
+                                "subject": {
+                                    "name": "self",
+                                    "quantifier": {
+                                        "checkType": "exists",
+                                        "value": 1
+                                    }
+                                },
+                                "radius": 10
+                            }
+                        },
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "ownGroup.title",
+                                "compValue": "Team Blue"
+                            }
+                        },
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "self.object.pathKey",
+                                "compValue": "BlueFlag"
                             }
                         }
                     ]
@@ -132,7 +181,7 @@
         },
         {
             "ID": "1",
-            "name": "Take Flag",
+            "name": "Take Red Flag",
             "parentState": "null",
             "startState": false,
             "finalState": false,
@@ -146,7 +195,7 @@
                 {
                     "name": "addToGroup",
                     "params": {
-                        "target": "self.object",
+                        "target": "Flags.RedFlag",
                         "group": "self.inventory"
                     }
                 },
@@ -160,7 +209,7 @@
             "endAction": {
                 "name": "removeFromGroup",
                 "params": {
-                    "target": "self.object.pathKey",
+                    "target": "Flags.RedFlag",
                     "group": "Flags"
                 }
             },
@@ -195,6 +244,69 @@
         },
         {
             "ID": "2",
+            "name": "Take Blue Flag",
+            "parentState": "null",
+            "startState": false,
+            "finalState": false,
+            "doAction": {
+                "name": "showText",
+                "params": {
+                    "text": "self.object.text"
+                }
+            },
+            "startAction": [
+                {
+                    "name": "addToGroup",
+                    "params": {
+                        "target": "Flags.BlueFlag",
+                        "group": "self.inventory"
+                    }
+                },
+                {
+                    "name": "useItem",
+                    "params": {
+                        "target": "self.object"
+                    }
+                }
+            ],
+            "endAction": {
+                "name": "removeFromGroup",
+                "params": {
+                    "target": "Flags.BlueFlag",
+                    "group": "Flags"
+                }
+            },
+            "transition": [
+                {
+                    "target": "Move With Flag",
+                    "event": "uiEvent",
+                    "condition": [
+                        {
+                            "name": "Take Flag!",
+                            "params": {
+                                "action": "RELEASE"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "target": "Your Team Lost",
+                    "event": "whiteboardEvent",
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "ownGroup.enemy.win",
+                                "compValue": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ID": "3",
             "name": "Move With Flag",
             "parentState": "null",
             "startState": false,
@@ -282,7 +394,7 @@
             ]
         },
         {
-            "ID": "3",
+            "ID": "4",
             "name": "Puzzle",
             "parentState": "null",
             "startState": false,
@@ -336,8 +448,8 @@
                             "name": "condition",
                             "params": {
                                 "checkType": "equals",
-                                "value": "ownGroup",
-                                "compValue": "Teams.Red"
+                                "value": "ownGroup.title",
+                                "compValue": "Team Red"
                             }
                         }
                     ]
@@ -358,8 +470,8 @@
                             "name": "condition",
                             "params": {
                                 "checkType": "equals",
-                                "value": "ownGroup",
-                                "compValue": "Teams.Blue"
+                                "value": "ownGroup.title",
+                                "compValue": "Team Blue"
                             }
                         }
                     ]
@@ -381,7 +493,7 @@
             ]
         },
         {
-            "ID": "4",
+            "ID": "5",
             "name": "Drop Red Flag",
             "parentState": "null",
             "startState": false,
@@ -448,7 +560,7 @@
             ]
         },
         {
-            "ID": "5",
+            "ID": "6",
             "name": "Drop Blue Flag",
             "parentState": "null",
             "startState": false,
@@ -515,7 +627,7 @@
             ]
         },
         {
-            "ID": "6",
+            "ID": "7",
             "name": "Your Team Won",
             "parentState": "null",
             "startState": false,
@@ -531,7 +643,7 @@
             "transition": "null"
         },
         {
-            "ID": "7",
+            "ID": "8",
             "name": "Your Team Lost",
             "parentState": "null",
             "startState": false,
