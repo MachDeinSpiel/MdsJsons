@@ -434,7 +434,7 @@
                 },
                 {
                     "target": "Drop Red Flag",
-                    "event": "whiteboardEvent",
+                    "event": "multipleWhiteboardEvent",
                     "condition": [
                         {
                             "name": "condition",
@@ -456,7 +456,7 @@
                 },
                 {
                     "target": "Drop Blue Flag",
-                    "event": "whiteboardEvent",
+                    "event": "multipleWhiteboardEvent",
                     "condition": [
                         {
                             "name": "condition",
