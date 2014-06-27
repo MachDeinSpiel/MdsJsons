@@ -4,25 +4,25 @@
             "name": "Cookie1",
             "longitude": "53.055142",
             "latitude": "8.783204",
-            "pathKey": "cookie1"
+            "pathKey": "Cookie1"
         },
         "Cookie2": {
             "name": "Cookie2",
             "longitude": "53.053931",
             "latitude": "8.783783",
-            "pathKey": "cookie2"
+            "pathKey": "Cookie2"
         },
         "Cookie3": {
             "name": "Cookie3",
             "longitude": "53.055240",
             "latitude": "8.784523",
-            "pathKey": "cookie3"
+            "pathKey": "Cookie3"
         },
         "Cookie4": {
             "name": "Cookie4",
             "longitude": "53.054115",
             "latitude": "8.787672",
-            "pathKey": "cookie4"
+            "pathKey": "Cookie4"
         }
     },
     "Players": {
