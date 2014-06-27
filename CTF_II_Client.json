@@ -67,7 +67,7 @@
             "transition": [
                 {
                     "target": "Take Flag",
-                    "event": "locationEvent",
+                    "event": "locationWhiteboardEvent",
                     "condition": [
                         {
                             "name": "nearby",
@@ -232,7 +232,7 @@
                 },
                 {
                     "target": "Your Team Won",
-                    "event": "locationEvent",
+                    "event": "locationWhiteboardEvent",
                     "condition": [
                         {
                             "name": "nearby",
