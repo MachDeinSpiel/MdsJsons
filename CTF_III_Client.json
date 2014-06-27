@@ -426,7 +426,7 @@
                             "name": "condition",
                             "params": {
                                 "checkType": "equals",
-                                "value": "notValue.self.solve",
+                                "value": "self.solve",
                                 "compValue": true
                             }
                         }
@@ -440,7 +440,7 @@
                             "name": "condition",
                             "params": {
                                 "checkType": "equals",
-                                "value": "notValue.self.solve",
+                                "value": "self.solve",
                                 "compValue": false
                             }
                         },
@@ -462,7 +462,7 @@
                             "name": "condition",
                             "params": {
                                 "checkType": "equals",
-                                "value": "notValue.self.solve",
+                                "value": "self.solve",
                                 "compValue": false
                             }
                         },
