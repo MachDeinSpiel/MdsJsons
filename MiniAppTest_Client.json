@@ -37,7 +37,7 @@
             "transition": [
                 {
                     "target": "Question",
-                    "event": "locationWhiteboardEvent",
+                    "event": "locationEvent",
                     "condition": {
                         "name": "nearby",
                         "params": {
