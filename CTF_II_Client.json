@@ -336,8 +336,8 @@
                             "name": "condition",
                             "params": {
                                 "checkType": "equals",
-                                "value": "ownGroup",
-                                "compValue": "Teams.Red"
+                                "value": "ownGroup.title",
+                                "compValue": "Team Red"
                             }
                         }
                     ]
@@ -358,8 +358,8 @@
                             "name": "condition",
                             "params": {
                                 "checkType": "equals",
-                                "value": "ownGroup",
-                                "compValue": "Teams.Blue"
+                                "value": "ownGroup.title",
+                                "compValue": "Team Blue"
                             }
                         }
                     ]
