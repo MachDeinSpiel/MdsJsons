@@ -163,7 +163,7 @@
                 }
             }],
             "endAction": {
-                "name": "removeFromFroup",
+                "name": "removeFromGroup",
                 "params": {
                     "target": "self.object",
                     "group": "Keys"
