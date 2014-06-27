@@ -1,6 +1,6 @@
 {
 "Teams": {
-	
+
 	"Red": {
 		"title": "Team Red",
         	"pathKey": "Red",
@@ -15,7 +15,7 @@
 		"text": "This is the blue Team",
 		"win": false
 	}
-	
+
 },
 
 "Flags": {
@@ -61,9 +61,9 @@
                 }
 	    }
 	}
-	
+
 },
-	
+
 "Bases": {
 	"RedBase": {
 	    "title": "Red Base",
@@ -89,7 +89,7 @@
 	    "imagePath": "http://i.imgur.com/0uLMOns.png",
 	    "useAction": "null"
 	}
-	
+
 },
 
 "Mines": {
@@ -154,7 +154,7 @@
 		"useAction": "null"
 	}
 },
-	
+
 "Players": {
         "template": {
             "pathKey": "template",
