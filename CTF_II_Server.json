@@ -3,14 +3,14 @@
 	
 	"Red": {
 		"title": "Team Red",
-        	"pathKey": "flag",
+        	"pathKey": "Red",
 		"enemy": "Teams.Blue",
         	"text": "This is the red Team",
 		"win": false
 		},
 	"Blue": {
 		"title": "Team Blue",	
-		"pathKey": "flag",
+		"pathKey": "Blue",
 		"enemy": "Teams.Red",
 		"text": "This is the blue Team",
 		"win": false
