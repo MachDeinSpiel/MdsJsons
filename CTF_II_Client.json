@@ -1,3 +1,4 @@
+
 {
     "action": [
         {
@@ -320,7 +321,7 @@
                     ]
                 },
                 {
-                    "target": "Drop Flag",
+                    "target": "Drop Red Flag",
                     "event": "whiteboardEvent",
                     "condition": [
                         {
@@ -329,6 +330,36 @@
                                 "checkType": "equals",
                                 "value": "notValue.self.solve",
                                 "compValue": false
+                            }
+                        },
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "ownGroup",
+                                "compValue": "Teams.Red"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "target": "Drop Blue Flag",
+                    "event": "whiteboardEvent",
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "notValue.self.solve",
+                                "compValue": false
+                            }
+                        },
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "ownGroup",
+                                "compValue": "Teams.Blue"
                             }
                         }
                     ]
@@ -351,7 +382,7 @@
         },
         {
             "ID": "4",
-            "name": "Drop Flag",
+            "name": "Drop Red Flag",
             "parentState": "null",
             "startState": false,
             "finalState": false,
@@ -365,7 +396,7 @@
                 {
                     "name": "addToGroup",
                     "params": {
-                        "target": "self.inventory.flag",
+                        "target": "self.inventory.RedFlag",
                         "group": "Flags"
                     }
                 },
@@ -383,7 +414,7 @@
             "endAction": {
                 "name": "removeFromGroup",
                 "params": {
-                    "target": "self.inventory.flag",
+                    "target": "self.inventory.RedFlag",
                     "group": "self.inventory"
                 }
             },
@@ -418,6 +449,73 @@
         },
         {
             "ID": "5",
+            "name": "Drop Blue Flag",
+            "parentState": "null",
+            "startState": false,
+            "finalState": false,
+            "doAction": {
+                "name": "showText",
+                "params": {
+                    "text": "The Mine detonated and you lost the Flag!"
+                }
+            },
+            "startAction": [
+                {
+                    "name": "addToGroup",
+                    "params": {
+                        "target": "self.inventory.BlueFlag",
+                        "group": "Flags"
+                    }
+                },
+                {
+                    "name": "changeAttribute",
+                    "params": {
+                        "attribute": "notValue.self.visibility",
+                        "value": "ownGroup",
+                        "valueType": "set",
+                        "duration": "null",
+                        "ticks": "null"
+                    }
+                }
+            ],
+            "endAction": {
+                "name": "removeFromGroup",
+                "params": {
+                    "target": "self.inventory.BlueFlag",
+                    "group": "self.inventory"
+                }
+            },
+            "transition": [
+                {
+                    "target": "Move Around",
+                    "event": "uiEvent",
+                    "condition": [
+                        {
+                            "name": "Carry On anyway!",
+                            "params": {
+                                "action": "RELEASE"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "target": "Your Team Lost",
+                    "event": "whiteboardEvent",
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "ownGroup.enemy.win",
+                                "compValue": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ID": "6",
             "name": "Your Team Won",
             "parentState": "null",
             "startState": false,
@@ -433,7 +531,7 @@
             "transition": "null"
         },
         {
-            "ID": "6",
+            "ID": "7",
             "name": "Your Team Lost",
             "parentState": "null",
             "startState": false,
