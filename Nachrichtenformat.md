@@ -57,4 +57,6 @@
 ```{"mode":"gamelobby","action":"players","isteamgame":true,"players":[{"name":"Team A","players":[{"name":"Jason"},{"name":"Eva"}]}]}```
 
 ###Fehler Nachrichten  
-```{"mode":"error", "message":"This is an error."}```
+Z.B. bei Login-Fehler, JSON-Exceptions und wenn der Server beendet wird.  
+```{"mode":"error", "message":"This is an error."}```  
+
