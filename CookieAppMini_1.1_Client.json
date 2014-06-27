@@ -1,126 +1,127 @@
-
-{	
-
-	"action": [
-				{
-				"ident": "addToGroup",
-				"defaults": {
-								"target": trigger.object.name,   
-								"group": "name" 
-							}
-				},	
-				{
-				"ident": "removeFromGroup",
-				"defaults": {
-								"target": uiEvent.Item.ID,  
-								"group": "name" 
-							}
-				},	
-				{
-					"ident": "showMap",
-					"params":	{  
-								"url": "trigger.object.params('url')"
-								}
-				  },
-				  {
-					"ident": "showEndScreen",
-					"params":	{
-								"text": "trigger.object.params('text')"
-								}
-				  }			
-			  ],
-
-	
-	"state": [ 
-		{
-			"ID": "0",
-			"name": "SearchCookies",
-			"parentState": "null",
-			"startState": true,
-			"finalState": false,
-			"doAction": {
-						  "name": "showMap"
-						},
-			"startAction": "null",
-			"endAction": "null",
-			"transition": [
-							{ 	"target": "Collect", 
-								"event": {													 
-											"type": "gameEvent",
-											"name": "nearby",
-											"params": {
-														"quantifier": 1,      
-														"target": "Cookies",
-														"who": "self",
-														"radius": 20
-													  }
-										  }
-								"action": 
-							},
-							{
-								"target": "game over",
-								"event": {
-											"type": "condition",
-											"value": "cookies.length"
-											"checkType": "==",
-											"compValue": 0
-										 }
-							}
-						  ]
-		},
-		{
-			"ID": "1",
-			"name": "Collect",
-			"parentState": "null",
-			"startState": "false",
-			"finalState": "false",
-			"doAction": "null",
-			"startAction":[
-						  {
-							"ident": "addToGroup",
-							"params": {
-										"target": "trigger.object.name",   
-										"group": "note" 
-										}
-						  },
-						  {
-							"ident": "removeFromGroup",
-							"params": {
-										"target": "trigger.object.name",   
-										"group": "cookies" 
-									  }
-						  } 
-						  ],
-			"endAction": "null",
-			"transition":[
-						  {
-							"target": "SearchCookies",
-							"event": {
-									  "type": "condition",
-									  "value": 0,
-									  "checkType": "==",
-									  "compValue": 0
-									 }
-						 ]
-		},
-		
-		{
-			"ID": "2",
-			"name": "game over",
-			"parentState": "null",
-			"startState": false,
-			"finalState": true,
-			"doAction": {
-						 "name": "showEndScreen",
-						 "params":	{
-								"text": "Super, du hast alle Punkte gefunden."
-								}
-						},
-			"startAction": "",
-			"endAction": "",
-			"transition": [
-					{}
-			]
-		}
-	]
-}				
+{
+    "action": [
+        {
+            "ident": "removeFromGroup",
+            "defaults": {
+                "target": "self.object",
+                "group": "name"
+            }
+        },
+        {
+            "ident": "updateMap",
+            "defaults": {
+                "target": "self"
+            }
+        },
+        {
+            "ident": "showText",
+            "defaults": {
+                "text": "text"
+            }
+        }
+    ],
+    "state": [
+        {
+            "ID": "0",
+            "name": "SearchCookies",
+            "parentState": "null",
+            "startState": true,
+            "finalState": false,
+            "doAction": {
+                "name": "updateMap"
+            },
+            "startAction": "null",
+            "endAction": "null",
+            "transition": [
+                {
+                    "target": "Collect",
+                    "event": "locationWhiteboardEvent",
+                    "condition": [
+                        {
+                            "name": "nearby",
+                            "params": {
+                                "object": {
+                                    "name": "Cookies",
+                                    "quantifier": {
+                                        "checkType": "exists",
+                                        "value": 1
+                                    }
+                                },
+                                "subject": {
+                                    "name": "self",
+                                    "quantifier": {
+                                        "checkType": "exists",
+                                        "value": 1
+                                    }
+                                },
+                                "radius": 10
+                            }
+                        }
+                    ]
+                },
+                {
+                    "target": "GameOver",
+                    "event": "whiteboardEvent",
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "Cookies.length",
+                                "compValue": 0
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ID": "1",
+            "name": "Collect",
+            "parentState": "null",
+            "startState": "false",
+            "finalState": "false",
+            "doAction": "null",
+            "startAction": "null",
+            "endAction": [
+                {
+                    "ident": "removeFromGroup",
+                    "params": {
+                        "target": "trigger.object.name",
+                        "group": "cookies"
+                    }
+                }
+            ],
+            "transition": [
+                {
+                    "target": "SearchCookies",
+                    "event": "uiEvent",
+                    "condition": [
+                        {
+                            "name": "Suche Fortsetzen",
+                            "params": {
+                                "action": "RELEASE"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ID": "2",
+            "name": "GameOver",
+            "parentState": "null",
+            "startState": false,
+            "finalState": true,
+            "doAction": {
+                "name": "showText",
+                "params": {
+                    "text": "Super, du hast alle Kekse gefunden."
+                }
+            },
+            "startAction": "null",
+            "endAction": "null",
+            "transition": "null"
+        }
+    ]
+}
