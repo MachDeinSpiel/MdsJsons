@@ -35,7 +35,7 @@
             "transition": [
                 {
                     "target": "Collect",
-                    "event": "locationWhiteboardEvent",
+                    "event": "locationEvent",
                     "condition": [
                         {
                             "name": "nearby",
