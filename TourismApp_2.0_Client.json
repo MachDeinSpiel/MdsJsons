@@ -1,188 +1,244 @@
-{	
-	"action": [
-				  {
-					"ident": "showVideo",
-					"defaults":	{
-								"url": "www.youtube.com"
-								}
-				  },
-				  {
-					"ident": "showInfo",
-					"defaults":	{
-								"text": "text"
-								}
-				  },
-				   {
-					"ident": "showMapWButton",
-					"defaults":	{
-								"target": "showInfo"
-								}
-				  },
-				  {
-				   "ident": "showMap",
-				   "defaults": {
-								"target": "self"
-				   
-							   }
-				  }
-			  ],
-	
-
-	"state": [ 
-		{
-			"ID": "0",
-			"name": "move around",
-			"parentState": "null",
-			"startState": true,
-			"finalState": false,
-			"doAction": {
-						  "name": "showMap"
-						},
-			"startAction": "null",
-			"endAction": "null",
-			"transition": [
-				{ 	"target": "show MapWButton", 
-					"event":
-							  
-							  {													 
-								"type": "gameEvent",
-								"name": "nearby",
-								"params": {
-											"quantifier": 1,     
-											"target": "exhibits",
-											"who": "self",
-											"radius": 20
-										  }
-							  }
-				},
-				{ 	"target": "game over",
-					"event": {
-								"type": "uiEvent",
-								"name": "endGame"
-							 } 
-				}
-			]
-		},
-		{
-			"ID": "1.1",
-			"name": "show info",
-			"parentState": "1",
-			"startState": false,
-			"finalState": false,
-			"doAction": {
-						 "name": "showInfo"
-						 "params": {
-									"text": "trigger.object.params('text')"
-									}
-						},
-			"startAction": "null",
-			"endAction": "null",
-			"transition": [
-				{	"target": "show video",
-				 	"event": {
-								"type": "uiEvent",
-								"name": "showVideo"
-							 }
-				  
-				},
-				{	"target": "move around",
-					"event": {
-								"type": "uiEvent",
-								"name": "proceedWalk"
-							 }
-				},
-				{ 	"target": "game over", 
-					"event": {
-								"type": "uiEvent",
-								"name": "endGame"
-							 }
-				}
-			]
-		},							
-		{
-			"ID": "1.2",
-			"name": "show video",
-			"parentState": "null",
-			"startState": false,
-			"finalState": false,
-			"doAction": {
-						"name": "showVideo",
-						"params":	{
-									"url": "trigger.object.params('url')",    
-									"text": "test"
-									}
-						},
-			"startAction": "null",
-			"endAction": "null",
-			"transition": [
-				{	"target": "show info",
-					"event": {
-								"type": "uiEvent",
-								"name": "proceedBack"
-							 }
-					
-				}
-			]
-		},	
-		{
-			"ID": "1",
-			"name": "show MapWButton",
-			"parentState": "null",
-			"startState": false,
-			"finalState": false,
-			"doAction": {
-						  "name": "showMapWButton"
-						  
-						},			
-			"startAction": "null",
-			"endAction": "null",
-			"transition": [
-				{	"target": "show info",
-				 	"event": {
-								"type": "uiEvent",
-								"name": "showInfo"
-							 }
-				  
-				},
-				{ 	"target": "move around", 
-					"event":
-							  
-							  {													 
-								"type": "gameEvent",
-								"name": "!nearby",
-								"params": {
-											"quantifier": 1,     
-											"target": "exhibits",
-											"who": "self",
-											"radius": 20
-										  }
-							  }
-				},
-				{ 	"target": "game over", 
-					"event": {
-								"type": "uiEvent",
-								"name": "endGame"
-							 }
-				}
-			]
-			
-		},		
-		{
-			"ID": "4",
-			"name": "game over",
-			"parentState": "null",
-			"startState": false,
-			"finalState": true,
-			"doAction": {
-						  "name": "showInfo",
-						  "params": {
-									 "text": "Tschüß!"
-									}
-						},			
-			"startAction": "null",
-			"endAction": "null",
-			"transition": []
-			
-		}						
-	]
-}				
+{
+    "action": [
+        {
+            "ident": "showVideo",
+            "defaults": {
+                "url": "www.youtube.com"
+            }
+        },
+        {
+            "ident": "showText",
+            "defaults": {
+                "text": "text"
+            }
+        },
+        {
+            "ident": "showMapWButton",
+            "defaults": {
+                "target": "showInfo"
+            }
+        },
+        {
+            "ident": "showMap",
+            "defaults": {
+                "target": "self"
+            }
+        }
+    ],
+    "state": [
+        {
+            "ID": "0",
+            "name": "move around",
+            "parentState": "null",
+            "startState": true,
+            "finalState": false,
+            "doAction": {
+                "name": "showMap"
+            },
+            "startAction": "null",
+            "endAction": "null",
+            "transition": [
+                {
+                    "target": "show MapWButton",
+                    "event": "locationEvent",
+                    "condition": [
+                        {
+                            "name": "nearby",
+                            "params": {
+                                "object": {
+                                    "name": "Exhibits",
+                                    "quantifier": {
+                                        "checkType": "exists",
+                                        "value": 1
+                                    }
+                                },
+                                "subject": {
+                                    "name": "self",
+                                    "quantifier": {
+                                        "checkType": "exists",
+                                        "value": 1
+                                    }
+                                },
+                                "radius": 20
+                            }
+                        }
+                    ]
+                },
+                {
+                    "target": "game over",
+                    "event": "uiEvent",
+                    "condition": [
+                        {
+                            "name": "Stadttour fortsetzen!",
+                            "params": {
+                                "action": "RELEASE"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ID": "1.1",
+            "name": "show info",
+            "parentState": "1",
+            "startState": false,
+            "finalState": false,
+            "doAction": {
+                "name": "showText",
+                "params": {
+                    "text": "object.text"
+                }
+            },
+            "startAction": "null",
+            "endAction": "null",
+            "transition": [
+                {
+                    "target": "show video",
+                    "event": "uiEvent",
+                    "condition": [
+                        {
+                            "name": "Informationsvideo ansehen!",
+                            "params": {
+                                "action": "RELEASE"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "target": "move around",
+                    "event": "uiEvent",
+                    "condition": [
+                        {
+                            "name": "Stadttour fortsetzen!",
+                            "params": {
+                                "action": "RELEASE"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "target": "game over",
+                    "event": "uiEvent",
+                    "condition": [
+                        {
+                            "name": "Spiel beenden!",
+                            "params": {
+                                "action": "RELEASE"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ID": "1.2",
+            "name": "show video",
+            "parentState": "null",
+            "startState": false,
+            "finalState": false,
+            "doAction": {
+                "name": "showVideo",
+                "params": {
+                    "url": "object.url"
+                }
+            },
+            "startAction": "null",
+            "endAction": "null",
+            "transition": [
+                {
+                    "target": "show info",
+                    "event": "uiEvent",
+                    "condition": [
+                        {
+                            "name": "Zurück!",
+                            "params": {
+                                "action": "RELEASE"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ID": "1",
+            "name": "show MapWButton",
+            "parentState": "null",
+            "startState": false,
+            "finalState": false,
+            "doAction": {
+                "name": "showMapWButton"
+            },
+            "startAction": "null",
+            "endAction": "null",
+            "transition": [
+                {
+                    "target": "show info",
+                    "event": "uiEvent",
+                    "condition": [
+                        {
+                            "name": "Informationen ansehen!",
+                            "params": {
+                                "action": "RELEASE"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "target": "move around",
+                    "event": "locationEvent",
+                    "condition": [
+                        {
+                            "name": "!nearby",
+                            "params": {
+                                "object": {
+                                    "name": "Exhibits",
+                                    "quantifier": {
+                                        "checkType": "exists",
+                                        "value": 1
+                                    }
+                                },
+                                "subject": {
+                                    "name": "self",
+                                    "quantifier": {
+                                        "checkType": "exists",
+                                        "value": 1
+                                    }
+                                },
+                                "radius": 10
+                            }
+                        }
+                    ]
+                },
+                {
+                    "target": "game over",
+                    "event": "uiEvent",
+                    "condition": [
+                        {
+                            "name": "Spiel beenden!",
+                            "params": {
+                                "action": "RELEASE"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ID": "4",
+            "name": "game over",
+            "parentState": "null",
+            "startState": false,
+            "finalState": true,
+            "doAction": {
+                "name": "showText",
+                "params": {
+                    "text": "Tschüß!"
+                }
+            },
+            "startAction": "null",
+            "endAction": "null",
+            "transition": "null"
+        }
+    ]
+}
