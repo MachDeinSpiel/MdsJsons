@@ -43,10 +43,10 @@
 ##Nachrichten vom Server  
 
 ###Liste aktiver Spiele  
-```{"games":[{"id":0,"serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/KeyQuest_Server.json","author":"MDS Team","maxplayers":2,"players":"Alice","name":"KeyQuest","isteamgame":false,"activeplayers":1,"clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/KeyQuest_Client.json","version":0.1}],"mode":"activegames"}```  
+```{"games":[{"id":0,"serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/KeyQuest_Server.json","author":"MDS Team","maxplayers":2,"players":"Alice","name":"KeyQuest","isteamgame":false,"activeplayers":1,"clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/KeyQuest_Client.json","apptheme":"light","version":0.1}],"mode":"activegames"}```  
 
 ###Liste verfügbarer Spiele  
-```{"games":[{"id":0,"author":"MDS Team","teams":0,"serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/KeyQuest_Server.json","maxplayers":2,"name":"KeyQuest","isteamgame":false,"clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/KeyQuest_Client.json","version":0.1}],"mode":"gametemplates"}```
+```{"games":[{"id":0,"author":"MDS Team","teams":0,"serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/KeyQuest_Server.json","maxplayers":2,"name":"KeyQuest","isteamgame":false,"clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/KeyQuest_Client.json","apptheme":"light","version":0.1}],"mode":"gametemplates"}```
 
 ###Spiele Lobby
 
