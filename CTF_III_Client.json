@@ -414,7 +414,7 @@
             "endAction": {
                 "name": "removeFromGroup",
                 "params": {
-                    "target": "self.inventory.redFlag",
+                    "target": "self.inventory.RedFlag",
                     "group": "self.inventory"
                 }
             },
@@ -463,7 +463,7 @@
                 {
                     "name": "addToGroup",
                     "params": {
-                        "target": "self.inventory.blueFlag",
+                        "target": "self.inventory.BlueFlag",
                         "group": "Flags"
                     }
                 },
