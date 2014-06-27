@@ -234,7 +234,7 @@
                     "result": [
                         {
                             "attribute": "notValue.self.solved",
-                            "minScore": 6,
+                            "minScore": 0,
                             "setWin": true,
                             "setLoose": false
                         }
