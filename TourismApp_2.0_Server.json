@@ -3,6 +3,7 @@
         "Roland": {
             "name": "Roland",
             "url": "http://www.youtube.com/watch?v=9jAEtbhXgz4",
+            "pathKey":"Roland",
             "text": "Willkommen beim Roland",
             "latitude": 53.075934,
             "longitude": 8.807341
@@ -10,6 +11,7 @@
         "HSB": {
             "name": "HSB",
             "url": "http://www.youtube.com/watch?v=esGOl-tMIZs",
+            "pathKey":"HSB",
             "text": "Willkommen bei der Hochschule Bremen",
             "latitude": 53.055142,
             "longitude": 8.783204
@@ -17,6 +19,7 @@
         "Stadtmusikanten": {
             "name": "Stadtmusikanten",
             "url": "http://www.youtube.com/watch?v=nLSOIaT_IGA",
+            "pathKey":"Stadtmusikanten",
             "text": "Willkommen bei den Bremer Stadtmusikanten",
             "latitude": 53.07616,
             "longitude": 8.807489
