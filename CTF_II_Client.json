@@ -159,7 +159,7 @@
             "endAction": {
                 "name": "removeFromGroup",
                 "params": {
-                    "target": "self.object",
+                    "target": "self.object.pathKey",
                     "group": "Flags"
                 }
             },
