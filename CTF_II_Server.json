@@ -21,7 +21,7 @@
 "Flags": {
 	"RedFlag": {
 	    "title": "Red Flag",
-    	    "pathKey": "flag",
+    	    "pathKey": "RedFlag",
 	    "team": "Team Red",
             "text": "You took The Red Teams Flag",
             "latitude": 53.061360,
@@ -42,7 +42,7 @@
 	},
 	"BlueFlag": {
 	    "title": "Blue Flag",
-            "pathKey": "flag",
+            "pathKey": "BlueFlag",
 	    "team": "Team Blue",
             "text": "You Took The Blue Teams Flag",
             "latitude": 53.053571,
@@ -67,7 +67,7 @@
 "Bases": {
 	"RedBase": {
 	    "title": "Red Base",
-            "pathKey": "baseRed",
+            "pathKey": "RedBase",
 	    "team": "Team Red",
             "text": "Team Red´s Base",
             "latitude": 53.053571, 
@@ -79,7 +79,7 @@
 	},
 	"BlueBase": {
 	    "title": "Blue Base",
-            "pathKey": "baseBlue",
+            "pathKey": "BlueBase",
 	    "team": "Team Blue",
             "text": "Team Blue´s Base",
             "latitude": 53.061360,
@@ -95,7 +95,7 @@
 "Mines": {
 	"Mine1": {
 		"title": "Mine 1",
-		"pathKey": "mine1",
+		"pathKey": "Mine1",
 		"latitude": 53.055547,
         	"longitude": 8.784968,
 		"visibility": "none",
@@ -105,7 +105,7 @@
 	},
 	"Mine2": {
 		"title": "Mine 2",
-		"pathKey": "mine2",
+		"pathKey": "Mine2",
 		"latitude": 53.056441, 
         	"longitude": 8.786541,
 		"visibility": "none",
@@ -115,7 +115,7 @@
 	},
 	"Mine3": {
 		"title": "Mine 3",
-		"pathKey": "mine3",
+		"pathKey": "Mine3",
 		"latitude": 53.057498, 
         	"longitude": 8.782185,
 		"visibility": "none",
@@ -125,7 +125,7 @@
 	},
 	"Mine4": {
 		"title": "Mine 4",
-		"pathKey": "mine4",
+		"pathKey": "Mine4",
 		"latitude": 53.055150, 
         	"longitude": 8.783054,
 		"visibility": "none",
@@ -135,7 +135,7 @@
 	},
 	"Mine5": {
 		"title": "Mine 5",
-		"pathKey": "mine5",
+		"pathKey": "Mine5",
 		"latitude": 53.054075, 
         	"longitude": 8.783819,
 		"visibility": "none",
@@ -145,7 +145,7 @@
 	},
 	"Mine6": {
 		"title": "Mine 6",
-		"pathKey": "mine6",
+		"pathKey": "Mine6",
 		"latitude": 53.052760, 
         	"longitude": 8.786244,
 		"visibility": "none",
