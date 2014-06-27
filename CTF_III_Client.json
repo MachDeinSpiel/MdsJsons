@@ -1,3 +1,4 @@
+
 {
     "action": [
         {
@@ -67,7 +68,7 @@
             "transition": [
                 {
                     "target": "Take Flag",
-                    "event": "locationEvent",
+                    "event": "locationWhiteboardEvent",
                     "condition": [
                         {
                             "name": "nearby",
@@ -232,7 +233,7 @@
                 },
                 {
                     "target": "Your Team Won",
-                    "event": "locationEvent",
+                    "event": "locationWhiteboardEvent",
                     "condition": [
                         {
                             "name": "nearby",
@@ -331,17 +332,17 @@
                                 "compValue": false
                             }
                         },
-						{
-							"name":"condition",
-							"params": {
+                        {
+                            "name": "condition",
+                            "params": {
                                 "checkType": "equals",
                                 "value": "ownGroup",
                                 "compValue": "Teams.Red"
                             }
-						}
+                        }
                     ]
                 },
-				{
+                {
                     "target": "Drop Blue Flag",
                     "event": "whiteboardEvent",
                     "condition": [
@@ -353,14 +354,14 @@
                                 "compValue": false
                             }
                         },
-						{
-							"name":"condition",
-							"params": {
+                        {
+                            "name": "condition",
+                            "params": {
                                 "checkType": "equals",
                                 "value": "ownGroup",
                                 "compValue": "Teams.Blue"
                             }
-						}
+                        }
                     ]
                 },
                 {
@@ -446,7 +447,7 @@
                 }
             ]
         },
-		{
+        {
             "ID": "5",
             "name": "Drop Blue Flag",
             "parentState": "null",
