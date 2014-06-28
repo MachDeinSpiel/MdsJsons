@@ -516,7 +516,7 @@
                     "name": "changeAttribute",
                     "params": {
                         "attribute": "notValue.self.visibility",
-                        "value": "ownGroup",
+                        "value": "notValue.ownGroup",
                         "valueType": "set",
                         "duration": "null",
                         "ticks": "null"
@@ -583,7 +583,7 @@
                     "name": "changeAttribute",
                     "params": {
                         "attribute": "notValue.self.visibility",
-                        "value": "ownGroup",
+                        "value": "notValue.ownGroup",
                         "valueType": "set",
                         "duration": "null",
                         "ticks": "null"
