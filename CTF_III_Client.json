@@ -23,6 +23,12 @@
             }
         },
         {
+            "ident": "dropItem",
+            "defaults": {
+                "target": "dropAction"
+            }
+        },
+        {
             "ident": "showText",
             "defaults": {
                 "text": "text"
@@ -417,10 +423,10 @@
             },
             "startAction": "null",
             "endAction": {
-                "name":"removeFromGroup",
-                "params":{
+                "name": "removeFromGroup",
+                "params": {
                     "target": "self.object",
-                    "group": "Mines"                    
+                    "group": "Mines"
                 }
             },
             "transition": [
@@ -505,19 +511,12 @@
             "startState": false,
             "finalState": false,
             "doAction": {
-                "name": "showText",
+                "name": "dropItem",
                 "params": {
-                    "text": "The Mine detonated and you lost the Flag!"
+                    "target": "RedFlag"
                 }
             },
             "startAction": [
-                {
-                    "name": "addToGroup",
-                    "params": {
-                        "target": "self.inventory.RedFlag",
-                        "group": "Flags"
-                    }
-                },
                 {
                     "name": "changeAttribute",
                     "params": {
@@ -529,13 +528,7 @@
                     }
                 }
             ],
-            "endAction": {
-                "name": "removeFromGroup",
-                "params": {
-                    "target": "self.inventory.RedFlag",
-                    "group": "self.inventory"
-                }
-            },
+            "endAction": "null",
             "transition": [
                 {
                     "target": "Move Around",
@@ -572,19 +565,12 @@
             "startState": false,
             "finalState": false,
             "doAction": {
-                "name": "showText",
+                "name": "dropItem",
                 "params": {
-                    "text": "The Mine detonated and you lost the Flag!"
+                    "target": "BlueFlag"
                 }
             },
             "startAction": [
-                {
-                    "name": "addToGroup",
-                    "params": {
-                        "target": "self.inventory.BlueFlag",
-                        "group": "Flags"
-                    }
-                },
                 {
                     "name": "changeAttribute",
                     "params": {
@@ -596,13 +582,7 @@
                     }
                 }
             ],
-            "endAction": {
-                "name": "removeFromGroup",
-                "params": {
-                    "target": "self.inventory.BlueFlag",
-                    "group": "self.inventory"
-                }
-            },
+            "endAction": "null",
             "transition": [
                 {
                     "target": "Move Around",
