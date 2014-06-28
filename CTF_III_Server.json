@@ -1,56 +1,32 @@
 {
-"Teams": {
-
-	"Red": {
-		"title": "Team Red",
-        	"pathKey": "Red",
-		"enemy": "Teams.Blue",
-        	"text": "This is the red Team",
-		"win": false
-		},
-	"Blue": {
-		"title": "Team Blue",	
-		"pathKey": "Blue",
-		"enemy": "Teams.Red",
-		"text": "This is the blue Team",
-		"win": false
-	}
-
-},
-
-"Flags": {
-	"RedFlag": {
-	    "title": "Red Flag",
-    	    "pathKey": "RedFlag",
-	    "team": "Team Red",
+    "Teams": {
+        "Red": {
+            "title": "Team Red",
+            "pathKey": "Red",
+            "enemy": "Teams.Blue",
+            "text": "This is the red Team",
+            "win": false
+        },
+        "Blue": {
+            "title": "Team Blue",
+            "pathKey": "Blue",
+            "enemy": "Teams.Red",
+            "text": "This is the blue Team",
+            "win": false
+        }
+    },
+    "Flags": {
+        "RedFlag": {
+            "title": "Red Flag",
+            "pathKey": "RedFlag",
+            "team": "Team Red",
             "text": "You took The Red Teams Flag",
             "latitude": 53.061360,
             "longitude": 8.785747,
-	    "visibility": "all",
-	    "iconName": "RoteF",			
-	    "imagePath": "http://i.imgur.com/XrMpVlg.png",
-	    "useAction": {
-            	"changeAttribute": {
-                    "name": "changeAttribute",
-                    "attribute": "notValue.self.visibility",
-                    "value": "all",
-                    "valueType": "set",
-                    "duration": "null",
-                    "ticks": "null"
-            	}
-	    }
-	},
-	"BlueFlag": {
-	    "title": "Blue Flag",
-            "pathKey": "BlueFlag",
-	    "team": "Team Blue",
-            "text": "You Took The Blue Teams Flag",
-            "latitude": 53.053571,
-            "longitude": 8.787077,
-	    "visibility": "all",
-	    "iconName": "BlaueF",			
-	    "imagePath": "http://i.imgur.com/tueOpzE.png",
-   	    "useAction": {
+            "visibility": "all",
+            "iconName": "RoteF",
+            "imagePath": "http://i.imgur.com/XrMpVlg.png",
+            "useAction": {
                 "changeAttribute": {
                     "name": "changeAttribute",
                     "attribute": "notValue.self.visibility",
@@ -59,115 +35,143 @@
                     "duration": "null",
                     "ticks": "null"
                 }
-	    }
-	}
-
-},
-
-"Bases": {
-	"RedBase": {
-	    "title": "Red Base",
-            "pathKey": "RedBase",
-	    "team": "Team Red",
-            "text": "Team Red´s Base",
-            "latitude": 53.053571, 
+            },
+            "dropAction": {
+                "addToGroup": {
+                    "target": "RedFlag",
+                    "group": "Flags"
+                }
+            }
+        },
+        "BlueFlag": {
+            "title": "Blue Flag",
+            "pathKey": "BlueFlag",
+            "team": "Team Blue",
+            "text": "You Took The Blue Teams Flag",
+            "latitude": 53.053571,
             "longitude": 8.787077,
-	    "visibility": "all",
-	    "iconName": "RoteB",			
-	    "imagePath": "http://i.imgur.com/sfCFfYd.png",
-	    "useAction": "null"
+            "visibility": "all",
+            "iconName": "BlaueF",
+            "imagePath": "http://i.imgur.com/tueOpzE.png",
+            "useAction": {
+                "changeAttribute": {
+                    "name": "changeAttribute",
+                    "attribute": "notValue.self.visibility",
+                    "value": "all",
+                    "valueType": "set",
+                    "duration": "null",
+                    "ticks": "null"
+                }
+            },
+            "dropAction": {
+                "addToGroup": {
+                    "target": "BlueFlag",
+                    "group": "Flags"
+                }
+            }
+        }
 	},
-	"BlueBase": {
-	    "title": "Blue Base",
-            "pathKey": "BlueBase",
-	    "team": "Team Blue",
-            "text": "Team Blue´s Base",
-            "latitude": 53.061360,
-            "longitude": 8.785747,
-	    "visibility": "all",
-	    "iconName": "BlaueB",			
-	    "imagePath": "http://i.imgur.com/0uLMOns.png",
-	    "useAction": "null"
-	}
-
-},
-
-"Mines": {
-	"Mine1": {
-		"title": "Mine 1",
-		"pathKey": "Mine1",
-		"latitude": 53.055547,
-        	"longitude": 8.784968,
-		"visibility": "none",
-		"iconName": "Mine",			
-		"imagePath": "http://i.imgur.com/mVaa4qd.png?1",
-		"useAction": "null"
-	},
-	"Mine2": {
-		"title": "Mine 2",
-		"pathKey": "Mine2",
-		"latitude": 53.056441, 
-        	"longitude": 8.786541,
-		"visibility": "none",
-		"iconName": "Mine",			
-		"imagePath": "http://i.imgur.com/mVaa4qd.png?1",
-		"useAction": "null"
-	},
-	"Mine3": {
-		"title": "Mine 3",
-		"pathKey": "Mine3",
-		"latitude": 53.057498, 
-        	"longitude": 8.782185,
-		"visibility": "none",
-		"iconName": "Mine",			
-		"imagePath": "http://i.imgur.com/mVaa4qd.png?1",
-		"useAction": "null"
-	},
-	"Mine4": {
-		"title": "Mine 4",
-		"pathKey": "Mine4",
-		"latitude": 53.055150, 
-        	"longitude": 8.783054,
-		"visibility": "none",
-		"iconName": "Mine",			
-		"imagePath": "http://i.imgur.com/mVaa4qd.png?1",
-		"useAction": "null"
-	},
-	"Mine5": {
-		"title": "Mine 5",
-		"pathKey": "Mine5",
-		"latitude": 53.054075, 
-        	"longitude": 8.783819,
-		"visibility": "none",
-		"iconName": "Mine",			
-		"imagePath": "http://i.imgur.com/mVaa4qd.png?1",
-		"useAction": "null"
-	},
-	"Mine6": {
-		"title": "Mine 6",
-		"pathKey": "Mine6",
-		"latitude": 53.052760, 
-        	"longitude": 8.786244,
-		"visibility": "none",
-		"iconName": "Mine",			
-		"imagePath": "http://i.imgur.com/mVaa4qd.png?1",
-		"useAction": "null"
-	}
-},
-
-"Players": {
-        "template": {
-            "pathKey": "template",
-            "health": 1000,
-            "latitude": "null",
-            "longitude": "null",
-	    "solve": "null",
-	    "visibility": "ownGroup",
-	    "iconName": "self.pathKey",	
-	    "imagePath": "http://imgur.com/Ureny6D",
-	    "inventory": {
-		"dummy": "dummytext"
-	    }
-	}
-    }	
+        "Bases": {
+            "RedBase": {
+                "title": "Red Base",
+                "pathKey": "RedBase",
+                "team": "Team Red",
+                "text": "Team Red´s Base",
+                "latitude": 53.053571,
+                "longitude": 8.787077,
+                "visibility": "all",
+                "iconName": "RoteB",
+                "imagePath": "http://i.imgur.com/sfCFfYd.png",
+                "useAction": "null"
+            },
+            "BlueBase": {
+                "title": "Blue Base",
+                "pathKey": "BlueBase",
+                "team": "Team Blue",
+                "text": "Team Blue´s Base",
+                "latitude": 53.061360,
+                "longitude": 8.785747,
+                "visibility": "all",
+                "iconName": "BlaueB",
+                "imagePath": "http://i.imgur.com/0uLMOns.png",
+                "useAction": "null"
+            }
+        },
+        "Mines": {
+            "Mine1": {
+                "title": "Mine 1",
+                "pathKey": "Mine1",
+                "latitude": 53.055547,
+                "longitude": 8.784968,
+                "visibility": "none",
+                "iconName": "Mine",
+                "imagePath": "http://i.imgur.com/mVaa4qd.png?1",
+                "useAction": "null"
+            },
+            "Mine2": {
+                "title": "Mine 2",
+                "pathKey": "Mine2",
+                "latitude": 53.056441,
+                "longitude": 8.786541,
+                "visibility": "none",
+                "iconName": "Mine",
+                "imagePath": "http://i.imgur.com/mVaa4qd.png?1",
+                "useAction": "null"
+            },
+            "Mine3": {
+                "title": "Mine 3",
+                "pathKey": "Mine3",
+                "latitude": 53.057498,
+                "longitude": 8.782185,
+                "visibility": "none",
+                "iconName": "Mine",
+                "imagePath": "http://i.imgur.com/mVaa4qd.png?1",
+                "useAction": "null"
+            },
+            "Mine4": {
+                "title": "Mine 4",
+                "pathKey": "Mine4",
+                "latitude": 53.055150,
+                "longitude": 8.783054,
+                "visibility": "none",
+                "iconName": "Mine",
+                "imagePath": "http://i.imgur.com/mVaa4qd.png?1",
+                "useAction": "null"
+            },
+            "Mine5": {
+                "title": "Mine 5",
+                "pathKey": "Mine5",
+                "latitude": 53.054075,
+                "longitude": 8.783819,
+                "visibility": "none",
+                "iconName": "Mine",
+                "imagePath": "http://i.imgur.com/mVaa4qd.png?1",
+                "useAction": "null"
+            },
+            "Mine6": {
+                "title": "Mine 6",
+                "pathKey": "Mine6",
+                "latitude": 53.052760,
+                "longitude": 8.786244,
+                "visibility": "none",
+                "iconName": "Mine",
+                "imagePath": "http://i.imgur.com/mVaa4qd.png?1",
+                "useAction": "null"
+            }
+        },
+        "Players": {
+            "template": {
+                "pathKey": "template",
+                "health": 1000,
+                "latitude": "null",
+                "longitude": "null",
+                "solve": "null",
+                "visibility": "ownGroup",
+                "iconName": "self.pathKey",
+                "imagePath": "http://imgur.com/Ureny6D",
+                "inventory": {
+                    "dummy": "dummytext"
+                }
+            }
+        }
 }
