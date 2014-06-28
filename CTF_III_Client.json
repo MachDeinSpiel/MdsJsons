@@ -416,7 +416,13 @@
                 }
             },
             "startAction": "null",
-            "endAction": "null",
+            "endAction": {
+                "name":"removeFromGroup",
+                "params":{
+                    "target": "self.object",
+                    "group": "Mines"                    
+                }
+            },
             "transition": [
                 {
                     "target": "Move With Flag",
