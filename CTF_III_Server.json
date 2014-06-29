@@ -38,7 +38,7 @@
             },
             "dropAction": {
                 "addToGroup": {
-                    "target": "RedFlag",
+                    "target": "Flags.RedFlag",
                     "group": "Flags"
                 }
             }
