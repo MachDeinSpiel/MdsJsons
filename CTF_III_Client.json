@@ -546,14 +546,12 @@
             "transition": [
                 {
                     "target": "Move Around",
-                    "event": "whiteBoardEvent",
+                    "event": "uiEvent",
                     "condition": [
                         {
-                            "name": "condition",
+                            "name": "Carry On anyway!",
                             "params": {
-                                "checkType": "equals",
-                                "value": "self.inventory.length",
-                                "compValue": 0
+                                "action": "RELEASE"
                             }
                         }
                     ]
@@ -602,14 +600,12 @@
             "transition": [
                 {
                     "target": "Move Around",
-                    "event": "whiteBoardEvent",
+                    "event": "uiEvent",
                     "condition": [
                         {
-                            "name": "condition",
+                            "name": "Carry On anyway!",
                             "params": {
-                                "checkType": "equals",
-                                "value": "self.inventory.length",
-                                "compValue": 0
+                                "action": "RELEASE"
                             }
                         }
                     ]
