@@ -288,6 +288,28 @@
             },
             "startAction": [
                 {
+                    "name": "addToGroup",
+                    "params": {
+                        "target": "Flags.BlueFlag",
+                        "group": "self.inventory"
+                    }
+                },
+                {
+                    "name": "useItem",
+                    "params": {
+                        "target": "self.object"
+                    }
+                }
+            ],
+            "endAction": {
+                "name": "removeFromGroup",
+                "params": {
+                    "target": "Flags.BlueFlag",
+                    "group": "Flags"
+                }
+            },
+            "transition": [
+                {
                     "target": "Move Around",
                     "event": "locationEvent",
                     "condition": [
@@ -313,28 +335,6 @@
                         }
                     ]
                 },
-                {
-                    "name": "addToGroup",
-                    "params": {
-                        "target": "Flags.BlueFlag",
-                        "group": "self.inventory"
-                    }
-                },
-                {
-                    "name": "useItem",
-                    "params": {
-                        "target": "self.object"
-                    }
-                }
-            ],
-            "endAction": {
-                "name": "removeFromGroup",
-                "params": {
-                    "target": "Flags.BlueFlag",
-                    "group": "Flags"
-                }
-            },
-            "transition": [
                 {
                     "target": "Move With Flag",
                     "event": "uiEvent",
@@ -712,4 +712,3 @@
         }
     ]
 }
-
