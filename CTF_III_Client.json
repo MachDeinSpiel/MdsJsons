@@ -451,7 +451,7 @@
                 },
                 {
                     "target": "Move Around",
-                    "event": "whiteBoardEvent",
+                    "event": "whiteboardEvent",
                     "condition": [
                         {
                             "name": "condition",
