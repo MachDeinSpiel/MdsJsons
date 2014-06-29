@@ -292,7 +292,7 @@
                     "event": "locationEvent",
                     "condition": [
                         {
-                            "name": "!nearby",
+                            "name": "notNearby",
                             "params": {
                                 "object": {
                                     "name": "Flags",
