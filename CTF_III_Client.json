@@ -221,6 +221,32 @@
             },
             "transition": [
                 {
+                    "target": "Move Around",
+                    "event": "locationEvent",
+                    "condition": [
+                        {
+                            "name": "!nearby",
+                            "params": {
+                                "object": {
+                                    "name": "Flags",
+                                    "quantifier": {
+                                        "checkType": "exists",
+                                        "value": 1
+                                    }
+                                },
+                                "subject": {
+                                    "name": "self",
+                                    "quantifier": {
+                                        "checkType": "exists",
+                                        "value": 1
+                                    }
+                                },
+                                "radius": 10
+                            }
+                        }
+                    ]
+                },
+                {
                     "target": "Move With Flag",
                     "event": "uiEvent",
                     "condition": [
@@ -261,6 +287,32 @@
                 }
             },
             "startAction": [
+                {
+                    "target": "Move Around",
+                    "event": "locationEvent",
+                    "condition": [
+                        {
+                            "name": "!nearby",
+                            "params": {
+                                "object": {
+                                    "name": "Flags",
+                                    "quantifier": {
+                                        "checkType": "exists",
+                                        "value": 1
+                                    }
+                                },
+                                "subject": {
+                                    "name": "self",
+                                    "quantifier": {
+                                        "checkType": "exists",
+                                        "value": 1
+                                    }
+                                },
+                                "radius": 10
+                            }
+                        }
+                    ]
+                },
                 {
                     "name": "addToGroup",
                     "params": {
@@ -660,3 +712,4 @@
         }
     ]
 }
+
