@@ -225,7 +225,7 @@
                     "event": "locationEvent",
                     "condition": [
                         {
-                            "name": "notNearby",
+                            "name": "!nearby",
                             "params": {
                                 "object": {
                                     "name": "Flags",
@@ -314,7 +314,7 @@
                     "event": "locationEvent",
                     "condition": [
                         {
-                            "name": "notNearby",
+                            "name": "!nearby",
                             "params": {
                                 "object": {
                                     "name": "Flags",
