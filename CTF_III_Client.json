@@ -7,6 +7,12 @@
             }
         },
         {
+            "ident": "backToMap",
+            "defaults": {
+                "target": "self"
+            }
+        },
+        {
             "ident": "changeAttribute",
             "defaults": {
                 "attribute": "null",
