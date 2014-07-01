@@ -24,6 +24,13 @@
                 "target": "object.name",
                 "group": "name"
             }
+        },
+        {
+            "ident": "removeFromGroup",
+            "defaults": {
+                "target": "object.name",
+                "group": "name"
+            }
         }
     ],
     "states": [
