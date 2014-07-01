@@ -124,11 +124,6 @@
                     "valueType": "add",
                     "duration": "null",
                     "ticks": "null"
-                },
-                "removeFromGroup": {
-                    "name": "removeFromGroup",
-                    "target": "Medipacks.Medipack1",
-                    "group": "Medipacks"
                 }
             }
         },
@@ -150,11 +145,6 @@
                     "valueType": "add",
                     "duration": "null",
                     "ticks": "null"
-                },
-                "removeFromGroup": {
-                    "name": "removeFromGroup",
-                    "target": "Medipacks.Medipack2",
-                    "group": "Medipacks"
                 }
             }
         },
@@ -176,11 +166,6 @@
                     "valueType": "add",
                     "duration": "null",
                     "ticks": "null"
-                },
-                "removeFromGroup": {
-                    "name": "removeFromGroup",
-                    "target": "Medipacks.Medipack3",
-                    "group": "Medipacks"
                 }
             }
         }
