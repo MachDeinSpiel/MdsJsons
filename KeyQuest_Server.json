@@ -77,6 +77,7 @@
    "Players":{
       "template":{
          "health":1000,
+         "visibility": "all",
          "iconName": "player",
          "latitude":"null",
          "longitude":"null",
