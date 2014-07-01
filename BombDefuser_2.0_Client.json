@@ -7,6 +7,12 @@
             }
         },
         {
+            "ident": "backToMap",
+            "defaults": {
+                "target": "self"
+            }
+        },
+        {
             "ident": "useItem",
             "defaults": {
                 "target": "useAction"
@@ -43,7 +49,11 @@
             "doAction": {
                 "name": "updateMap"
             },
-            "startAction": "null",
+            "startAction": [
+                {
+                   "name": "backToMap"; 
+                }
+            ],
             "endAction": "null",
             "transition": [
                 {
