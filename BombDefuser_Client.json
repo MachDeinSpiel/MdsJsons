@@ -27,7 +27,14 @@
             "doAction": {
                 "name": "updateMap"
             },
-            "startAction": "null",
+            "startAction": [
+                {
+                    "name": "backToMap",
+                    "params": {
+                        "target": "self"
+                    }
+                }
+            ],
             "endAction": "null",
             "transition": [
                 {
