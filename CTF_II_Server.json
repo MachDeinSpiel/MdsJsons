@@ -158,6 +158,7 @@
 "Players": {
         "template": {
             "pathKey": "template",
+            "iconName": "player",
             "health": 1000,
             "latitude": "null",
             "longitude": "null",
