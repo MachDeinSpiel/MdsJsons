@@ -27,20 +27,6 @@
          "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/BombDefuser_2.0_Client.json"
       },
       {
-         "name":"CTF_II",
-         "author":"MDS Team",
-         "version":0.1,
-         "id":2,
-         "minplayers":1,
-         "maxplayers":8,
-         "teams":2,
-         "isteamgame":true,
-         "teamnames": ["Blue", "Red"],
-         "apptheme":"dark",
-         "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/CTF_II_Client.json",
-         "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/CTF_II_Server.json"
-      },  
-      {
          "name":"CTF_III",
          "author":"MDS Team",
          "version":0.1,
