@@ -253,7 +253,7 @@
                 {
                     "name": "removeFromGroup",
                     "params": {
-                        "target": "self.object",
+                        "target": "self.object.pathKey",
                         "group": "Medipacks"
                     }
                 }
@@ -294,7 +294,7 @@
                 {
                     "name": "removeFromGroup",
                     "params": {
-                        "target": "self.object",
+                        "target": "self.object.pathKey",
                         "group": "Medipacks"
                     }
                 }
