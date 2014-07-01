@@ -72,7 +72,7 @@
             "endAction": "null",
             "transition": [
                 {
-                    "target": "Take Red Flag",
+                    "target": "Show Red Flag",
                     "event": "locationWhiteboardEvent",
                     "condition": [
                         {
@@ -114,7 +114,7 @@
                     ]
                 },
                 {
-                    "target": "Take Blue Flag",
+                    "target": "Show Blue Flag",
                     "event": "locationWhiteboardEvent",
                     "condition": [
                         {
@@ -187,7 +187,7 @@
         },
         {
             "ID": "1",
-            "name": "Take Red Flag",
+            "name": "Show Red Flag",
             "parentState": "null",
             "startState": false,
             "finalState": false,
@@ -197,28 +197,8 @@
                     "text": "self.object.text"
                 }
             },
-            "startAction": [
-                {
-                    "name": "addToGroup",
-                    "params": {
-                        "target": "Flags.RedFlag",
-                        "group": "self.inventory"
-                    }
-                },
-                {
-                    "name": "useItem",
-                    "params": {
-                        "target": "self.object"
-                    }
-                }
-            ],
-            "endAction": {
-                "name": "removeFromGroup",
-                "params": {
-                    "target": "Flags.RedFlag",
-                    "group": "Flags"
-                }
-            },
+            "startAction": "null",
+            "endAction": "null",
             "transition": [
                 {
                     "target": "Move Around",
@@ -247,7 +227,7 @@
                     ]
                 },
                 {
-                    "target": "Move With Flag",
+                    "target": "Take Red Flag",
                     "event": "uiEvent",
                     "condition": [
                         {
@@ -276,7 +256,7 @@
         },
         {
             "ID": "2",
-            "name": "Take Blue Flag",
+            "name": "Show Blue Flag",
             "parentState": "null",
             "startState": false,
             "finalState": false,
@@ -286,28 +266,8 @@
                     "text": "self.object.text"
                 }
             },
-            "startAction": [
-                {
-                    "name": "addToGroup",
-                    "params": {
-                        "target": "Flags.BlueFlag",
-                        "group": "self.inventory"
-                    }
-                },
-                {
-                    "name": "useItem",
-                    "params": {
-                        "target": "self.object"
-                    }
-                }
-            ],
-            "endAction": {
-                "name": "removeFromGroup",
-                "params": {
-                    "target": "Flags.BlueFlag",
-                    "group": "Flags"
-                }
-            },
+            "startAction": "null",
+            "endAction": "null",
             "transition": [
                 {
                     "target": "Move Around",
@@ -336,7 +296,7 @@
                     ]
                 },
                 {
-                    "target": "Move With Flag",
+                    "target": "Take Blue Flag",
                     "event": "uiEvent",
                     "condition": [
                         {
@@ -365,6 +325,126 @@
         },
         {
             "ID": "3",
+            "name": "Take Red Flag",
+            "parentState": "null",
+            "startState": false,
+            "finalState": false,
+            "doAction": "null",
+            "startAction": [
+                {
+                    "name": "addToGroup",
+                    "params": {
+                        "target": "Flags.RedFlag",
+                        "group": "self.inventory"
+                    }
+                },
+                {
+                    "name": "useItem",
+                    "params": {
+                        "target": "self.object"
+                    }
+                }
+            ],
+            "endAction": {
+                "name": "removeFromGroup",
+                "params": {
+                    "target": "Flags.RedFlag",
+                    "group": "Flags"
+                }
+            },
+            "transition": [
+                {
+                    "target": "Your Team Lost",
+                    "event": "whiteboardEvent",
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "ownGroup.enemy.win",
+                                "compValue": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "target": "Move With Flag",
+                    "event": "whiteboardEvent",
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "0",
+                                "compValue": "0"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ID": "4",
+            "name": "Take Blue Flag",
+            "parentState": "null",
+            "startState": false,
+            "finalState": false,
+            "doAction": "null",
+            "startAction": [
+                {
+                    "name": "addToGroup",
+                    "params": {
+                        "target": "Flags.BlueFlag",
+                        "group": "self.inventory"
+                    }
+                },
+                {
+                    "name": "useItem",
+                    "params": {
+                        "target": "self.object"
+                    }
+                }
+            ],
+            "endAction": {
+                "name": "removeFromGroup",
+                "params": {
+                    "target": "Flags.BlueFlag",
+                    "group": "Flags"
+                }
+            },
+            "transition": [
+                {
+                    "target": "Your Team Lost",
+                    "event": "whiteboardEvent",
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "ownGroup.enemy.win",
+                                "compValue": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "target": "Move With Flag",
+                    "event": "whiteboardEvent",
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "0",
+                                "compValue": "0"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ID": "4",
             "name": "Move With Flag",
             "parentState": "null",
             "startState": false,
@@ -466,7 +546,7 @@
             ]
         },
         {
-            "ID": "4",
+            "ID": "5",
             "name": "Puzzle",
             "parentState": "null",
             "startState": false,
@@ -571,7 +651,7 @@
             ]
         },
         {
-            "ID": "5",
+            "ID": "6",
             "name": "Drop Red Flag",
             "parentState": "null",
             "startState": false,
@@ -625,7 +705,7 @@
             ]
         },
         {
-            "ID": "6",
+            "ID": "7",
             "name": "Drop Blue Flag",
             "parentState": "null",
             "startState": false,
@@ -679,7 +759,7 @@
             ]
         },
         {
-            "ID": "7",
+            "ID": "8",
             "name": "Your Team Won",
             "parentState": "null",
             "startState": false,
@@ -695,7 +775,7 @@
             "transition": "null"
         },
         {
-            "ID": "8",
+            "ID": "9",
             "name": "Your Team Lost",
             "parentState": "null",
             "startState": false,
