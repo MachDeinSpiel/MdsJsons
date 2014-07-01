@@ -51,7 +51,7 @@
             },
             "startAction": [
                 {
-                   "name": "backToMap"; 
+                   "name": "backToMap"
                 }
             ],
             "endAction": "null",
