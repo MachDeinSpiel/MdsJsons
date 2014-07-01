@@ -44,7 +44,7 @@
         {
             "ident": "removeFromGroup",
             "defaults": {
-                "target": "self.object",
+                "target": "self.object.pathKey",
                 "group": "name"
             }
         },
@@ -578,7 +578,7 @@
             "endAction": {
                 "name": "removeFromGroup",
                 "params": {
-                    "target": "self.object",
+                    "target": "self.object.pathKey",
                     "group": "Mines"
                 }
             },
