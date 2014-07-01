@@ -153,6 +153,7 @@
     "Players": {
         "0": {
             "health": 1000,
+            "iconName": "player",
             "latitude": "null",
             "longitude": "null"
         }
