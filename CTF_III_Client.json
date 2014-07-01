@@ -438,7 +438,7 @@
             ]
         },
         {
-            "ID": "4",
+            "ID": "5",
             "name": "Move With Flag",
             "parentState": "null",
             "startState": false,
@@ -540,7 +540,7 @@
             ]
         },
         {
-            "ID": "5",
+            "ID": "6",
             "name": "Puzzle",
             "parentState": "null",
             "startState": false,
@@ -645,7 +645,7 @@
             ]
         },
         {
-            "ID": "6",
+            "ID": "7",
             "name": "Drop Red Flag",
             "parentState": "null",
             "startState": false,
@@ -700,7 +700,7 @@
             ]
         },
         {
-            "ID": "7",
+            "ID": "8",
             "name": "Drop Blue Flag",
             "parentState": "null",
             "startState": false,
@@ -755,7 +755,7 @@
             ]
         },
         {
-            "ID": "8",
+            "ID": "9",
             "name": "Your Team Won",
             "parentState": "null",
             "startState": false,
@@ -771,7 +771,7 @@
             "transition": "null"
         },
         {
-            "ID": "9",
+            "ID": "10",
             "name": "Your Team Lost",
             "parentState": "null",
             "startState": false,
