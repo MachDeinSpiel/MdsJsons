@@ -37,6 +37,12 @@
 
 ###Monitoring Tool  
 
+**Liste mit allen Spielen anfordern (Spiele im Lobby-Zustand und laufende Spiele)**  
+```{"mode":"allgames"}```
+
+**Liste mit allen laufenden Spielen anfordern**  
+```{"mode":"runninggames"}```
+
 **Monitoring Tool mit Namen "Monitor1" in laufendes Spiel 0 einhängen**  
 ```{"mode":"monitor", "id":0, "name":"Monitor1"}```
 
