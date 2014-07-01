@@ -23,12 +23,6 @@
             }
         },
         {
-            "ident": "dropItem",
-            "defaults": {
-                "target": "dropAction"
-            }
-        },
-        {
             "ident": "showText",
             "defaults": {
                 "text": "text"
@@ -657,9 +651,10 @@
             "startState": false,
             "finalState": false,
             "doAction": {
-                "name": "dropItem",
+                "name": "removeFromGroup",
                 "params": {
-                    "target": "RedFlag"
+                    "target": "self.inventory.RedFlag",
+                    "group": "self.inventory"
                 }
             },
             "startAction": [
@@ -711,9 +706,10 @@
             "startState": false,
             "finalState": false,
             "doAction": {
-                "name": "dropItem",
+                "name": "removeFromGroup",
                 "params": {
-                    "target": "BlueFlag"
+                    "target": "self.inventory.BlueFlag",
+                    "group": "self.inventory"
                 }
             },
             "startAction": [
