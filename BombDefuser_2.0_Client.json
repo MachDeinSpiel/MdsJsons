@@ -173,7 +173,7 @@
             "endAction": "null",
             "transition": [
                 {
-                    "target": "trigger Item",
+                    "target": "use Medipack",
                     "event": "uiEvent",
                     "condition": [
                         {
@@ -226,17 +226,28 @@
         },
         {
             "ID": "3",
-            "name": "pickup Medipack",
+            "name": "use Medipack",
             "parentState": "null",
             "startState": false,
             "finalState": false,
-            "doAction": "null",
+            "doAction": {
+                "name": "showText",
+                "params": {
+                    "text": "self.object.text"
+                }
+            },
             "startAction": [
                 {
-                    "name": "addToGroup",
+                    "name": "useItem",
+                    "params": {
+                        "target": "self.object"
+                    }
+                },
+                {
+                    "name": "removeFromGroup",
                     "params": {
                         "target": "self.object",
-                        "group": "self.inventory"
+                        "group": "Medipacks"
                     }
                 }
             ],
@@ -260,6 +271,47 @@
         },
         {
             "ID": "4",
+            "name": "pickup Medipack",
+            "parentState": "null",
+            "startState": false,
+            "finalState": false,
+            "doAction": "null",
+            "startAction": [
+                {
+                    "name": "addToGroup",
+                    "params": {
+                        "target": "self.object",
+                        "group": "self.inventory"
+                    }
+                },
+                {
+                    "name": "removeFromGroup",
+                    "params": {
+                        "target": "self.object",
+                        "group": "Medipacks"
+                    }
+                }
+            ],
+            "endAction": "null",
+            "transition": [
+                {
+                    "target": "move around",
+                    "event": "whiteboardEvent",
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "0",
+                                "compValue": "0"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ID": "5",
             "name": "gameOver Bombs",
             "parentState": "null",
             "startState": false,
@@ -275,7 +327,7 @@
             "transition": "null"
         },
         {
-            "ID": "5",
+            "ID": "6",
             "name": "gameOver Health",
             "parentState": "null",
             "startState": false,
