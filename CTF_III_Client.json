@@ -228,7 +228,7 @@
                             "name": "!nearby",
                             "params": {
                                 "object": {
-                                    "name": "Flags",
+                                    "name": "Flags.RedFlag",
                                     "quantifier": {
                                         "checkType": "exists",
                                         "value": 1
@@ -317,7 +317,7 @@
                             "name": "!nearby",
                             "params": {
                                 "object": {
-                                    "name": "Flags",
+                                    "name": "Flags.BlueFlag",
                                     "quantifier": {
                                         "checkType": "exists",
                                         "value": 1
