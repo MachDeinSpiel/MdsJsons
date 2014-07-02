@@ -7,7 +7,7 @@
             "text": "Willkommen beim Roland",
             "iconName": "Roland",
             "imagePath": "http://i.imgur.com/GKY1yuZ.png",
-            "mimagePath": "http://i.imgur.com/GKY1yuZ.png",
+            "mImagePath": "http://i.imgur.com/GKY1yuZ.png",
             "latitude": 53.075934,
             "longitude": 8.807341
         },
@@ -18,7 +18,7 @@
             "text": "Willkommen bei der Hochschule Bremen",
             "iconName": "HSB",
             "imagePath": "http://i.imgur.com/GKY1yuZ.png",
-            "mimagePath": "http://i.imgur.com/GKY1yuZ.png",
+            "mImagePath": "http://i.imgur.com/GKY1yuZ.png",
             "latitude": 53.055142,
             "longitude": 8.783204
         },
@@ -29,7 +29,7 @@
             "text": "Willkommen bei den Bremer Stadtmusikanten",
             "iconName": "Stadtmusikanten",
             "imagePath": "http://i.imgur.com/GKY1yuZ.png",
-            "mimagePath": "http://i.imgur.com/GKY1yuZ.png",
+            "mImagePath": "http://i.imgur.com/GKY1yuZ.png",
             "latitude": 53.07616,
             "longitude": 8.807489
         }
@@ -39,7 +39,7 @@
             "latitude": "null",
             "longitude": "null",
             "imagePath": "http://i.imgur.com/nK9BlqD.png",
-            "mimagePath": "http://i.imgur.com/nK9BlqD.png"
+            "mImagePath": "http://i.imgur.com/nK9BlqD.png"
         }
     }
 }
