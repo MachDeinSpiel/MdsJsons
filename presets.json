@@ -21,7 +21,28 @@
             },
             "json":" {\"ident\": \"changeAttribute\", \"defaults\": {\"attribute\": \"notValue.self._attribute_\", \"value\": _amount_, \"valueType\": \"_method_\", \"duration\": \"null\", \"ticks\": \"null\"}}"
         },
-		{
+        {
+            "name" : "Start Mini App",
+            "inputs": {
+                "attribute": {
+                    "type": "STRING",
+                    "hint": "Name of the Mini App you want to start"
+                },
+                "subject": {
+                    "type": "STRING",
+                    "hint": "layer who will play the MiniApp usually self"
+                },
+                "obcject": {
+                    "type": "STRING",
+                    "hint": "In case the MiniApp should require an object but usually null"
+                },
+		"result":{
+			
+		}
+            },
+            "json":" {\"ident\": \"changeAttribute\", \"defaults\": {\"attribute\": \"notValue.self._attribute_\", \"value\": _amount_, \"valueType\": \"_method_\", \"duration\": \"null\", \"ticks\": \"null\"}}"
+        },
+	{
             "name" : "SetStringAttribute",
             "inputs": {
                 "attribute": {
