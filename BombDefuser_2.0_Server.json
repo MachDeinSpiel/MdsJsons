@@ -179,7 +179,7 @@
             "latitude": "null",
             "longitude": "null",
             "imagePath": "http://i.imgur.com/nK9BlqD.png",
-            "mimagePath": "http://i.imgur.com/nK9BlqD.png",
+            "mImagePath": "http://i.imgur.com/nK9BlqD.png",
             "inventory": {
                 "dummy": "dummytext"
             }
