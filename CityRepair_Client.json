@@ -1,0 +1,206 @@
+{
+    "action": [
+        {
+            "ident": "updateMap",
+            "defaults": {
+                "target": "self"
+            }
+        },
+        {
+            "ident": "backToMap",
+            "defaults": {
+                "target": "self"
+            }
+        },
+        {
+            "ident": "showText",
+            "defaults": {
+                "text": "self.score"
+            }
+        },
+        {
+            "ident": "removeFromGroup",
+            "defaults": {
+                "target": "self.object.pathKey",
+                "group": "name"
+            }
+        },
+        {
+            "ident": "startMiniApp",
+            "defaults": {
+                "name": "null",
+                "subject": "self",
+                "object": "null",
+                "result": "null"
+            }
+        }
+    ],
+    "states": [
+        {
+            "ID": "0",
+            "name": "Move Around",
+            "parentState": "null",
+            "startState": true,
+            "finalState": false,
+            "doAction": [
+                {
+                    "name": "updateMap"
+                },
+                {
+                    "name": "showText"
+                }
+            ],
+            "startAction": [
+                {
+                    "name": "backToMap",
+                    "params": {
+                        "target": "self"
+                    }
+                }
+            ],
+            "endAction": "null",
+            "transition": [
+                {
+                    "target": "Repair Machine",
+                    "event": "locationEvent",
+                    "condition": [
+                        {
+                            "name": "nearby",
+                            "params": {
+                                "object": {
+                                    "name": "Machines",
+                                    "quantifier": {
+                                        "checkType": "exists",
+                                        "value": 1
+                                    }
+                                },
+                                "subject": {
+                                    "name": "self",
+                                    "quantifier": {
+                                        "checkType": "exists",
+                                        "value": 1
+                                    }
+                                },
+                                "radius": 10
+                            }
+                        }
+                    ]
+                },
+                {
+                    "target": "Won Game",
+                    "event": "whiteboardEvent",
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "highequals",
+                                "value": "self.score",
+                                "compValue": 1000
+                            }
+                        }
+                    ]
+                },
+                {
+                    "target": "Lost Game",
+                    "event": "multipleWhiteboardEvent",
+                    "condition": [
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "equals",
+                                "value": "Machines.length",
+                                "compValue": 0
+                            }
+                        },
+                        {
+                            "name": "condition",
+                            "params": {
+                                "checkType": "lower",
+                                "value": "self.score",
+                                "compValue": 1000
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ID": "1",
+            "name": "Repair Machine",
+            "parentState": "null",
+            "startState": false,
+            "finalState": false,
+            "doAction": {
+                "name": "startMiniApp",
+                "params": {
+                    "type": "Reaction",
+                    "subject": "self",
+                    "object": "null",
+                    "result": [
+                        {
+                            "attribute": "notValue.self.score",
+                            "minScore": 5,
+                            "factor": 100,
+                            "setWin": 5,
+                            "setLoose": -1
+                        }
+                    ]
+                }
+            },
+            "startAction": "null",
+            "endAction": {
+                "name": "removeFromGroup",
+                "params": {
+                    "target": "self.object.pathKey",
+                    "group": "Machines"
+                }
+            },
+            "transition": [
+                {
+                    "target": "Move Around",
+                    "event": "uiEvent",
+                    "condition": [
+                        {
+                            "name": "Repair more Machines!",
+                            "params": {
+                                "action": "RELEASE"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ID": "2",
+            "name": "Won Game",
+            "parentState": "null",
+            "startState": false,
+            "finalState": true,
+            "doAction": {
+                "name": "showText",
+                "params": {
+                    "text": "You´ve fixed enough Machines for this day"
+                }
+            },
+            "startAction": "null",
+            "endAction": "null",
+            "transition": "null"
+        },
+        {
+            "ID": "3",
+            "name": "Lost Game",
+            "parentState": "null",
+            "startState": false,
+            "finalState": true,
+            "doAction": {
+                "name": "showText",
+                "params": {
+                    "text": "You failed to fix the Machines."
+                }
+            },
+            "startAction": "null",
+            "endAction": "null",
+            "transition": "null"
+        }
+    ]
+}
