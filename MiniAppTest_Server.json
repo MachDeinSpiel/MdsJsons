@@ -3,6 +3,9 @@
         "template": {
             "latitude": "null",
             "longitude": "null",
+            "iconName": "self.pathKey",
+            "imagePath": "http://i.imgur.com/nK9BlqD.png",
+            "mimagePath": "http://i.imgur.com/nK9BlqD.png",
             "solve": false
         }
     }
