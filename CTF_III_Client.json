@@ -341,7 +341,7 @@
                 "name": "changeAttribute",
                 "params": {
                     "attribute": "notValue.self.inventory.RedFlag",
-                    "value": "ownGroup.title",
+                    "value": "none",
                     "valueType": "set",
                     "duration": "null",
                     "ticks": "null"
@@ -410,7 +410,7 @@
                 "name": "changeAttribute",
                 "params": {
                     "attribute": "notValue.self.inventory.BlueFlag",
-                    "value": "ownGroup.title",
+                    "value": "none",
                     "valueType": "set",
                     "duration": "null",
                     "ticks": "null"
