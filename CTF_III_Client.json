@@ -340,7 +340,7 @@
             "doAction": {
                 "name": "changeAttribute",
                 "params": {
-                    "attribute": "notValue.self.inventory.RedFlag",
+                    "attribute": "notValue.self.inventory.RedFlag.visibility",
                     "value": "none",
                     "valueType": "set",
                     "duration": "null",
@@ -409,7 +409,7 @@
             "doAction": {
                 "name": "changeAttribute",
                 "params": {
-                    "attribute": "notValue.self.inventory.BlueFlag",
+                    "attribute": "notValue.self.inventory.BlueFlag.visibility",
                     "value": "none",
                     "valueType": "set",
                     "duration": "null",
@@ -702,7 +702,7 @@
                 {
                     "name": "changeAttribute",
                     "params": {
-                        "attribute": "notValue.self.inventory.RedFlag",
+                        "attribute": "notValue.self.inventory.RedFlag.visibility",
                         "value": "all",
                         "valueType": "set",
                         "duration": "null",
@@ -779,7 +779,7 @@
                 {
                     "name": "changeAttribute",
                     "params": {
-                        "attribute": "notValue.self.inventory.BlueFlag",
+                        "attribute": "notValue.self.inventory.BlueFlag.visibility",
                         "value": "all",
                         "valueType": "set",
                         "duration": "null",
