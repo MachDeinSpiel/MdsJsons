@@ -680,6 +680,12 @@
                         "duration": "null",
                         "ticks": "null"
                     }
+                },
+                {
+                    "name": "showText",
+                    "params": {
+                        "text": "You lost the Flag!",
+                    }
                 }
             ],
             "endAction": {
@@ -740,6 +746,12 @@
                         "valueType": "set",
                         "duration": "null",
                         "ticks": "null"
+                    }
+                },
+                {
+                    "name": "showText",
+                    "params": {
+                        "text": "You lost the Flag!",
                     }
                 }
             ],
