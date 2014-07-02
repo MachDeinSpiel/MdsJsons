@@ -1,3 +1,4 @@
+
 {
     "action": [
         {
@@ -664,10 +665,9 @@
             "startState": false,
             "finalState": false,
             "doAction": {
-                "name": "addToGroup",
+                "name": "showText",
                 "params": {
-                    "target": "self.inventory.RedFlag",
-                    "group": "Flags"
+                    "text": "You lost the Flag!"
                 }
             },
             "startAction": [
@@ -682,9 +682,10 @@
                     }
                 },
                 {
-                    "name": "showText",
+                    "name": "addToGroup",
                     "params": {
-                        "text": "You lost the Flag!",
+                        "target": "self.inventory.RedFlag",
+                        "group": "Flags"
                     }
                 }
             ],
@@ -731,10 +732,9 @@
             "startState": false,
             "finalState": false,
             "doAction": {
-                "name": "addToGroup",
+                "name": "showText",
                 "params": {
-                    "target": "self.inventory.BlueFlag",
-                    "group": "Flags"
+                    "text": "You lost the Flag!"
                 }
             },
             "startAction": [
@@ -749,9 +749,10 @@
                     }
                 },
                 {
-                    "name": "showText",
+                    "name": "addToGroup",
                     "params": {
-                        "text": "You lost the Flag!",
+                        "target": "self.inventory.BlueFlag",
+                        "group": "Flags"
                     }
                 }
             ],
