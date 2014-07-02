@@ -38,7 +38,8 @@
         "template": {
             "latitude": "null",
             "longitude": "null",
-            "imagePath": "http://imgur.com/Ureny6D"
+            "imagePath": "http://i.imgur.com/nK9BlqD.png",
+            "mimagePath": "http://i.imgur.com/nK9BlqD.png"
         }
     }
 }
