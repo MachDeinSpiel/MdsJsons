@@ -178,7 +178,8 @@
             "visibility": "all",
             "latitude": "null",
             "longitude": "null",
-            "imagePath": "http://imgur.com/Ureny6D.png",
+            "imagePath": "http://i.imgur.com/nK9BlqD.png",
+            "mimagePath": "http://i.imgur.com/nK9BlqD.png",
             "inventory": {
                 "dummy": "dummytext"
             }
