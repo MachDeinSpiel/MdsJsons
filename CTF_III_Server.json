@@ -167,7 +167,7 @@
             "visibility": "ownGroup",
             "iconName": "self.pathKey",
             "imagePath": "http://i.imgur.com/nK9BlqD.png",
-            "mimagePath": "http://i.imgur.com/nK9BlqD.png"
+            "mimagePath": "http://i.imgur.com/nK9BlqD.png",
             "inventory": {
                 "dummy": "dummytext"
             }
