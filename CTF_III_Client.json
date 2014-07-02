@@ -337,7 +337,16 @@
             "parentState": "null",
             "startState": false,
             "finalState": false,
-            "doAction": "null",
+            "doAction": {
+                "name": "changeAttribute",
+                "params": {
+                    "attribute": "notValue.self.inventory.RedFlag",
+                    "value": "ownGroup.title",
+                    "valueType": "set",
+                    "duration": "null",
+                    "ticks": "null"
+                }
+            },
             "startAction": [
                 {
                     "name": "addToGroup",
@@ -397,7 +406,16 @@
             "parentState": "null",
             "startState": false,
             "finalState": false,
-            "doAction": "null",
+            "doAction": {
+                "name": "changeAttribute",
+                "params": {
+                    "attribute": "notValue.self.inventory.BlueFlag",
+                    "value": "ownGroup.title",
+                    "valueType": "set",
+                    "duration": "null",
+                    "ticks": "null"
+                }
+            },
             "startAction": [
                 {
                     "name": "addToGroup",
@@ -682,6 +700,16 @@
                     }
                 },
                 {
+                    "name": "changeAttribute",
+                    "params": {
+                        "attribute": "notValue.self.inventory.RedFlag",
+                        "value": "all",
+                        "valueType": "set",
+                        "duration": "null",
+                        "ticks": "null"
+                    }
+                },
+                {
                     "name": "addToGroup",
                     "params": {
                         "target": "self.inventory.RedFlag",
@@ -743,6 +771,16 @@
                     "params": {
                         "attribute": "notValue.self.visibility",
                         "value": "ownGroup.title",
+                        "valueType": "set",
+                        "duration": "null",
+                        "ticks": "null"
+                    }
+                },
+                {
+                    "name": "changeAttribute",
+                    "params": {
+                        "attribute": "notValue.self.inventory.BlueFlag",
+                        "value": "all",
                         "valueType": "set",
                         "duration": "null",
                         "ticks": "null"
