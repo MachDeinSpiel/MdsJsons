@@ -27,6 +27,7 @@
     },
     "Players": {
         "name": "Player",
+        "iconName": "player",
         "latitude": "null",
         "longitude": "null"
     }
