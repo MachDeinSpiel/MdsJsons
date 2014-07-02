@@ -1,28 +1,36 @@
 {
     "Cookies": {
         "Cookie1": {
-            "name": "Cookie1",
+            "pathKey": "Cookie1",
             "longitude": "53.055142",
             "latitude": "8.783204",
-            "pathKey": "Cookie1"
+            "iconName": "Keks",
+            "imagePath": "http://i.imgur.com/7anZcLo.png",
+            "mimagePath": "http://i.imgur.com/7anZcLo.png"
         },
         "Cookie2": {
-            "name": "Cookie2",
+            "pathKey": "Cookie2",
             "longitude": "53.053931",
             "latitude": "8.783783",
-            "pathKey": "Cookie2"
+            "iconName": "Keks",
+            "imagePath": "http://i.imgur.com/7anZcLo.png",
+            "mimagePath": "http://i.imgur.com/7anZcLo.png"
         },
         "Cookie3": {
-            "name": "Cookie3",
+            "pathKey": "Cookie3",
             "longitude": "53.055240",
             "latitude": "8.784523",
-            "pathKey": "Cookie3"
+            "iconName": "Keks",
+            "imagePath": "http://i.imgur.com/7anZcLo.png",
+            "mimagePath": "http://i.imgur.com/7anZcLo.png"
         },
         "Cookie4": {
-            "name": "Cookie4",
+            "pathKey": "Cookie4",
             "longitude": "53.054115",
             "latitude": "8.787672",
-            "pathKey": "Cookie4"
+            "iconName": "Keks",
+            "imagePath": "http://i.imgur.com/7anZcLo.png",
+            "mimagePath": "http://i.imgur.com/7anZcLo.png"
         }
     },
     "Players": {
