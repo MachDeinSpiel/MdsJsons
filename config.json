@@ -19,7 +19,7 @@
          "version":0.1,
          "id":1,
          "minplayers":1,
-         "maxplayers":2,
+         "maxplayers":3,
          "teams":0,
          "isteamgame":false,
          "apptheme":"dark",
