@@ -78,7 +78,7 @@
       "template":{
          "health":1000,
          "visibility": "all",
-         "iconName": "player",
+         "iconName": "self.pathKey",
          "latitude":"null",
          "longitude":"null",
          "imagePath":"http://i.imgur.com/nK9BlqD.png",
