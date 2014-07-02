@@ -87,7 +87,7 @@
                 {
                     "ident": "removeFromGroup",
                     "params": {
-                        "target": "trigger.object.name",
+                        "target": "self.object.pathKey",
                         "group": "cookies"
                     }
                 }
