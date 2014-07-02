@@ -8,6 +8,7 @@
             "visibility": "none",
             "iconName": "Machine",
             "imagePath": "http://i.imgur.com/mVaa4qd.png?1",
+            "mImagePath": "http://i.imgur.com/mVaa4qd.png?1",
             "useAction": "null"
         },
         "Machine2": {
@@ -18,6 +19,7 @@
             "visibility": "none",
             "iconName": "Machine",
             "imagePath": "http://i.imgur.com/mVaa4qd.png?1",
+            "mImagePath": "http://i.imgur.com/mVaa4qd.png?1",
             "useAction": "null"
         },
         "Machine3": {
@@ -28,6 +30,7 @@
             "visibility": "none",
             "iconName": "Machine",
             "imagePath": "http://i.imgur.com/mVaa4qd.png?1",
+            "mImagePath": "http://i.imgur.com/mVaa4qd.png?1",
             "useAction": "null"
         },
         "Machine4": {
@@ -38,6 +41,7 @@
             "visibility": "none",
             "iconName": "Machine",
             "imagePath": "http://i.imgur.com/mVaa4qd.png?1",
+            "mImagePath": "http://i.imgur.com/mVaa4qd.png?1",
             "useAction": "null"
         }
     },
@@ -48,7 +52,8 @@
             "latitude": "null",
             "longitude": "null",
             "iconName": "self.pathKey",
-            "imagePath": "http://imgur.com/Ureny6D.png"
+            "imagePath": "http://i.imgur.com/nK9BlqD.png",
+            "mImagePath": "http://i.imgur.com/nK9BlqD.png"
         }
     }
 }
