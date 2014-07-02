@@ -81,7 +81,7 @@
         {
             "ID": "1.1",
             "name": "show info",
-            "parentState": "1",
+            "parentState": "null",
             "startState": false,
             "finalState": false,
             "doAction": {
