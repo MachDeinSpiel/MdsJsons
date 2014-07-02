@@ -664,10 +664,10 @@
             "startState": false,
             "finalState": false,
             "doAction": {
-                "name": "removeFromGroup",
+                "name": "addToGroup",
                 "params": {
                     "target": "self.inventory.RedFlag",
-                    "group": "self.inventory"
+                    "group": "Flags"
                 }
             },
             "startAction": [
@@ -682,7 +682,13 @@
                     }
                 }
             ],
-            "endAction": "null",
+            "endAction": {
+                "name": "removeFromGroup",
+                "params": {
+                    "target": "self.inventory.RedFlag",
+                    "group": "self.inventory"
+                }
+            },
             "transition": [
                 {
                     "target": "Move Around",
@@ -719,10 +725,10 @@
             "startState": false,
             "finalState": false,
             "doAction": {
-                "name": "removeFromGroup",
+                "name": "addToGroup",
                 "params": {
                     "target": "self.inventory.BlueFlag",
-                    "group": "self.inventory"
+                    "group": "Flags"
                 }
             },
             "startAction": [
@@ -737,7 +743,13 @@
                     }
                 }
             ],
-            "endAction": "null",
+            "endAction": {
+                "name": "removeFromGroup",
+                "params": {
+                    "target": "self.inventory.BlueFlag",
+                    "group": "self.inventory"
+                }
+            },
             "transition": [
                 {
                     "target": "Move Around",
