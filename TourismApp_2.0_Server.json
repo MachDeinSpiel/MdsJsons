@@ -38,6 +38,7 @@
         "template": {
             "latitude": "null",
             "longitude": "null",
+            "iconName": "self.pathKey",
             "imagePath": "http://i.imgur.com/nK9BlqD.png",
             "mImagePath": "http://i.imgur.com/nK9BlqD.png"
         }
