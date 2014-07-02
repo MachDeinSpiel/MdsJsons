@@ -36,21 +36,16 @@
                     "duration": "null",
                     "ticks": "null"
                 },
-                "dropAction": {
-                    "addToGroup": {
-                        "target": "self.inventory.RedFlag",
-                        "group": "Flags"
-                    }
+            },
+            "dropAction": {
+                "addToGroup": {
+                    "target": "self.inventory.RedFlag",
+                    "group": "Flags"
                 }
             }
         }
     },
-    "dropAction": {
-        "addToGroup": {
-            "target": "self.inventory.RedFlag",
-            "group": "Flags"
-        }
-    },
+
     "BlueFlag": {
         "title": "Blue Flag",
         "pathKey": "BlueFlag",
