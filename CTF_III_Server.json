@@ -35,6 +35,12 @@
                     "valueType": "set",
                     "duration": "null",
                     "ticks": "null"
+                },
+                "dropAction": {
+                    "addToGroup": {
+                        "target": "self.inventory.RedFlag",
+                        "group": "Flags"
+                    }
                 }
             }
         }
