@@ -1,0 +1,54 @@
+{
+    "Machines": {
+        "Machine1": {
+            "title": "Machine No. 1",
+            "pathKey": "Machine1",
+            "latitude": 53.055547,
+            "longitude": 8.784968,
+            "visibility": "none",
+            "iconName": "Machine",
+            "imagePath": "http://i.imgur.com/mVaa4qd.png?1",
+            "useAction": "null"
+        },
+        "Machine2": {
+            "title": "Machine No. 2",
+            "pathKey": "Machine2",
+            "latitude": 53.056441,
+            "longitude": 8.786541,
+            "visibility": "none",
+            "iconName": "Machine",
+            "imagePath": "http://i.imgur.com/mVaa4qd.png?1",
+            "useAction": "null"
+        },
+        "Machine3": {
+            "title": "Machine No. 3",
+            "pathKey": "Machine3",
+            "latitude": 53.057498,
+            "longitude": 8.782185,
+            "visibility": "none",
+            "iconName": "Machine",
+            "imagePath": "http://i.imgur.com/mVaa4qd.png?1",
+            "useAction": "null"
+        },
+        "Machine4": {
+            "title": "Machine No. 4",
+            "pathKey": "Machine4",
+            "latitude": 53.05515,
+            "longitude": 8.783054,
+            "visibility": "none",
+            "iconName": "Machine",
+            "imagePath": "http://i.imgur.com/mVaa4qd.png?1",
+            "useAction": "null"
+        }
+    },
+    "Players": {
+        "template": {
+            "pathKey": "template",
+            "score": 0,
+            "latitude": "null",
+            "longitude": "null",
+            "iconName": "self.pathKey",
+            "imagePath": "http://imgur.com/Ureny6D.png"
+        }
+    }
+}
