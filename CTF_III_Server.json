@@ -16,6 +16,33 @@
         }
     },
     "Flags": {
+        "BlueFlag": {
+        "title": "Blue Flag",
+        "pathKey": "BlueFlag",
+        "team": "Team Blue",
+        "text": "You Took The Blue Teams Flag",
+        "latitude": 53.053571,
+        "longitude": 8.787077,
+        "visibility": "all",
+        "iconName": "BlaueF",
+        "imagePath": "http://i.imgur.com/tueOpzE.png",
+        "mimagePath": "http://i.imgur.com/tueOpzE.png",
+        "useAction": {
+            "changeAttribute": {
+                "name": "changeAttribute",
+                "attribute": "notValue.self.visibility",
+                "value": "all",
+                "valueType": "set",
+                "duration": "null",
+                "ticks": "null"
+            }
+        },
+        "dropAction": {
+            "addToGroup": {
+                "target": "self.inventory.BlueFlag",
+                "group": "Flags"
+            }
+        },
         "RedFlag": {
             "title": "Red Flag",
             "pathKey": "RedFlag",
@@ -46,34 +73,6 @@
         }
     },
 
-    "BlueFlag": {
-        "title": "Blue Flag",
-        "pathKey": "BlueFlag",
-        "team": "Team Blue",
-        "text": "You Took The Blue Teams Flag",
-        "latitude": 53.053571,
-        "longitude": 8.787077,
-        "visibility": "all",
-        "iconName": "BlaueF",
-        "imagePath": "http://i.imgur.com/tueOpzE.png",
-        "mimagePath": "http://i.imgur.com/tueOpzE.png",
-        "useAction": {
-            "changeAttribute": {
-                "name": "changeAttribute",
-                "attribute": "notValue.self.visibility",
-                "value": "all",
-                "valueType": "set",
-                "duration": "null",
-                "ticks": "null"
-            }
-        },
-        "dropAction": {
-            "addToGroup": {
-                "target": "self.inventory.BlueFlag",
-                "group": "Flags"
-            }
-        }
-    },
     "Bases": {
         "RedBase": {
             "title": "Red Base",
