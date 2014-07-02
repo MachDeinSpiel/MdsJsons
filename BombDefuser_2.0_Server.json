@@ -173,7 +173,7 @@
     "Players": {
         "template": {
             "pathKey": "template",
-            "iconName": "player",
+            "iconName": "self.pathKey",
             "health": 1000,
             "visibility": "all",
             "latitude": "null",
