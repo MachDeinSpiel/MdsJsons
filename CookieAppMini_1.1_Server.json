@@ -36,6 +36,9 @@
     "Players": {
         "name": "Player",
         "iconName": "player",
+        "iconName": "self.pathKey",
+        "imagePath": "http://i.imgur.com/nK9BlqD.png",
+        "mimagePath": "http://i.imgur.com/nK9BlqD.png",
         "latitude": "null",
         "longitude": "null"
     }
