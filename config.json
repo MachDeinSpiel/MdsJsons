@@ -104,6 +104,19 @@
          "apptheme":"dark",
          "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/CityRepair_Client.json",
          "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master/CityRepair_Server.json"
-      }
+      }, 
+      {
+         "name":"Test Wrong JSON link",
+         "author":"MDS Team",
+         "version":0.1,
+         "id":8,
+         "minplayers":1,
+         "maxplayers":2,
+         "teams":0,
+         "isteamgame":false,
+         "apptheme":"light",
+         "serverurl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master",
+         "clienturl":"https://raw.githubusercontent.com/MachDeinSpiel/MdsJsons/master"
+      },
    ]
 }
