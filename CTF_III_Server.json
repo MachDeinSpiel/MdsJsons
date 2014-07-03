@@ -41,7 +41,16 @@
                 "addToGroup": {
                     "target": "self.inventory.BlueFlag",
                     "group": "Flags"
+                },
+                "changeAttribute": {
+                    "name": "changeAttribute",
+                    "attribute": "notValue.Flags.BlueFlag.visibility",
+                    "value": "all",
+                    "valueType": "set",
+                    "duration": "null",
+                    "ticks": "null"
                 }
+            },
             }
         },
         "RedFlag": {
@@ -69,6 +78,14 @@
                 "addToGroup": {
                     "target": "self.inventory.RedFlag",
                     "group": "Flags"
+                },
+                "changeAttribute": {
+                    "name": "changeAttribute",
+                    "attribute": "notValue.Flags.RedFlag.visibility",
+                    "value": "all",
+                    "valueType": "set",
+                    "duration": "null",
+                    "ticks": "null"
                 }
             }
         }
