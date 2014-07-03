@@ -202,7 +202,7 @@
             "doAction": {
                 "name": "showText",
                 "params": {
-                    "text": "self.object.text"
+                    "text": "This is the Red Teams's Flag. You can take it or move on"
                 }
             },
             "startAction": "null",
@@ -271,7 +271,7 @@
             "doAction": {
                 "name": "showText",
                 "params": {
-                    "text": "self.object.text"
+                    "text": "This is the Blue Teams's Flag. You can take it or move on"
                 }
             },
             "startAction": "null",
