@@ -700,17 +700,17 @@
                     }
                 },
                 {
-                    "name": "removeFromGroup",
-                    "params": {
-                        "target": "self.inventory.RedFlag",
-                        "group": "self.inventory"
-                    }
-                },
-                {
                     "name": "addToGroup",
                     "params": {
                         "target": "self.inventory.RedFlag",
                         "group": "Flags"
+                    }
+                },
+                {
+                    "name": "removeFromGroup",
+                    "params": {
+                        "target": "self.inventory.RedFlag",
+                        "group": "self.inventory"
                     }
                 }
             ],
@@ -777,17 +777,17 @@
                     }
                 },
                 {
-                    "name": "removeFromGroup",
-                    "params": {
-                        "target": "self.inventory.BlueFlag",
-                        "group": "self.inventory"
-                    }
-                },
-                {
                     "name": "addToGroup",
                     "params": {
                         "target": "self.inventory.BlueFlag",
                         "group": "Flags"
+                    }
+                },
+                {
+                    "name": "removeFromGroup",
+                    "params": {
+                        "target": "self.inventory.BlueFlag",
+                        "group": "self.inventory"
                     }
                 }
             ],
