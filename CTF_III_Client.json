@@ -700,13 +700,10 @@
                     }
                 },
                 {
-                    "name": "changeAttribute",
+                    "name": "removeFromGroup",
                     "params": {
-                        "attribute": "notValue.self.inventory.RedFlag.visibility",
-                        "value": "all",
-                        "valueType": "set",
-                        "duration": "null",
-                        "ticks": "null"
+                        "target": "self.inventory.RedFlag",
+                        "group": "self.inventory"
                     }
                 },
                 {
@@ -718,10 +715,13 @@
                 }
             ],
             "endAction": {
-                "name": "removeFromGroup",
+                "name": "changeAttribute",
                 "params": {
-                    "target": "self.inventory.RedFlag",
-                    "group": "self.inventory"
+                    "attribute": "notValue.Flags.RedFlag.visibility",
+                    "value": "all",
+                    "valueType": "set",
+                    "duration": "null",
+                    "ticks": "null"
                 }
             },
             "transition": [
@@ -777,6 +777,13 @@
                     }
                 },
                 {
+                    "name": "removeFromGroup",
+                    "params": {
+                        "target": "self.inventory.BlueFlag",
+                        "group": "self.inventory"
+                    }
+                },
+                {
                     "name": "changeAttribute",
                     "params": {
                         "attribute": "notValue.self.inventory.BlueFlag.visibility",
@@ -795,10 +802,13 @@
                 }
             ],
             "endAction": {
-                "name": "removeFromGroup",
+                "name": "changeAttribute",
                 "params": {
-                    "target": "self.inventory.BlueFlag",
-                    "group": "self.inventory"
+                    "attribute": "notValue.Flags.RedFlag.visibility",
+                    "value": "all",
+                    "valueType": "set",
+                    "duration": "null",
+                    "ticks": "null"
                 }
             },
             "transition": [
