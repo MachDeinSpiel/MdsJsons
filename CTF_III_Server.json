@@ -39,6 +39,7 @@
             },
             "dropAction": {
                 "addToGroup": {
+                    "name": "addToGroup",
                     "target": "self.inventory.BlueFlag",
                     "group": "Flags"
                 },
@@ -83,6 +84,7 @@
             },
             "dropAction": {
                 "addToGroup": {
+                    "name": "addToGroup",
                     "target": "self.inventory.RedFlag",
                     "group": "Flags"
                 },
