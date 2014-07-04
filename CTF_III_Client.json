@@ -784,16 +784,6 @@
                     }
                 },
                 {
-                    "name": "changeAttribute",
-                    "params": {
-                        "attribute": "notValue.self.inventory.BlueFlag.visibility",
-                        "value": "all",
-                        "valueType": "set",
-                        "duration": "null",
-                        "ticks": "null"
-                    }
-                },
-                {
                     "name": "addToGroup",
                     "params": {
                         "target": "self.inventory.BlueFlag",
@@ -804,7 +794,7 @@
             "endAction": {
                 "name": "changeAttribute",
                 "params": {
-                    "attribute": "notValue.Flags.RedFlag.visibility",
+                    "attribute": "notValue.Flags.BlueFlag.visibility",
                     "value": "all",
                     "valueType": "set",
                     "duration": "null",
