@@ -45,7 +45,7 @@
                 },
                 "changeAttribute": {
                     "name": "changeAttribute",
-                    "attribute": "notValue.self.inventory.BlueFlag.visibility",
+                    "attribute": "notValue.Flags.BlueFlag.visibility",
                     "value": "all",
                     "valueType": "set",
                     "duration": "null",
@@ -90,7 +90,7 @@
                 },
                 "changeAttribute": {
                     "name": "changeAttribute",
-                    "attribute": "notValue.self.inventory.RedFlag.visibility",
+                    "attribute": "notValue.Flags.RedFlag.visibility",
                     "value": "all",
                     "valueType": "set",
                     "duration": "null",
