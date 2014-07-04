@@ -53,7 +53,7 @@
                 "changeAttribute1": {
                     "name": "changeAttribute",
                     "attribute": "notValue.self.visibility",
-                    "value": "ownGroup.title",
+                    "value": "all",
                     "valueType": "set",
                     "duration": "null",
                     "ticks": "null"
@@ -97,7 +97,7 @@
                 "changeAttribute1": {
                     "name": "changeAttribute",
                     "attribute": "notValue.self.visibility",
-                    "value": "ownGroup.title",
+                    "value": "all",
                     "valueType": "set",
                     "duration": "null",
                     "ticks": "null"
